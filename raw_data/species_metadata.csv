@@ -1,0 +1,49 @@
+SpeciesID,Genera,Species_Group,Alias,Mobility,COMMON NAME (for reference)
+anemone_sp,Cnidaria,Anemone,Anemone,Nonmotile,anemone that's not metridium or urticina
+amphipod,Arthropoda,Amphipod/shrimp,Amphipod,Motile,small crustaceans that look like tiny shrimp
+barnacle,Arthropoda,Barnacle,Barnacle,Nonmotile,NA
+branched_bryozoan_sp,Bryozoa,Bryozoan: branched,Bryozoan: branched,Nonmotile,branched bryozoan (that's specifically different looking than Crisia_sp)
+brachiopod,Brachiopoda,Brachiopod,Brachiopod,Nonmotile,NA
+calcareous_tubeworm,Annelida,Tubeworm: calcareous,Calcareous tubeworm,Nonmotile,"Serpula spp., most likely Pseudochitinopoma"
+Chelysoma_productum,Chordata,Tunicate,Brown tunicate,Nonmotile,brown tunicate
+Scallop_sp,Mollusca,Scallop,Scallop sp.,Nonmotile,scallop
+Chlamys_rhubida,Mollusca,Scallop,Pink scallop,Nonmotile,"typo in name, actual name is Chlamys rubida"
+Chorilia_longipes,Arthropoda,Majoidae crab,Longhord decorator crab,Motile,Longhorn decorator crab
+Corella_willmeriana,Chordata,Tunicate,Clear tunicate,Nonmotile,clear tunicate
+crab_sp,Arthropoda,Cancridae crab,Crab,Motile,"specifically different looking than Glebocarcinus_oregonensis, but let's see if we can figure out what it is!"
+Cranopsis_cucullata,Mollusca,Limpet,Hooded keyhole limpet,Nonmotile,NA
+Crepidula,Mollusca,Limpet,Slipper snail,Nonmotile,slipper snail (limpet)
+Crisia_sp,Bryozoa,Bryozoan: branched,Bryozoan: branched,Nonmotile,branched bryozoan
+colonial tunicate,Tunicata,Tunicate,Colonial tunicate,Nonmotile,NA
+Demospongiae,Porifera,Demosponge,Demosponge,Nonmotile,sponge
+egg_mass,Unknown,Unidentified,Unidentified egg mass,Nonmotile,NA
+encrusting_bryozoan_sp,Bryozoa,Bryozoan: encrusting,Bryozoan: encrusting,Nonmotile,encrusting bryozoan
+Ericthonius_rubricornis,Arthropoda,Amphipod: tube,Amphipod: tube,Nonmotile,"arthropod, looks like a bunch of tube worms jumbled together"
+Eulalia_quadrioculata,Annelida,Polychaete: errant,Polychaete: errant,Motile,annelid worms
+Glebocarcinus_oregonensis,Arthropoda,Cancridae crab,Pygmy Rock Crab,Motile,pygmy rock crab
+Harmothoe_sp,Annelida,Polychaete: errant,Polychaete: errant,Motile,annelid worms
+Hiatella_arctica,Mollusca,Clam,Wrinkled rock-borer clam,Nonmotile,wrinkled rock-borer clam
+Hinnites_giganteous,Mollusca,Scallop,Giant Scallop,Nonmotile,giant scallop (white shells with ridges)
+Lichenopora,Bryozoa,Bryozoan: coral-like,Bryozoan: coral-like,Nonmotile,coral bryozoan (encrusting frilly looking bryozoan)
+limpet,Mollusca,Limpet,Limpet,Nonmotile,NA
+Metridium,Cnidaria,Anemone,Anemone,Nonmotile,stalked anenome - usually white or orange
+Mopalia_kennerleyi,Mollusca,Chiton,Northern hairy chiton,Motile,NA
+Mussel,Mollusca,Mussel,Mussel,Nonmotile,NA
+Amphissa,Mollusca,Gastropod: snail,Wrinkled amphissa,Motile,wrinkled amphissa
+neptunea_lyrata,Mollusca,Gastropod: snail,Lyre whelk,Motile,lyre whelk
+Phyllodoce_sp,Annelida,Polychaete: errant,Scale worm,Motile,polychaete species (scale worm/annelid worm)
+Pododesmus_macrochisma,Mollusca,Jingle shell,Alaska jingle,Nonmotile,Alaska jingle (bivalve)
+polychaete_sp,Annelida,Polychaete: errant,Polychaete: errant,Motile,"annelid (see also Eulalia, Harmothoe, and sabellida)"
+Polynoid_sp,Annelida,Polychaete: errant,Scale worm,Motile,NA
+sabellariid_tubeworm,Annelida,Polychaete: tube,Sand and glue tubeworm,Nonmotile,"""sand and glue"" tubeworms; sabellida"
+shrimp_sp,Arthropoda,Amphipod/shrimp,Shrimp,Motile,let's try to indentify which one!
+Seaweed_sp,Unknown,Seaweed sp.,Seaweed sp.,Nonmotile,unidentified red/brown seaweed (but let's try to identify it!)
+Schizoporella_sp,Bryozoa,Bryozoan: encrusting,Bryozoan: encrusting,Nonmotile,NA
+spirobis_sp,Annelida,Polychaete: spirorbis,Spiral fan worm,Nonmotile,spiral fan worms (annelids)
+Strongylocentrotus_sp,Echinodermata,Sea urchin,Sea urchin,Motile,sea urchin spp
+Trichotropis,Mollusca,Gastropod: snail,Hairy snail,Motile,Hairy snail
+Styaela_gibbsii,Chordata,Tunicate,Stalked tunicate,Nonmotile,stalked tunicate
+Ulva,Chlorophyta,Ulva sp.,Sea lettuce,Nonmotile,sea lettuce
+Urticina,Cnidaria,Anemone,Colorful anemone,Nonmotile,colorful anemone
+unidentified_pending,Unknown,Unidentified,Unidentified,Nonmotile,** this means it's either pending identification because you've put it in the Discord and/or we're sending it over to Megan or Greg or another expert
+unidentified,Unknown,Unidentified,Unidentified,Nonmotile,this means it's too small/difficult for even the experts to identify
