@@ -92,6 +92,41 @@ perc_cover_df %>%
 
 # ggsave("figures/figure4.png", width = 8, height = 6, dpi = 300)
 
+#### univariate stats ####
+perc_cover_mod1 <- aov(perc.cover ~ Depth, data = perc_cover_df)
+summary(perc_cover_mod1)
+
+TukeyHSD(perc_cover_mod1) #this only works if you don't include the interaction term
+
+perc_cover_mod2 <- aov(perc.cover ~ Depth + Year + Depth*Year, data = perc_cover_df)
+summary(perc_cover_mod2)
+
+#model diagnostics
+aov.res <- residuals(perc_cover_mod2)
+
+hist(perc_cover_mod2$residuals)
+qqnorm(perc_cover_mod2$residuals)
+qqline(perc_cover_mod2$residuals)
+
+shapiro.test(x = aov.res)
+#p value is > 0.05, meets the assumption of normality
+
+perc_cover_mod4 <- aov(perc.live.cover ~ Depth + Year + Depth*Year, data = perc_cover_df)
+summary(perc_cover_mod4)
+
+perc_cover_mod5 <- aov(perc.live.cover ~ Depth + Year, data = perc_cover_df)
+
+TukeyHSD(perc_cover_mod5)
+
+summary(aov(perc.live.cover ~ id + Year + id*Year, data = combine_600ft_cover))
+
+compare_live_wo_5 <- combine_600ft_cover %>% 
+  filter(!Year == 5)
+
+summary(aov(perc.live.cover ~ id + Year + id*Year, data = compare_live_wo_5))
+
+t.test(perc.live.cover ~ id, data = compare_live_wo_5)
+
 #### nonmotile multivariate analysis ####
 
 #convert the data to wide format
@@ -274,4 +309,53 @@ ggplot(data=motile.nmds_points,
            label = paste("Stress = ", round(motile.nmds$stress, 3)))
 
 # ggsave("figures/figure6.png", width = 8, height = 6, dpi = 300)
+
+#### motile multi analysis ####
+
+## compare depths at the outfall pipe
+motile.abund_pipe <- motile_tidy_w %>%
+  filter(!depth == "600ft_ref") %>% 
+  select(amphipod_shrimp:sea_urchin)
+
+motile.abund_pipe_rel <- wisconsin(motile.abund_pipe)
+
+motile.meta_pipe <- motile_tidy_w %>% 
+  filter(!depth == "600ft_ref") %>% 
+  select(year:replicate)
+
+adonis2(motile.abund_pipe_rel ~ depth:year, method = "bray",
+        data = motile.meta_pipe, permutations = 9999, by = "margin")
+#interaction is significant
+
+## compare the pipe and reference 200 m sites
+motile.abund_ref <- motile_tidy_w %>%
+  filter(depth == 600 | depth == "600_ref") %>%
+  select(amphipod_shrimp:sea_urchin)
+
+motile.abund_ref_rel <- wisconsin(motile.abund_ref)
+
+motile.meta_ref <- motile_tidy_w %>% 
+  filter(depth == 600 | depth == "600_ref") %>%
+  select(year:replicate)
+
+adonis2(motile.abund_ref_rel ~ depth:year, method = "bray",
+        data = motile.meta_ref, permutations = 9999, by = "margin")
+
+#interaction is not significant; test for main effects 
+adonis2(motile.abund_ref_rel ~ depth + year, method = "bray",
+        data = motile.meta_ref, permutations = 9999, by = "margin")
+#no significant effect
+
+## compare motile dispersion
+permutest(betadisper(vegdist(motile.abund_pipe_rel, method = "bray"), group = motile.meta_pipe$depth, type = "median"))
+permutest(betadisper(vegdist(motile.abund_pipe_rel, method = "bray"), group = motile.meta_pipe$year, type = "median"))
+permutest(betadisper(vegdist(motile.abund_ref_rel, method = "bray"), group = motile.meta_ref$depth, type = "median"))
+permutest(betadisper(vegdist(motile.abund_ref_rel, method = "bray"), group = motile.meta_ref$year, type = "median"))
+#none are significant
+
+## SIMPER comparing year 2 to year 10 across all sites
+motile.SIMPER_year <- simper(comm = motile.abund_rel, group = motile.meta$year, permutations = 9999)
+
+summary(motile.SIMPER_year)$'2_10'
+
 
