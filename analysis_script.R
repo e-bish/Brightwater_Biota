@@ -14,10 +14,11 @@ import_600ft <- read_csv("raw_data/import_600ft.csv")
 import_600ft_ref <- read_csv("raw_data/import_600ft_ref.csv")
 species_metadata <- read_csv("raw_data/species_metadata.csv")
 
+# set seed for permutations
 set.seed(2025)
 
-# prep dataframes
 ##### prepare dataframes for analysis ####
+
 #combine dataframes
 combined_import <- bind_rows(import_100ft, import_300ft, import_600ft, import_600ft_ref) #combine imported data into a single dataframe
 
@@ -31,43 +32,54 @@ combined_tidy <- combined_import %>%
   anti_join(QC_data) %>% #remove QC rows
   mutate(Depth = as.character(Depth), 
          Replicate = as.factor(Replicate), 
-         Year = factor(Year, labels = c("2", "5", "10"))) %>% 
-  mutate(Depth = ifelse(grepl("R", Grid.ID), paste0(Depth, "_ref"), Depth)) %>% 
+         Year = factor(Year, labels = c("2", "5", "10"))) %>% #recode as deployment intervals
+  mutate(Depth = ifelse(grepl("R", Grid.ID), paste0(Depth, "_ref"), Depth)) %>% #recode reference plates
   full_join(species_metadata, by = "SpeciesID")
 
-#species identified in 2014 report but not the current effort at the outfall pipe sites
-not_found <- combined_tidy %>% filter(is.na(Depth))
-
-#remove rows with empty depth
-combined_tidy <- combined_tidy %>% 
-  anti_join(not_found)
-
+#create motile and nonmotile dataframes for separate analysis
 motile_tidy <- combined_tidy %>% filter(Mobility == "Motile")
 nonmotile_tidy <- combined_tidy %>% filter(Mobility == "Nonmotile")
 
-## summary plots
-#percent cover
+#### summary of nonmotile phyla ####
+nonmotile_tidy %>% 
+  filter(!Depth == "600_ref") %>% 
+  ggplot(aes(x = factor(Depth, labels = c("30", "90", "200")), 
+             y = Org.Area.cm, fill = Genera)) +
+  geom_col(position = "fill") +
+  theme_classic() + 
+  facet_wrap(~Year) + 
+  # theme(text = element_text(size = 14)) +
+  labs(y = "Proportion of total live area", x = "Depth (m)", fill = "Phylum") +
+  scale_fill_manual(values = rev(brewer.pal(n = 11, "Spectral")))
+
+# ggsave("figures/figure2.png", width = 8, height = 6, dpi = 300)
+
+#### summary plots based on % cover ####
+#calculate nonmotile percent live cover
 perc_cover_df <- nonmotile_tidy %>% 
-  group_by(Year, Depth, Replicate) %>% #this step tells R that we're interested in summarizing values across unique combinations of year, depth, and replicate
-  summarize(grid.area.sum = sum(Grid.Area.cm), #sum the total area across all grids on a given tile
-            area.covered.sum = sum(Area.Covered.cm), #sum the area covered across all grids on a given tile
+  group_by(Year, Depth, Replicate) %>% 
+  summarize(grid.area.sum = sum(Grid.Area.cm), #sum the total area across all grids on a given plate
             live.area.covered = sum(Org.Area.cm)) %>% 
   ungroup() %>% #we're done summarizing data so we can remove the groupings
-  mutate(perc.cover = round((area.covered.sum/grid.area.sum)*100, 2),
-         perc.live.cover = round((live.area.covered/grid.area.sum)*100, 2)) #divide the area covered by the total area to get % cover
+  mutate(perc.live.cover = round((live.area.covered/grid.area.sum)*100, 2)) #divide the area covered by the total area to get % cover
 
 depth_colors <- c("#fde725","#21918c", "#440154", "#fc8961")
 
+## Figure 1 
 perc_cover_df %>%
   filter(!Depth == "600_ref") %>% 
   ggplot(aes(x = Year, y = perc.live.cover, fill = Depth)) +
   geom_point(size = 3, shape = 21) +
   theme_classic() +
-  labs(y = "Percent live cover", x = "Pipe material deployment time (years)", color = "Depth (ft)") +
-  scale_fill_manual(values = depth_colors[1:3])
+  labs(y = "Percent live cover", 
+       x = "Pipe material deployment time (years)", 
+       color = "Depth (ft)") +
+  scale_fill_manual(values = depth_colors[1:3], 
+                    labels = c("30 m", "90 m", "200 m"))
 
-#compare cover
+# ggsave("figures/figure3.png", width = 8, height = 6, dpi = 300)
 
+#compare cover to reference location
 perc_cover_df %>% 
   filter(Depth %in% c("600", "600_ref")) %>% 
   group_by(Year, Depth) %>% 
@@ -76,22 +88,14 @@ perc_cover_df %>%
   geom_bar(stat = "identity", position = "dodge", alpha = 0.95) +
   geom_errorbar(aes(ymin = mean - sd, ymax = mean + sd), width=.1, position = position_dodge(width = .9)) +
   theme_classic() +
-  labs(y = "Average percent live cover at -600 ft MLLW", x = "Pipe material deployment time (years)", fill = "Site") +
+  labs(y = "Average percent live cover at -200 m MLLW", x = "Pipe material deployment time (years)", fill = "Site") +
   scale_fill_manual(values = depth_colors[3:4])
 
-#phyla
-nonmotile_tidy %>% 
-  filter(!Depth == "600_ref") %>% 
-  ggplot(aes(x = Depth, y = Org.Area.cm, fill = Genera)) +
-  geom_col(position = "fill") +
-  theme_classic() + 
-  facet_wrap(~Year) + 
-  # theme(text = element_text(size = 14)) +
-  labs(y = "Proportion of total live area", x = "Depth (ft)", fill = "Phylum") +
-  scale_fill_manual(values = rev(brewer.pal(n = 11, "Spectral")))
+# ggsave("figures/figure4.png", width = 8, height = 6, dpi = 300)
 
-#nonmotile analysis
+#### nonmotile multivariate analysis ####
 
+#convert the data to wide format
 nonmotile_tidy_w <- nonmotile_tidy %>% 
   group_by(Year, Depth, Replicate, Species_Group) %>% 
   summarize(sum_area = sum(Area.Covered.cm)) %>% 
@@ -102,7 +106,7 @@ nonmotile_tidy_w <- nonmotile_tidy %>%
   clean_names() %>% 
   arrange(year, depth, replicate)
 
-#prep final raw dataframes
+#prep abundance and metadata matrices
 
 abund <- nonmotile_tidy_w %>%
   select(amphipod_tube:ulva_sp) #not including unidentified orgs
@@ -110,16 +114,16 @@ abund <- nonmotile_tidy_w %>%
 meta <- nonmotile_tidy_w %>%
   select(year:replicate)
 
-#conduct data transformations and/or relativizations
+#conduct data transformations and/or relativizations 
 #not removing rare species because we're looking for differences in diversity
 
+#function for calculating the coefficient of variation
 CV <- function(x) { 100 * sd(x) / mean(x) }
 
-CV(x = rowSums(abund2)) #low, relativizing will not make a big difference
-CV(x = colSums(abund2)) #high, could have an effect to relativize between species
+CV(x = rowSums(abund)) #low (<50), relativizing by row will not make a big difference
+CV(x = colSums(abund)) #medium (50-100), could have an effect to relativize between species
 
-
-#### NMDS #### 
+#### nonmotile NMDS #### 
 nonmotile.nmds <- metaMDS(abund, distance = "bray", 
                           autotransform = FALSE,
                           engine = "monoMDS",
@@ -132,150 +136,63 @@ nonmotile.nmds <- metaMDS(abund, distance = "bray",
                           trace = FALSE)
 #post-hoc test
 stressplot(object = nonmotile.nmds, lwd = 5)
-
-#base R
-# plot(nonmotile.nmds, "sites")
-# with(abund, 
-#      points(nonmotile.nmds,
-#             display = "sites"))
-# ordihull(nonmotile.nmds,
-#          meta$depth, display = "sites", draw = c("polygon"))
-
-#tidyverse
-nmds_points <- data.frame(nonmotile.nmds$points)
-nmds_points <- bind_cols(meta, nmds_points)
-# nmds_depth_hulls <- nmds_points %>% 
-#   group_by(depth) %>% 
-#   slice(chull(MDS1, MDS2))
-
-# nmds_year_hulls <- nmds_points %>% 
-#   group_by(year) %>% 
-#   slice(chull(MDS1, MDS2))
-
-# stress_df <- data.frame(stress = nonmotile.nmds$stress, x = 2, y = 1)
 #stress values less than 0.2 but greater than 0.10 are decent but shouldn't be relied on for details
 
+#extract points and bind to metadata
+nmds_points <- data.frame(nonmotile.nmds$points)
+nmds_points <- bind_cols(meta, nmds_points) %>% 
+  mutate(depth = factor(depth, labels = c("30 m pipe", "90 m pipe", "200 m pipe", "200 m reference")),
+         year = factor(year))
+
+#nmds plot
 ggplot(data=nmds_points,
        aes(x=MDS1, y=MDS2,
-           fill= factor(meta$depth, labels = c("100", "300", "600", "600 reference")),
-           shape= meta$year)) + 
+           fill= depth,
+           shape= year)) + 
   geom_point(color = "black", size = 3) +
-  stat_ellipse(aes(group = meta$depth, color = meta$depth), 
+  stat_ellipse(aes(group = depth, color = depth), 
                linetype = "dashed", show.legend = FALSE) +
   theme(axis.line = element_blank(), 
         axis.ticks = element_blank(),
         axis.text =  element_blank()) +
   theme_classic() +
-  labs(fill = "Depth", shape = "Year") + 
+  labs(fill = "Site", shape = "Year") + 
   scale_shape_manual(values = c(21, 24, 22)) +
   scale_fill_manual(values = depth_colors) + 
   scale_color_manual(values = depth_colors) +
-  guides(fill=guide_legend(override.aes=list(color=c(depth_colors))))
+  guides(fill=guide_legend(override.aes=list(color=c(depth_colors)))) +
+  annotate("text", x = -1.2, y = 1.4, 
+           label = paste("Stress = ", round(nonmotile.nmds$stress, 3)))
+#warning message isn't a problem
 
-#### alt interaction plot code. Leaving here for reference but decided to use betadisper instead because 
-#the documentation seems to match up with Anderson et al. 2017 ###
+# ggsave("figures/figure5.png", width = 8, height = 6, dpi = 300)
 
-nmds_points <- nmds_points %>% 
-  mutate(int = paste(year, depth, sep = "_"))
-
-## using envfit
-centroids <- envfit(nonmotile.nmds,nmds_points[,"int"])[["factors"]][["centroids"]]
-
-nonmotile.int.nmds <- metaMDS(centroids, distance = "euc", 
-                              autotransform = FALSE,
-                              engine = "monoMDS",
-                              k = 3,
-                              weakties = TRUE,
-                              model = "global",
-                              maxit = 400,
-                              try = 40,
-                              trymax = 100)
-
-nmds_int_points <- data.frame(nonmotile.int.nmds$points) %>% 
-  as.data.frame() %>% 
-  mutate(depth = rep(c("100", "300", "600", "600_ref"), times = 3),
-         year = rep(c("10", "2", "5"), each = 4)) %>% 
-  mutate(year = factor(year, levels = c("2", "5", "10")))
-
-
-ggplot(data=nmds_int_points,
-       aes(x=MDS1, y=MDS2, 
-           # label = rownames(centroids), 
-           color = depth, 
-           shape = year)) +
-  geom_point(size = 3) +
-  theme(axis.line = element_blank(), 
-        axis.ticks = element_blank(),
-        axis.text =  element_blank()) +
-  theme_classic()
-
-## using betadisper
-abund_dist <- vegdist(abund, method = "bray")
-centroids <- betadisper(abund_dist, group = nmds_points$int, type = "centroid")$centroids
-
-centroids_points <- data.frame(centroids) %>% 
-  as.data.frame() %>% 
-  select(!PCoA3:PCoA31) %>% 
-  mutate(depth = rep(c("100", "300", "600", "600_ref"), times = 3),
-         year = rep(c("10", "2", "5"), each = 4)) %>% 
-  mutate(year = factor(year, levels = c("2", "5", "10")))
-
-
-nonmotile.int.nmds <- metaMDS(centroids, distance = "euc", 
-                              autotransform = FALSE,
-                              engine = "monoMDS",
-                              k = 3,
-                              weakties = TRUE,
-                              model = "global",
-                              maxit = 400,
-                              try = 40,
-                              trymax = 100)
-
-# nonmotile.int.nmds$stress
-
-nonmotile.int.points <- nonmotile.int.nmds$points
-
-ggplot(data=nonmotile.int.points ,
-       aes(x=MDS1, y=MDS2, 
-           # label = rownames(centroids), 
-           fill = centroids_points$depth, 
-           shape = centroids_points$year)) +
-  geom_point(size = 3) +
-  theme(axis.line = element_blank(), 
-        axis.ticks = element_blank(),
-        axis.text =  element_blank()) +
-  theme_classic() +
-  labs(fill = "Depth", shape = "Year") + 
-  scale_shape_manual(values = c(21, 24, 22)) +
-  scale_fill_manual(values = depth_colors) + 
-  scale_color_manual(values = depth_colors) +
-  guides(fill=guide_legend(override.aes=list(color=c(depth_colors)))) 
-
-#### Nonmotile permanova ####
-## compare 600_ref separately
-abund_out <- nonmotile_tidy_w %>%
+#### Nonmotile multi stats ####
+## compare depths at the pipe
+abund_pipe <- nonmotile_tidy_w %>%
   filter(!depth == "600_ref") %>%
   select(amphipod_tube:ulva_sp) #not including unidentified orgs
 
-meta_out <- nonmotile_tidy_w %>%
+meta_pipe <- nonmotile_tidy_w %>%
   filter(!depth == "600_ref") %>%
   select(year:replicate)
 
+adonis2(abund_pipe ~ depth:year, method = "bray",
+        data = meta_pipe, permutations = 9999, by = "margin")
+#significant interaction term
 
-abund_comp <- nonmotile_tidy_w %>%
+## compare the -200 m pipe and reference sites
+abund_ref <- nonmotile_tidy_w %>%
   filter(depth == 600 | depth == "600_ref") %>%
   select(amphipod_tube:ulva_sp) #not including unidentified orgs
 
-meta_comp <- nonmotile_tidy_w %>%
+meta_ref <- nonmotile_tidy_w %>%
   filter(depth == 600 | depth == "600_ref") %>%
   select(year:replicate)
 
-#make the distance matrix separately because the argument for it in pairwise Adonis isn't working
-nonmotile_dist_out <- vegdist(abund_out, method = "bray")
-adonis2(nonmotile_dist_out ~ depth:year, data = meta_out, permutations = 9999, by = "margin")
-
-nonmotile_dist_comp <- vegdist(abund_comp, method = "bray")
-adonis2(nonmotile_dist_comp ~ depth:year, data = meta_comp, permutations = 9999, by = "margin")
+adonis2(abund_ref ~ depth:year, method = "bray",
+        data = meta_ref, permutations = 9999, by = "margin")
+#significant interaction term
 
 ## see if any species are specific to a particular depth
 ISA_depth <- multipatt(x = abund, cluster = meta$depth, duleg = TRUE)
@@ -317,74 +234,45 @@ CV(x = colSums(motile.abund)) #high, indicates there would be high impact of rel
 
 motile.abund_rel <- wisconsin(motile.abund) #double standardization: standardizes by row total and max of columns
 
-motile.nmds <- metaMDS(motile.abund_rel, distance = "bray")
+motile.nmds <- metaMDS(motile.abund_rel,
+                       distance = "bray", 
+                       autotransform = FALSE,
+                       engine = "monoMDS",
+                       k = 3,
+                       weakties = TRUE,
+                       model = "global",
+                       maxit = 400,
+                       try = 40,
+                       trymax = 100, 
+                       trace = FALSE)
 #post-hoc test
 stressplot(object = motile.nmds, lwd = 5)
 
-#base R
-plot(motile.nmds, "sites")
-with(motile.abund_rel, 
-     points(motile.nmds,
-            display = "sites"))
-ordihull(motile.nmds,
-         motile.meta$depth, display = "sites", draw = c("polygon"))
-
 #tidyverse
 motile.nmds_points <- data.frame(motile.nmds$points)
-motile.nmds_points <- bind_cols(motile.meta, motile.nmds_points)
+motile.nmds_points <- bind_cols(motile.meta, motile.nmds_points) %>% 
+  mutate(depth = factor(depth, labels = c("30 m pipe", "90 m pipe", "200 m pipe", "200 m reference")),
+         year = factor(year))
 
-
-calculate_hull <- function(df) {
-  df[chull(df$MDS1, df$MDS2), ]
-}
-
-motile.nmds_depth_hulls <- motile.nmds_points %>% 
-  group_by(factor(depth)) %>% 
-  group_split() %>%
-  map_dfr(~ calculate_hull(.), .id = "hull_no") 
-
-motile.nmds_year_hulls <- motile.nmds_points %>% 
-  group_by(factor(year)) %>% 
-  group_split() %>%
-  map_dfr(~ calculate_hull(.), .id = "hull_no") 
-
-stress_df <- data.frame(stress = motile.nmds$stress, x = 2, y = 1)
-#stress values less than 0.2 but greater than 0.10 are decent but shouldn't be relied on for details
-
+#motile nmds
 ggplot(data=motile.nmds_points,
        aes(x=MDS1, y=MDS2,
-           fill= factor(motile.meta$depth, labels = c("100", "300", "600", "600 reference")),
-           shape= motile.meta$year)) + 
+           fill= depth,
+           shape= year)) + 
   geom_point(color = "black", size = 3) +
-  theme(axis.line = element_blank(),
+  stat_ellipse(aes(group = depth, color = depth), 
+               linetype = "dashed", show.legend = FALSE) +
+  theme(axis.line = element_blank(), 
         axis.ticks = element_blank(),
         axis.text =  element_blank()) +
   theme_classic() +
-  labs(fill = "Depth", shape = "Year") + 
+  labs(fill = "Site", shape = "Year") + 
   scale_shape_manual(values = c(21, 24, 22)) +
   scale_fill_manual(values = depth_colors) + 
-  scale_color_manual(values = depth_colors) + 
-  guides(fill=guide_legend(override.aes=list(color=c(depth_colors))))
-  # geom_polygon(data = motile.nmds_depth_hulls,
-  #              aes(x = MDS1, y = MDS2, 
-  #              fill = hull_no, group = depth), 
-  #            show.legend = FALSE, alpha = 0.75, inherit.aes = FALSE)
+  scale_color_manual(values = depth_colors) +
+  guides(fill=guide_legend(override.aes=list(color=c(depth_colors)))) +
+  annotate("text", x = 2.1, y = -2.7, 
+           label = paste("Stress = ", round(motile.nmds$stress, 3)))
 
-
-# anosim(abund,
-#   meta$depth,
-#   permutations = 999,
-#   distance = "bray",
-#   strata = NULL,
-#   parallel = getOption("mc.cores")
-# )
-# 
-# anosim(abund,
-#        meta$year,
-#        permutations = 999,
-#        distance = "bray",
-#        strata = NULL,
-#        parallel = getOption("mc.cores")
-# )
-#The test statistic (R) ranges from -1 (all lowest ranks are between groups – an unusual situation) to +1 (all lowest ranks are within groups).
+# ggsave("figures/figure6.png", width = 8, height = 6, dpi = 300)
 
