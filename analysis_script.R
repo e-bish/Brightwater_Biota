@@ -2,7 +2,6 @@
 library(tidyverse)
 library(janitor)
 library(vegan)
-library(ggordiplots)
 library(indicspecies)
 library(viridis)
 library(RColorBrewer)
