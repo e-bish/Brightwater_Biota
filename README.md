@@ -1,8 +1,8 @@
 # Brightwater_Biota
 
-This is a repository to store code to replicate the analyses in Dethier et al. (in prep). 
+This is a repository to store information for replicating the analyses in Dethier et al. (in prep). 
 
 ## Folder structure
-**data** - .csv files containing raw data from image analysis
 
-**figures** - image files created within analysis_script.R
+Running the code in Brightwater_biota_analysis_script.R will replicate all analyses. This file pulls data from the folder **raw_data** and writes figure images to files in the folder **figures**. 
+
