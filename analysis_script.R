@@ -40,6 +40,25 @@ motile_tidy <- combined_tidy %>% filter(Mobility == "Motile")
 nonmotile_tidy <- combined_tidy %>% filter(Mobility == "Nonmotile")
 
 #### summary of nonmotile phyla ####
+#phylum proportion values 
+area_sum <- nonmotile_tidy %>% 
+  group_by(Year, Depth) %>% 
+  mutate(total_live_area = sum(Org.Area.cm)) %>% 
+  dplyr::select(Year, Depth, total_live_area) %>% 
+  distinct()
+
+#breakdown by organism category
+group_perc_live_cover <- nonmotile_tidy %>% 
+  group_by(Year, Depth, Species_Group) %>% 
+  summarize(group_area = sum(Org.Area.cm)) %>% 
+  right_join(area_sum) %>% 
+  mutate(group_prop = round(group_area/total_live_area, 4)*100)
+
+#focus on dominant groups
+top_10group_perc <- group_perc_live_cover %>% 
+  filter(group_prop > 10) 
+
+#plot proportions of nonmotile taxa
 nonmotile_tidy %>% 
   filter(!Depth == "600_ref") %>% 
   ggplot(aes(x = factor(Depth, labels = c("30", "90", "200")), 
@@ -49,7 +68,8 @@ nonmotile_tidy %>%
   facet_wrap(~Year) + 
   # theme(text = element_text(size = 14)) +
   labs(y = "Proportion of total live area", x = "Depth (m)", fill = "Phylum") +
-  scale_fill_manual(values = rev(brewer.pal(n = 11, "Spectral")))
+  scale_fill_manual(values = rev(brewer.pal(n = 11, "Spectral"))) +
+  theme(text = element_text(size = 14))
 
 # ggsave("figures/figure2.png", width = 8, height = 6, dpi = 300)
 
@@ -64,7 +84,7 @@ perc_cover_df <- nonmotile_tidy %>%
 
 depth_colors <- c("#fde725","#21918c", "#440154", "#fc8961")
 
-## Figure 1 
+## Figure 2
 perc_cover_df %>%
   filter(!Depth == "600_ref") %>% 
   ggplot(aes(x = Year, y = perc.live.cover, fill = Depth)) +
@@ -72,9 +92,21 @@ perc_cover_df %>%
   theme_classic() +
   labs(y = "Percent live cover", 
        x = "Pipe material deployment time (years)", 
-       color = "Depth (ft)") +
+       fill = "Depth (m)") +
   scale_fill_manual(values = depth_colors[1:3], 
-                    labels = c("30 m", "90 m", "200 m"))
+                    labels = c("30", "90", "200")) +
+  theme(text = element_text(size = 14))
+
+# perc_cover_df %>%
+#   ggplot(aes(x = Year, y = perc.live.cover, fill = Depth)) +
+#   geom_point(size = 3, shape = 21) +
+#   theme_classic() +
+#   labs(y = "Percent live cover", 
+#        x = "Pipe material deployment time (years)", 
+#        fill = "Site") +
+#   scale_fill_manual(values = depth_colors, 
+#                     labels = c("30 m outfall", "90 m outfall", "200 m outfall", "200 m reference")) +
+#   theme(text = element_text(size = 14))
 
 # ggsave("figures/figure3.png", width = 8, height = 6, dpi = 300)
 
@@ -88,44 +120,42 @@ perc_cover_df %>%
   geom_errorbar(aes(ymin = mean - sd, ymax = mean + sd), width=.1, position = position_dodge(width = .9)) +
   theme_classic() +
   labs(y = "Average percent live cover at -200 m MLLW", x = "Pipe material deployment time (years)", fill = "Site") +
-  scale_fill_manual(values = depth_colors[3:4])
+  scale_fill_manual(values = depth_colors[3:4]) + 
+  theme(text = element_text(size = 14))
 
 # ggsave("figures/figure4.png", width = 8, height = 6, dpi = 300)
 
 #### univariate stats ####
-perc_cover_mod1 <- aov(perc.cover ~ Depth, data = perc_cover_df)
-summary(perc_cover_mod1)
+shapiro.test(x = perc_cover_df$perc.live.cover)
+shapiro.test(x = log(perc_cover_df$perc.live.cover))
 
-TukeyHSD(perc_cover_mod1) #this only works if you don't include the interaction term
+#test the outfall sites only 
+perc_cover_mod <- aov(log(perc.live.cover) ~ Depth + Year + Depth*Year, data = filter(perc_cover_df, !Depth == "600_ref"))
+summary(perc_cover_mod)
 
-perc_cover_mod2 <- aov(perc.cover ~ Depth + Year + Depth*Year, data = perc_cover_df)
-summary(perc_cover_mod2)
+#post-hoc test
+perc_cover_mod2 <- aov(log(perc.live.cover) ~ Depth + Year, data = filter(perc_cover_df, !Depth == "600_ref"))
+TukeyHSD(perc_cover_mod2)
 
 #model diagnostics
-aov.res <- residuals(perc_cover_mod2)
+aov.res <- residuals(perc_cover_mod)
 
-hist(perc_cover_mod2$residuals)
-qqnorm(perc_cover_mod2$residuals)
-qqline(perc_cover_mod2$residuals)
+hist(perc_cover_mod$residuals)
+qqnorm(perc_cover_mod$residuals)
+qqline(perc_cover_mod$residuals)
 
-shapiro.test(x = aov.res)
-#p value is > 0.05, meets the assumption of normality
+#test for differences between the -200 m outfall and reference sites
+compare_tidy <- perc_cover_df %>% 
+  filter(Depth %in% c("600", "600_ref")) 
 
-perc_cover_mod4 <- aov(perc.live.cover ~ Depth + Year + Depth*Year, data = perc_cover_df)
-summary(perc_cover_mod4)
+shapiro.test(x = compare_tidy$perc.live.cover)
 
-perc_cover_mod5 <- aov(perc.live.cover ~ Depth + Year, data = perc_cover_df)
+summary(aov(perc.live.cover ~ Depth + Year + Depth*Year, data = compare_tidy))
 
-TukeyHSD(perc_cover_mod5)
-
-summary(aov(perc.live.cover ~ id + Year + id*Year, data = combine_600ft_cover))
-
-compare_live_wo_5 <- combine_600ft_cover %>% 
+compare_live_wo_5 <- compare_tidy %>% 
   filter(!Year == 5)
 
-summary(aov(perc.live.cover ~ id + Year + id*Year, data = compare_live_wo_5))
-
-t.test(perc.live.cover ~ id, data = compare_live_wo_5)
+summary(aov(perc.live.cover ~ Depth + Year + Depth*Year, data = compare_live_wo_5))
 
 #### nonmotile multivariate analysis ####
 
@@ -175,7 +205,7 @@ stressplot(object = nonmotile.nmds, lwd = 5)
 #extract points and bind to metadata
 nmds_points <- data.frame(nonmotile.nmds$points)
 nmds_points <- bind_cols(meta, nmds_points) %>% 
-  mutate(depth = factor(depth, labels = c("30 m pipe", "90 m pipe", "200 m pipe", "200 m reference")),
+  mutate(depth = factor(depth, labels = c("30 m outfall", "90 m outfall", "200 m outfall", "200 m reference")),
          year = factor(year))
 
 #nmds plot
@@ -191,31 +221,41 @@ ggplot(data=nmds_points,
         axis.text =  element_blank()) +
   theme_classic() +
   labs(fill = "Site", shape = "Year") + 
-  scale_shape_manual(values = c(21, 24, 22)) +
+  scale_shape_manual(values = c(21,24,22)) +
   scale_fill_manual(values = depth_colors) + 
   scale_color_manual(values = depth_colors) +
   guides(fill=guide_legend(override.aes=list(color=c(depth_colors)))) +
   annotate("text", x = -1.2, y = 1.4, 
-           label = paste("Stress = ", round(nonmotile.nmds$stress, 3)))
+           label = paste("Stress = ", round(nonmotile.nmds$stress, 3))) +
+  theme(text = element_text(size = 14))
 #warning message isn't a problem
 
 # ggsave("figures/figure5.png", width = 8, height = 6, dpi = 300)
 
 #### Nonmotile multi stats ####
 ## compare depths at the pipe
-abund_pipe <- nonmotile_tidy_w %>%
+abund_outfall <- nonmotile_tidy_w %>%
   filter(!depth == "600_ref") %>%
   select(amphipod_tube:ulva_sp) #not including unidentified orgs
 
-meta_pipe <- nonmotile_tidy_w %>%
+meta_outfall <- nonmotile_tidy_w %>%
   filter(!depth == "600_ref") %>%
   select(year:replicate)
 
-adonis2(abund_pipe ~ depth:year, method = "bray",
-        data = meta_pipe, permutations = 9999, by = "margin")
+adonis2(abund_outfall ~ depth:year, method = "bray",
+        data = meta_outfall, permutations = 9999, by = "margin")
 #significant interaction term
 
-## compare the -200 m pipe and reference sites
+permutest(betadisper(vegdist(abund_outfall, method = "bray"), group = meta_outfall$depth, type = "median"))
+#significant
+
+year.beta <- betadisper(vegdist(abund_outfall, method = "bray"), group = meta_outfall$depth, type = "median")
+permutest(year.beta, pairwise = TRUE)
+
+permutest(betadisper(vegdist(abund_outfall, method = "bray"), group = meta_outfall$year, type = "median"))
+#not significant
+
+## compare the -200 m outfall and reference sites
 abund_ref <- nonmotile_tidy_w %>%
   filter(depth == 600 | depth == "600_ref") %>%
   select(amphipod_tube:ulva_sp) #not including unidentified orgs
@@ -228,12 +268,36 @@ adonis2(abund_ref ~ depth:year, method = "bray",
         data = meta_ref, permutations = 9999, by = "margin")
 #significant interaction term
 
+permutest(betadisper(vegdist(abund_ref, method = "bray"), group = meta_ref$depth, type = "median"))
+permutest(betadisper(vegdist(abund_ref, method = "bray"), group = meta_ref$year, type = "median"))
+#neither are significant
+
 ## see if any species are specific to a particular depth
+#see how many species are unique to each depth
+unique_by_depth <- combined_tidy %>% 
+  group_by(Depth) %>% 
+  distinct(SpeciesID) %>% 
+  mutate(present = 1) %>% 
+  ungroup() %>% 
+  pivot_wider(names_from = Depth, values_from = present, values_fill = 0) %>% 
+  mutate(depths_present = rowSums(select_if(., is.numeric))) %>% 
+  arrange(depths_present)
+
+unique_group_by_depth <- combined_tidy %>% 
+  group_by(Depth) %>% 
+  distinct(Species_Group) %>% 
+  mutate(present = 1) %>% 
+  ungroup() %>% 
+  pivot_wider(names_from = Depth, values_from = present, values_fill = 0) %>% 
+  mutate(depths_present = rowSums(select_if(., is.numeric))) %>% 
+  arrange(depths_present)
+
 ISA_depth <- multipatt(x = abund, cluster = meta$depth, duleg = TRUE)
 summary(ISA_depth)
 
-ISA_year <- multipatt(x = abund, cluster = meta$year, duleg = TRUE)
-summary(ISA_year)
+nonmotile_tidy %>% 
+  group_by(Depth) %>%
+  distinct(SpeciesID)
 
 ## SIMPER 
 SIMPER_depth <- simper(comm = abund, group = meta$depth, permutations = 9999)
@@ -285,7 +349,7 @@ stressplot(object = motile.nmds, lwd = 5)
 #tidyverse
 motile.nmds_points <- data.frame(motile.nmds$points)
 motile.nmds_points <- bind_cols(motile.meta, motile.nmds_points) %>% 
-  mutate(depth = factor(depth, labels = c("30 m pipe", "90 m pipe", "200 m pipe", "200 m reference")),
+  mutate(depth = factor(depth, labels = c("30 m outfall", "90 m outfall", "200 m outfall", "200 m reference")),
          year = factor(year))
 
 #motile nmds
@@ -306,28 +370,29 @@ ggplot(data=motile.nmds_points,
   scale_color_manual(values = depth_colors) +
   guides(fill=guide_legend(override.aes=list(color=c(depth_colors)))) +
   annotate("text", x = 2.1, y = -2.7, 
-           label = paste("Stress = ", round(motile.nmds$stress, 3)))
+           label = paste("Stress = ", round(motile.nmds$stress, 3))) +
+  theme(text = element_text(size = 14))
 
 # ggsave("figures/figure6.png", width = 8, height = 6, dpi = 300)
 
 #### motile multi analysis ####
 
-## compare depths at the outfall pipe
-motile.abund_pipe <- motile_tidy_w %>%
+## compare depths at the outfall outfall
+motile.abund_outfall <- motile_tidy_w %>%
   filter(!depth == "600ft_ref") %>% 
   select(amphipod_shrimp:sea_urchin)
 
-motile.abund_pipe_rel <- wisconsin(motile.abund_pipe)
+motile.abund_outfall_rel <- wisconsin(motile.abund_outfall)
 
-motile.meta_pipe <- motile_tidy_w %>% 
+motile.meta_outfall <- motile_tidy_w %>% 
   filter(!depth == "600ft_ref") %>% 
   select(year:replicate)
 
-adonis2(motile.abund_pipe_rel ~ depth:year, method = "bray",
-        data = motile.meta_pipe, permutations = 9999, by = "margin")
+adonis2(motile.abund_outfall_rel ~ depth:year, method = "bray",
+        data = motile.meta_outfall, permutations = 9999, by = "margin")
 #interaction is significant
 
-## compare the pipe and reference 200 m sites
+## compare the outfall and reference 200 m sites
 motile.abund_ref <- motile_tidy_w %>%
   filter(depth == 600 | depth == "600_ref") %>%
   select(amphipod_shrimp:sea_urchin)
@@ -347,8 +412,8 @@ adonis2(motile.abund_ref_rel ~ depth + year, method = "bray",
 #no significant effect
 
 ## compare motile dispersion
-permutest(betadisper(vegdist(motile.abund_pipe_rel, method = "bray"), group = motile.meta_pipe$depth, type = "median"))
-permutest(betadisper(vegdist(motile.abund_pipe_rel, method = "bray"), group = motile.meta_pipe$year, type = "median"))
+permutest(betadisper(vegdist(motile.abund_outfall_rel, method = "bray"), group = motile.meta_outfall$depth, type = "median"))
+permutest(betadisper(vegdist(motile.abund_outfall_rel, method = "bray"), group = motile.meta_outfall$year, type = "median"))
 permutest(betadisper(vegdist(motile.abund_ref_rel, method = "bray"), group = motile.meta_ref$depth, type = "median"))
 permutest(betadisper(vegdist(motile.abund_ref_rel, method = "bray"), group = motile.meta_ref$year, type = "median"))
 #none are significant
