@@ -60,16 +60,18 @@ top_10group_perc <- group_perc_live_cover %>%
 
 #plot proportions of nonmotile taxa
 nonmotile_tidy %>% 
-  filter(!Depth == "600_ref") %>% 
-  ggplot(aes(x = factor(Depth, labels = c("30", "90", "200")), 
+  ggplot(aes(x = factor(Depth, 
+                        # labels = c("30 m\noutfall", "90 m\noutfall", "200 m\noutfall", "200 m\nreference")), 
+             labels = c("30", "90", "200", "200\nref")), 
              y = Org.Area.cm, fill = Genera)) +
   geom_col(position = "fill") +
   theme_classic() + 
   facet_wrap(~Year) + 
   # theme(text = element_text(size = 14)) +
-  labs(y = "Proportion of total live area", x = "Depth (m)", fill = "Phylum") +
+  labs(y = "Proportion of total live area", x = "Site", fill = "Phylum") +
   scale_fill_manual(values = rev(brewer.pal(n = 11, "Spectral"))) +
-  theme(text = element_text(size = 14))
+  theme(text = element_text(size = 14),
+        axis.text.x = element_text(angle = 0, vjust = 1))
 
 # ggsave("figures/figure2.png", width = 8, height = 6, dpi = 300)
 
@@ -86,44 +88,17 @@ depth_colors <- c("#fde725","#21918c", "#440154", "#fc8961")
 
 ## Figure 2
 perc_cover_df %>%
-  filter(!Depth == "600_ref") %>% 
   ggplot(aes(x = Year, y = perc.live.cover, fill = Depth)) +
   geom_point(size = 3, shape = 21) +
   theme_classic() +
-  labs(y = "Percent live cover", 
-       x = "Pipe material deployment time (years)", 
-       fill = "Depth (m)") +
-  scale_fill_manual(values = depth_colors[1:3], 
-                    labels = c("30", "90", "200")) +
+  labs(y = "Percent live cover",
+       x = "Pipe material deployment time (years)",
+       fill = "Site") +
+  scale_fill_manual(values = depth_colors,
+                    labels = c("30", "90", "200", "200 ref")) +
   theme(text = element_text(size = 14))
-
-# perc_cover_df %>%
-#   ggplot(aes(x = Year, y = perc.live.cover, fill = Depth)) +
-#   geom_point(size = 3, shape = 21) +
-#   theme_classic() +
-#   labs(y = "Percent live cover", 
-#        x = "Pipe material deployment time (years)", 
-#        fill = "Site") +
-#   scale_fill_manual(values = depth_colors, 
-#                     labels = c("30 m outfall", "90 m outfall", "200 m outfall", "200 m reference")) +
-#   theme(text = element_text(size = 14))
 
 # ggsave("figures/figure3.png", width = 8, height = 6, dpi = 300)
-
-#compare cover to reference location
-perc_cover_df %>% 
-  filter(Depth %in% c("600", "600_ref")) %>% 
-  group_by(Year, Depth) %>% 
-  summarize(mean = mean(perc.live.cover), sd = sd(perc.live.cover)) %>% 
-  ggplot(aes(x = Year, y = mean, fill = factor(Depth, labels = c("Outfall pipe", "Reference")))) +
-  geom_bar(stat = "identity", position = "dodge", alpha = 0.95) +
-  geom_errorbar(aes(ymin = mean - sd, ymax = mean + sd), width=.1, position = position_dodge(width = .9)) +
-  theme_classic() +
-  labs(y = "Average percent live cover at -200 m MLLW", x = "Pipe material deployment time (years)", fill = "Site") +
-  scale_fill_manual(values = depth_colors[3:4]) + 
-  theme(text = element_text(size = 14))
-
-# ggsave("figures/figure4.png", width = 8, height = 6, dpi = 300)
 
 #### univariate stats ####
 shapiro.test(x = perc_cover_df$perc.live.cover)
@@ -205,7 +180,7 @@ stressplot(object = nonmotile.nmds, lwd = 5)
 #extract points and bind to metadata
 nmds_points <- data.frame(nonmotile.nmds$points)
 nmds_points <- bind_cols(meta, nmds_points) %>% 
-  mutate(depth = factor(depth, labels = c("30 m outfall", "90 m outfall", "200 m outfall", "200 m reference")),
+  mutate(depth = factor(depth, labels = c("30", "90", "200", "200 ref")),
          year = factor(year))
 
 #nmds plot
@@ -349,7 +324,7 @@ stressplot(object = motile.nmds, lwd = 5)
 #tidyverse
 motile.nmds_points <- data.frame(motile.nmds$points)
 motile.nmds_points <- bind_cols(motile.meta, motile.nmds_points) %>% 
-  mutate(depth = factor(depth, labels = c("30 m outfall", "90 m outfall", "200 m outfall", "200 m reference")),
+  mutate(depth = factor(depth, labels = c("30", "90", "200", "200 ref")),
          year = factor(year))
 
 #motile nmds
