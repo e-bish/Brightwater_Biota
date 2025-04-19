@@ -58,7 +58,8 @@ group_perc_live_cover <- nonmotile_tidy %>%
 top_10group_perc <- group_perc_live_cover %>% 
   filter(group_prop > 10) 
 
-#plot proportions of nonmotile taxa
+#### Figure 2 ####
+## plot proportions of nonmotile taxa
 nonmotile_tidy %>% 
   ggplot(aes(x = factor(Depth, 
                         # labels = c("30 m\noutfall", "90 m\noutfall", "200 m\noutfall", "200 m\nreference")), 
@@ -73,9 +74,9 @@ nonmotile_tidy %>%
   theme(text = element_text(size = 14),
         axis.text.x = element_text(angle = 0, vjust = 1))
 
-# ggsave("figures/figure2.png", width = 8, height = 6, dpi = 300)
+# ggsave("figures/figure2.tiff", width = 8, height = 6, dpi = 300)
 
-#### summary plots based on % cover ####
+## summary plots based on % cover 
 #calculate nonmotile percent live cover
 perc_cover_df <- nonmotile_tidy %>% 
   group_by(Year, Depth, Replicate) %>% 
@@ -86,7 +87,7 @@ perc_cover_df <- nonmotile_tidy %>%
 
 depth_colors <- c("#fde725","#21918c", "#440154", "#fc8961")
 
-## Figure 2
+#### Figure 3 ####
 perc_cover_df %>%
   ggplot(aes(x = Year, y = perc.live.cover, fill = Depth)) +
   geom_point(size = 3, shape = 21) +
@@ -98,7 +99,7 @@ perc_cover_df %>%
                     labels = c("30", "90", "200", "200 ref")) +
   theme(text = element_text(size = 14))
 
-# ggsave("figures/figure3.png", width = 8, height = 6, dpi = 300)
+# ggsave("figures/figure3.tiff", width = 8, height = 6, dpi = 300)
 
 #### univariate stats ####
 shapiro.test(x = perc_cover_df$perc.live.cover)
@@ -183,6 +184,7 @@ nmds_points <- bind_cols(meta, nmds_points) %>%
   mutate(depth = factor(depth, labels = c("30", "90", "200", "200 ref")),
          year = factor(year))
 
+#### Figure 4 ####
 #nmds plot
 ggplot(data=nmds_points,
        aes(x=MDS1, y=MDS2,
@@ -205,7 +207,7 @@ ggplot(data=nmds_points,
   theme(text = element_text(size = 14))
 #warning message isn't a problem
 
-# ggsave("figures/figure5.png", width = 8, height = 6, dpi = 300)
+# ggsave("figures/figure4.tiff", width = 8, height = 6, dpi = 300)
 
 #### Nonmotile multi stats ####
 ## compare depths at the pipe
@@ -327,6 +329,7 @@ motile.nmds_points <- bind_cols(motile.meta, motile.nmds_points) %>%
   mutate(depth = factor(depth, labels = c("30", "90", "200", "200 ref")),
          year = factor(year))
 
+#### Figure 5 ####
 #motile nmds
 ggplot(data=motile.nmds_points,
        aes(x=MDS1, y=MDS2,
@@ -348,7 +351,7 @@ ggplot(data=motile.nmds_points,
            label = paste("Stress = ", round(motile.nmds$stress, 3))) +
   theme(text = element_text(size = 14))
 
-# ggsave("figures/figure6.png", width = 8, height = 6, dpi = 300)
+# ggsave("figures/figure5.tiff", width = 8, height = 6, dpi = 300)
 
 #### motile multi analysis ####
 
