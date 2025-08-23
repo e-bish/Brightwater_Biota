@@ -29,9 +29,10 @@ QC_data <- combined_import %>% #these rows are repeats of data we already have s
 combined_tidy <- combined_import %>% 
   filter(!is.na(Year)) %>% #remove empty rows
   anti_join(QC_data) %>% #remove QC rows
+  filter(!Year == 2017) %>% #remove for this analysis because there wasn't enough replication
   mutate(Depth = as.character(Depth), 
          Replicate = as.factor(Replicate), 
-         Year = factor(Year, labels = c("2", "5", "10"))) %>% #recode as deployment intervals
+         Year = factor(Year, labels = c("2", "10"))) %>% #recode as deployment intervals
   mutate(Depth = ifelse(grepl("R", Grid.ID), paste0(Depth, "_ref"), Depth)) %>% #recode reference plates
   full_join(species_metadata, by = "SpeciesID")
 
@@ -189,8 +190,8 @@ ggplot(data=nmds_points,
            fill= depth,
            shape= year)) + 
   geom_point(color = "black", size = 3) +
-  stat_ellipse(aes(group = depth, color = depth), 
-               linetype = "dashed", show.legend = FALSE) +
+  # stat_ellipse(aes(group = depth, color = depth), 
+  #              linetype = "dashed", show.legend = FALSE) +
   theme(axis.line = element_blank(), 
         axis.ticks = element_blank(),
         axis.text =  element_blank()) +
@@ -200,7 +201,7 @@ ggplot(data=nmds_points,
   scale_fill_manual(values = depth_colors) + 
   scale_color_manual(values = depth_colors) +
   guides(fill=guide_legend(override.aes=list(color=c(depth_colors)))) +
-  annotate("text", x = -1.2, y = 1.4, 
+  annotate("text", x = -1, y = 1.4, 
            label = paste("Stress = ", round(nonmotile.nmds$stress, 3))) +
   theme(text = element_text(size = 14))
 #warning message isn't a problem
@@ -328,25 +329,25 @@ motile.nmds_points <- bind_cols(motile.meta, motile.nmds_points) %>%
          year = factor(year))
 
 #motile nmds
-ggplot(data=motile.nmds_points,
-       aes(x=MDS1, y=MDS2,
-           fill= depth,
-           shape= year)) + 
-  geom_point(color = "black", size = 3) +
-  stat_ellipse(aes(group = depth, color = depth), 
-               linetype = "dashed", show.legend = FALSE) +
-  theme(axis.line = element_blank(), 
-        axis.ticks = element_blank(),
-        axis.text =  element_blank()) +
-  theme_classic() +
-  labs(fill = "Site", shape = "Year") + 
-  scale_shape_manual(values = c(21, 24, 22)) +
-  scale_fill_manual(values = depth_colors) + 
-  scale_color_manual(values = depth_colors) +
-  guides(fill=guide_legend(override.aes=list(color=c(depth_colors)))) +
-  annotate("text", x = 2.1, y = -2.7, 
-           label = paste("Stress = ", round(motile.nmds$stress, 3))) +
-  theme(text = element_text(size = 14))
+# ggplot(data=motile.nmds_points,
+#        aes(x=MDS1, y=MDS2,
+#            fill= depth,
+#            shape= year)) + 
+#   geom_point(color = "black", size = 3) +
+#   stat_ellipse(aes(group = depth, color = depth), 
+#                linetype = "dashed", show.legend = FALSE) +
+#   theme(axis.line = element_blank(), 
+#         axis.ticks = element_blank(),
+#         axis.text =  element_blank()) +
+#   theme_classic() +
+#   labs(fill = "Site", shape = "Year") + 
+#   scale_shape_manual(values = c(21, 24, 22)) +
+#   scale_fill_manual(values = depth_colors) + 
+#   scale_color_manual(values = depth_colors) +
+#   guides(fill=guide_legend(override.aes=list(color=c(depth_colors)))) +
+#   annotate("text", x = 2.1, y = -2.7, 
+#            label = paste("Stress = ", round(motile.nmds$stress, 3))) +
+#   theme(text = element_text(size = 14))
 
 # ggsave("figures/figure6.png", width = 8, height = 6, dpi = 300)
 
