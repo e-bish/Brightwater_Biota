@@ -31,49 +31,44 @@ combined_tidy <- combined_import %>%
   filter(!is.na(Year)) %>% #remove empty rows
   anti_join(QC_data) %>% #remove QC rows
   filter(!Year == 2017) %>% #remove for this analysis because there wasn't enough replication
-  mutate(Depth = as.character(Depth), 
-         Replicate = as.factor(Replicate), 
+  rename(Depth_ft = Depth) %>% 
+  mutate(Replicate = as.factor(Replicate), 
          Year = factor(Year, labels = c("2", "10"))) %>% #recode as deployment intervals
-  mutate(Depth = ifelse(grepl("R", Grid.ID), paste0(Depth, "_ref"), Depth)) %>% #recode reference plates
+  mutate(Depth = case_when(Depth_ft == 100 ~ 30,
+                           Depth_ft == 300 ~ 90, 
+                           TRUE ~ 200),
+         Site = ifelse(grepl("R", Grid.ID), paste0(Depth, "_ref"), Depth), .after = Depth_ft) %>% 
+  mutate(Site = factor(Site, levels = c("30", "90", "200", "200_ref"))) %>% 
   full_join(species_metadata, by = "SpeciesID") %>% 
   filter(!is.na(Year))
 
 #create motile and nonmotile dataframes for separate analysis
 motile_tidy <- combined_tidy %>% 
-  filter(Mobility == "Motile") %>% 
-  group_by(Year, Depth, Replicate, Phylum, 
-           Recode_for_MS, MS_Species_Group) %>% 
-  summarize(Species_count = sum(Species.Count)) %>% 
-  ungroup()
+  filter(Mobility == "Motile") 
 
 nonmotile_tidy <- combined_tidy %>% 
-  filter(Mobility == "Nonmotile") %>% 
-  group_by(PhotoID, Year, Depth, Replicate, Grid.Area.cm, Area.Covered.cm, 
-           Phylum, Recode_for_MS, MS_Species_Group) %>% 
-  summarize(Org.Area = sum(Org.Area.cm)) %>% 
-  ungroup()
+  filter(Mobility == "Nonmotile") 
 
 remove_algae <- combined_tidy %>% 
   filter(is.na(Recode_for_MS)) %>% 
-  mutate(Grid.Area.cm = Grid.Area.cm - Org.Area.cm)
+  mutate(Grid.Area.cm = Grid.Area.cm - Org.Area.cm) %>% 
+  select(PhotoID, Grid.Area.cm)
 
-nonmotile_tidy_test <- nonmotile_tidy %>% 
-  # mutate(Grid.Area.cm = ifelse(PhotoID %in% remove_algae$PhotoID, 
-  #                              remove_algae$Grid.Area.cm, Grid.Area.cm)) #this doesn't work, need to
-  #revisit how to adjust the grid area for removing algae
+nonmotile_tidy<- nonmotile_tidy %>% 
+  rows_update(remove_algae, by = "PhotoID")
 
 #### summary of nonmotile phyla ####
 #phylum proportion values 
 area_sum <- nonmotile_tidy %>% 
-  group_by(Year, Depth) %>% 
-  mutate(total_live_area = sum(Org.Area)) %>% 
-  dplyr::select(Year, Depth, total_live_area) %>% 
+  group_by(Year, Site) %>% 
+  mutate(total_live_area = sum(Org.Area.cm)) %>% 
+  dplyr::select(Year, Site, total_live_area) %>% 
   distinct()
 
 #breakdown by organism category
 group_perc_live_cover <- nonmotile_tidy %>% 
-  group_by(Year, Depth, Recode_for_MS) %>% 
-  summarize(group_area = sum(Org.Area)) %>% 
+  group_by(Year, Site, Recode_for_MS) %>% 
+  summarize(group_area = sum(Org.Area.cm)) %>% 
   right_join(area_sum) %>% 
   mutate(group_prop = round(group_area/total_live_area, 4)*100)
 
@@ -84,9 +79,9 @@ top_10group_perc <- group_perc_live_cover %>%
 #### Figure 2 ####
 ## plot proportions of nonmotile taxa
 nonmotile_tidy %>% 
-  ggplot(aes(x = factor(Depth, 
+  ggplot(aes(x = factor(Site, 
                         labels = c("Upper\noutfall", "Mid\noutfall", "Deep\noutfall", "Deep\nreference")), 
-             y = Org.Area, fill = Phylum)) +
+             y = Org.Area.cm, fill = Phylum)) +
   geom_col(position = "fill") +
   theme_classic() + 
   facet_wrap(~Year) + 
@@ -101,17 +96,17 @@ nonmotile_tidy %>%
 ## summary plots based on % cover 
 #calculate nonmotile percent live cover
 perc_cover_df <- nonmotile_tidy %>% 
-  group_by(Year, Depth, Replicate) %>% 
+  group_by(Year, Depth, Site, Replicate) %>% 
   summarize(grid.area.sum = sum(Grid.Area.cm), #sum the total area across all grids on a given plate
-            live.area.covered = sum(Org.Area)) %>% 
-  ungroup() %>% #we're done summarizing data so we can remove the groupings
+            live.area.covered = sum(Org.Area.cm)) %>% 
+  ungroup() %>% 
   mutate(perc.live.cover = round((live.area.covered/grid.area.sum)*100, 2)) #divide the area covered by the total area to get % cover
-
-depth_colors <- c("#fde725","#21918c", "#440154", "#fc8961")
+  
+depth_colors <- c("#fde725","#4de3cc","#440154", "#fc8961")
 
 #### Figure 3 ####
 perc_cover_df %>%
-  ggplot(aes(x = Year, y = perc.live.cover, fill = Depth)) +
+  ggplot(aes(x = Year, y = perc.live.cover, fill = Site)) +
   geom_point(size = 3, shape = 21) +
   theme_classic() +
   labs(y = "Percent live cover",
@@ -119,7 +114,8 @@ perc_cover_df %>%
        fill = "Site") +
   scale_fill_manual(values = depth_colors,
                     labels = c("Upper outfall", "Mid outfall", "Deep outfall", "Deep reference")) +
-  theme(text = element_text(size = 14))
+  theme(text = element_text(size = 14)) +
+  facet_wrap(~ factor(Depth, labels = c("30 m", "90 m", "200 m")))
 
 # ggsave("figures/figure3.tiff", width = 8, height = 6, dpi = 300)
 
@@ -128,11 +124,11 @@ shapiro.test(x = perc_cover_df$perc.live.cover)
 shapiro.test(x = log(perc_cover_df$perc.live.cover))
 
 #test the outfall sites only 
-perc_cover_mod <- aov(log(perc.live.cover) ~ Depth + Year + Depth*Year, data = filter(perc_cover_df, !Depth == "600_ref"))
+perc_cover_mod <- aov(log(perc.live.cover) ~ Depth + Year + Depth*Year, data = filter(perc_cover_df))
 summary(perc_cover_mod)
 
 #post-hoc test
-perc_cover_mod2 <- aov(log(perc.live.cover) ~ Depth + Year, data = filter(perc_cover_df, !Depth == "600_ref"))
+perc_cover_mod2 <- aov(log(perc.live.cover) ~ Depth + Year, data = filter(perc_cover_df))
 TukeyHSD(perc_cover_mod2)
 
 #model diagnostics
@@ -142,31 +138,18 @@ hist(perc_cover_mod$residuals)
 qqnorm(perc_cover_mod$residuals)
 qqline(perc_cover_mod$residuals)
 
-#test for differences between the -200 m outfall and reference sites
-compare_tidy <- perc_cover_df %>% 
-  filter(Depth %in% c("600", "600_ref")) 
-
-shapiro.test(x = compare_tidy$perc.live.cover)
-
-summary(aov(perc.live.cover ~ Depth + Year + Depth*Year, data = compare_tidy))
-
-compare_live_wo_5 <- compare_tidy %>% 
-  filter(!Year == 5)
-
-summary(aov(perc.live.cover ~ Depth + Year + Depth*Year, data = compare_live_wo_5))
-
 #### nonmotile multivariate analysis ####
 
 #convert the data to wide format
 nonmotile_tidy_w <- nonmotile_tidy %>% 
-  group_by(Year, Depth, Replicate, Recode_for_MS) %>% 
-  summarize(sum_area = sum(Area.Covered.cm)) %>% 
+  group_by(Year, Depth, Site, Replicate, Recode_for_MS) %>% 
+  summarize(sum_area = sum(Org.Area.cm)) %>% 
   filter(!is.na(Recode_for_MS)) %>% 
   ungroup() %>% 
   arrange(Recode_for_MS) %>% 
   pivot_wider(names_from = Recode_for_MS, values_from = sum_area, values_fill = 0) %>% 
   clean_names() %>% 
-  arrange(year, depth, replicate)
+  arrange(year, site, replicate)
 
 #prep abundance and metadata matrices
 
@@ -204,14 +187,17 @@ stressplot(object = nonmotile.nmds, lwd = 5)
 #extract points and bind to metadata
 nmds_points <- data.frame(nonmotile.nmds$points)
 nmds_points <- bind_cols(meta, nmds_points) %>% 
-  mutate(depth = factor(depth, labels = c("30", "90", "200", "200 ref")),
+  mutate(depth = factor(depth, labels = c("30", "90", "200")),
          year = factor(year))
 
 #### Figure 4 ####
 #nmds plot
 ggplot(data=nmds_points,
        aes(x=MDS1, y=MDS2,
-           fill= depth,
+           fill= factor(site,
+                        labels = c("Upper outfall", "Mid outfall", 
+                                   "Deep outfall", "Deep reference")), 
+
            shape= year)) + 
   geom_point(color = "black", size = 3) +
   # stat_ellipse(aes(group = depth, color = depth), 
