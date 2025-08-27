@@ -1,630 +1,633 @@
-Analyzer,Year,PhotoID,Grid.ID,Depth,Replicate,Grid.No,Grid.Area.cm,Area.Covered.cm,SpeciesID,Species.Count,Org.Area.cm,Notes
-Tyler,2014,600ft_Year2_Rep3 (1).JPG,6_3_1,600,3,1,63.105,50.245,encrusting_bryozoan_sp,3,40.314,Grid Hanging off plate
-Tyler,2014,600ft_Year2_Rep3 (1).JPG,6_3_1,600,3,1,63.105,50.245,barnacle,5,2.57,"Kim's sheet did not say barnacles, appear alive"
-Tyler,2014,600ft_Year2_Rep3 (1).JPG,6_3_1,600,3,1,63.105,50.245,Pododesmus_macrochisma,1,0.755,NA
-Tyler,2014,600ft_Year2_Rep3 (1).JPG,6_3_1,600,3,1,63.105,50.245,Crisia_sp,1,0.129,NA
-Tyler,2014,600ft_Year2_Rep3 (1).JPG,6_3_1,600,3,1,63.105,50.245,Hinnites_giganteous,1,0.339,NA
-Tyler,2014,600ft_Year2_Rep3 (2).JPG,6_3_2,600,3,2,75,54.053,encrusting_bryozoan_sp,3,20.66,NA
-Tyler,2014,600ft_Year2_Rep3 (2).JPG,6_3_2,600,3,2,75,54.053,Hinnites_giganteous,1,2.375,NA
-Tyler,2014,600ft_Year2_Rep3 (2).JPG,6_3_2,600,3,2,75,54.053,Pododesmus_macrochisma,6,6.238,NA
-Tyler,2014,600ft_Year2_Rep3 (2).JPG,6_3_2,600,3,2,75,54.053,calcareous_tubeworm,2,0.236,NA
-Tyler,2014,600ft_Year2_Rep3 (2).JPG,6_3_2,600,3,2,75,54.053,sabellariid_tubeworm,2,1.201,NA
-Tyler,2014,600ft_Year2_Rep3 (2).JPG,6_3_2,600,3,2,75,54.053,Crisia_sp,5,0.836,NA
-Tyler,2014,600ft_Year2_Rep3 (3b).JPG,6_3_3,600,3,3,70.237,57.274,encrusting_bryozoan_sp,10,28.429,Grid Hanging off plate
-Tyler,2014,600ft_Year2_Rep3 (3b).JPG,6_3_3,600,3,3,70.237,57.274,Crisia_sp,1,0.169,NA
-Tyler,2014,600ft_Year2_Rep3 (3b).JPG,6_3_3,600,3,3,70.237,57.274,Hinnites_giganteous,1,1.108,NA
-Tyler,2014,600ft_Year2_Rep3 (3b).JPG,6_3_3,600,3,3,70.237,57.274,Pododesmus_macrochisma,6,3.141,NA
-Tyler,2014,600ft_Year2_Rep3 (3b).JPG,6_3_3,600,3,3,70.237,57.274,barnacle,4,2.26,NA
-Tyler,2014,600ft_Year2_Rep3 (3b).JPG,6_3_3,600,3,3,70.237,57.274,amphipod,1,0.104,NA
-Tyler,2014,600ft_Year2_Rep3 (3b).JPG,6_3_3,600,3,3,70.237,57.274,branched_bryozoan_sp,2,0.96,NA
-Tyler,2014,600ft_Year2_Rep3 (4).JPG,6_3_4,600,3,4,86.413,69,encrusting_bryozoan_sp,8,5.74,NA
-Tyler,2014,600ft_Year2_Rep3 (4).JPG,6_3_4,600,3,4,86.413,69,Crisia_sp,2,1.261,NA
-Tyler,2014,600ft_Year2_Rep3 (4).JPG,6_3_4,600,3,4,86.413,69,sabellariid_tubeworm,1,1.373,NA
-Tyler,2014,600ft_Year2_Rep3 (4).JPG,6_3_4,600,3,4,86.413,69,Hinnites_giganteous,2,1.471,Standby for clairfication on sp
-Tyler,2014,600ft_Year2_Rep3 (4).JPG,6_3_4,600,3,4,86.413,69,Pododesmus_macrochisma,4,1.882,NA
-Tyler,2014,600ft_Year2_Rep3 (4).JPG,6_3_4,600,3,4,86.413,69,Chlamys_rhubida,1,0.155,NA
-Tyler,2014,600ft_Year2_Rep3 (4).JPG,6_3_4,600,3,4,86.413,69,Trichotropis,1,0.257,NA
-Tyler,2014,600ft_Year2_Rep3 (4).JPG,6_3_4,600,3,4,86.413,69,amphipod,1,0.129,NA
-Tyler,2014,600ft_Year2_Rep3 (4).JPG,6_3_4,600,3,4,86.413,69,barnacle,14,6.469,NA
-Tyler,2014,600ft_Year2_Rep3 (4).JPG,6_3_4,600,3,4,86.413,69,Hiatella_arctica,7,1.6,Wait for clarification sp
-Tyler,2014,600ft_Year2_Rep3 (5).JPG,6_3_5,600,3,5,84.417,57.85,encrusting_bryozoan_sp,8,16.934,NA
-Tyler,2014,600ft_Year2_Rep3 (5).JPG,6_3_5,600,3,5,84.417,57.85,Hinnites_giganteous,1,7.886,Wait for clarification sp
-Tyler,2014,600ft_Year2_Rep3 (5).JPG,6_3_5,600,3,5,84.417,57.85,Chlamys_rhubida,1,0.172,ar
-Tyler,2014,600ft_Year2_Rep3 (5).JPG,6_3_5,600,3,5,84.417,57.85,sabellariid_tubeworm,1,0.376,NA
-Tyler,2014,600ft_Year2_Rep3 (5).JPG,6_3_5,600,3,5,84.417,57.85,Pododesmus_macrochisma,5,1.219,NA
-Tyler,2014,600ft_Year2_Rep3 (5).JPG,6_3_5,600,3,5,84.417,57.85,branched_bryozoan_sp,2,0.253,NA
-Tyler,2014,600ft_Year2_Rep3 (5).JPG,6_3_5,600,3,5,84.417,57.85,barnacle,35,10.315,NA
-Tyler,2014,600ft_Year2_Rep3 (5).JPG,6_3_5,600,3,5,84.417,57.85,Hiatella_arctica,7,1.39,NA
-Tyler,2014,600ft_Year2_Rep3 (6b).JPG,6_3_6,600,3,6,64.781,43.802,Crisia_sp,13,3.867,Grid hanging off plate
-Tyler,2014,600ft_Year2_Rep3 (6b).JPG,6_3_6,600,3,6,64.781,43.802,sabellariid_tubeworm,1,2.26,Looks different from NC
-Tyler,2014,600ft_Year2_Rep3 (6b).JPG,6_3_6,600,3,6,64.781,43.802,calcareous_tubeworm,3,0.256,NA
-Tyler,2014,600ft_Year2_Rep3 (6b).JPG,6_3_6,600,3,6,64.781,43.802,Hiatella_arctica,10,1.987,NA
-Tyler,2014,600ft_Year2_Rep3 (6b).JPG,6_3_6,600,3,6,64.781,43.802,encrusting_bryozoan_sp,6,8.901,NA
-Tyler,2014,600ft_Year2_Rep3 (6b).JPG,6_3_6,600,3,6,64.781,43.802,Pododesmus_macrochisma,3,1.427,NA
-Tyler,2014,600ft_Year2_Rep3 (6b).JPG,6_3_6,600,3,6,64.781,43.802,barnacle,24,7.695,NA
-Tyler,2014,600ft_Year2_Rep3 (6b).JPG,6_3_6,600,3,6,64.781,43.802,Trichotropis,1,0.1,NA
-Tyler,2014,600ft_Year2_Rep3 (6b).JPG,6_3_6,600,3,6,64.781,43.802,amphipod,1,0.238,Possibly Sea flea?- could be a scaled polychaete
-Tyler,2014,600ft_Year2_Rep3 (7b).JPG,6_3_7,600,3,7,59.951,36.594,encrusting_bryozoan_sp,3,9.196,Grid Hanging off square
-Tyler,2014,600ft_Year2_Rep3 (7b).JPG,6_3_7,600,3,7,59.951,36.594,branched_bryozoan_sp,5,1.302,NA
-Tyler,2014,600ft_Year2_Rep3 (7b).JPG,6_3_7,600,3,7,59.951,36.594,Pododesmus_macrochisma,2,0.803,NA
-Tyler,2014,600ft_Year2_Rep3 (7b).JPG,6_3_7,600,3,7,59.951,36.594,sabellariid_tubeworm,2,1.442,NA
-Tyler,2014,600ft_Year2_Rep3 (7b).JPG,6_3_7,600,3,7,59.951,36.594,Hiatella_arctica,6,1.364,NA
-Tyler,2014,600ft_Year2_Rep3 (7b).JPG,6_3_7,600,3,7,59.951,36.594,Hiatella_arctica,28,9.0229,"none are present in 8, only six in 7"
-Tyler,2014,600ft_Year2_Rep3 (8c).JPG,6_3_8,600,3,8,77.85,49.218,encrusting_bryozoan_sp,5,18.789,Grid hanging off plate
-Tyler,2014,600ft_Year2_Rep3 (8c).JPG,6_3_8,600,3,8,77.85,49.218,Pododesmus_macrochisma,2,1.248,NA
-Tyler,2014,600ft_Year2_Rep3 (8c).JPG,6_3_8,600,3,8,77.85,49.218,branched_bryozoan_sp,5,2.898,NA
-Tyler,2014,600ft_Year2_Rep3 (8c).JPG,6_3_8,600,3,8,77.85,49.218,sabellariid_tubeworm,1,0.371,NA
-Tyler,2014,600ft_Year2_Rep3 (8c).JPG,6_3_8,600,3,8,77.85,49.218,branched_bryozoan_sp,1,0.58,NA
-Tyler,2014,600ft_Year2_Rep3 (9b).JPG,6_3_9,600,3,9,71.396,58.986,encrusting_bryozoan_sp,5,11.222,NA
-Tyler,2014,600ft_Year2_Rep3 (9b).JPG,6_3_9,600,3,9,71.396,58.986,Pododesmus_macrochisma,2,0.501,NA
-Tyler,2014,600ft_Year2_Rep3 (9b).JPG,6_3_9,600,3,9,71.396,58.986,Hiatella_arctica,17,3.905,NA
-Tyler,2014,600ft_Year2_Rep3 (9b).JPG,6_3_9,600,3,9,71.396,58.986,branched_bryozoan_sp,2,0.182,NA
-Tyler,2014,600ft_Year2_Rep3 (9b).JPG,6_3_9,600,3,9,71.396,58.986,amphipod,1,0.137,NA
-Tyler,2014,600ft_Year2_Rep3 (10).JPG,6_3_10,600,3,10,73.437,63.719,encrusting_bryozoan_sp,2,2.738,Large ammounts of sediment covering plate
-Tyler,2014,600ft_Year2_Rep3 (10).JPG,6_3_10,600,3,10,73.437,63.719,Crisia_sp,7,0.845,NA
-Tyler,2014,600ft_Year2_Rep3 (10).JPG,6_3_10,600,3,10,73.437,63.719,sabellariid_tubeworm,1,1.783,NA
-Tyler,2014,600ft_Year2_Rep3 (10).JPG,6_3_10,600,3,10,73.437,63.719,Hiatella_arctica,12,2.22,NA
-Tyler,2014,600ft_Year2_Rep3 (10).JPG,6_3_10,600,3,10,73.437,63.719,barnacle,29,11.078,NA
-Tyler,2014,600ft_Year2_Rep3 (11).JPG,6_3_11,600,3,11,86.797,26.802,encrusting_bryozoan_sp,10,7.564,Ring thing in the middle
-Tyler,2014,600ft_Year2_Rep3 (11).JPG,6_3_11,600,3,11,86.797,26.802,sabellariid_tubeworm,1,2.578,NA
-Tyler,2014,600ft_Year2_Rep3 (11).JPG,6_3_11,600,3,11,86.797,26.802,Crisia_sp,3,4.993,NA
-Tyler,2014,600ft_Year2_Rep3 (11).JPG,6_3_11,600,3,11,86.797,26.802,Hiatella_arctica,6,2.136,NA
-Tyler,2014,600ft_Year2_Rep3 (11).JPG,6_3_11,600,3,11,86.797,26.802,barnacle,8,2.494,NA
-Tyler,2014,600ft_Year2_Rep3 (12).JPG,6_3_12,600,3,12,80.83,45.796,encrusting_bryozoan_sp,11,9.936,NA
-Tyler,2014,600ft_Year2_Rep3 (12).JPG,6_3_12,600,3,12,80.83,45.796,branched_bryozoan_sp,2,0.715,NA
-Tyler,2014,600ft_Year2_Rep3 (12).JPG,6_3_12,600,3,12,80.83,45.796,Pododesmus_macrochisma,1,0.177,NA
-Tyler,2014,600ft_Year2_Rep3 (12).JPG,6_3_12,600,3,12,80.83,45.796,Hiatella_arctica,24,5.822,NA
-Tyler,2014,600ft_Year2_Rep3 (12).JPG,6_3_12,600,3,12,80.83,45.796,sabellariid_tubeworm,1,1.45,NA
-Tyler,2014,600ft_Year2_Rep3 (12).JPG,6_3_12,600,3,12,80.83,45.796,calcareous_tubeworm,1,0.299,NA
-Tyler,2014,600ft_Year2_Rep3 (12).JPG,6_3_12,600,3,12,80.83,45.796,barnacle,5,3,NA
-Tyler,2014,600ft_Year2_Rep3 (13).JPG,6_3_13,600,3,13,88.418,67.98,encrusting_bryozoan_sp,3,18.086,NA
-Tyler,2014,600ft_Year2_Rep3 (13).JPG,6_3_13,600,3,13,88.418,67.98,Crisia_sp,6,5.529,NA
-Tyler,2014,600ft_Year2_Rep3 (13).JPG,6_3_13,600,3,13,88.418,67.98,sabellariid_tubeworm,1,0.36,NA
-Tyler,2014,600ft_Year2_Rep3 (13).JPG,6_3_13,600,3,13,88.418,67.98,branched_bryozoan_sp,1,1.247,NA
-Tyler,2014,600ft_Year2_Rep3 (13).JPG,6_3_13,600,3,13,88.418,67.98,amphipod,1,0.158,NA
-Tyler,2014,600ft_Year2_Rep3 (13).JPG,6_3_13,600,3,13,88.418,67.98,barnacle,12,6.532,NA
-Tyler,2014,600ft_Year2_Rep3 (13).JPG,6_3_13,600,3,13,88.418,67.98,Hiatella_arctica,32,9.487,NA
-Tyler,2014,600ft_Year2_Rep3 (13).JPG,6_3_14,600,3,14,78.542,65.975,encrusting_bryozoan_sp,7,2.639,Grid Hannging off plate
-Tyler,2014,600ft_Year2_Rep3 (14b).JPG,6_3_14,600,3,14,78.542,65.975,Crisia_sp,10,5.259,NA
-Tyler,2014,600ft_Year2_Rep3 (14b).JPG,6_3_14,600,3,14,78.542,65.975,sabellariid_tubeworm,3,1.825,NA
-Tyler,2014,600ft_Year2_Rep3 (14b).JPG,6_3_14,600,3,14,78.542,65.975,Hiatella_arctica,24,4.778,NA
-Tyler,2014,600ft_Year2_Rep3 (14b).JPG,6_3_14,600,3,14,78.542,65.975,amphipod,1,0.151,NA
-Tyler,2014,600ft_Year2_Rep3 (14b).JPG,6_3_14,600,3,14,78.542,65.975,Trichotropis,6,0.674,NA
-Tyler,2014,600ft_Year2_Rep3 (14b).JPG,6_3_14,600,3,14,78.542,65.975,barnacle,19,7.739,NA
-Tyler,2014,600ft_Year2_Rep3 (15b).JPG,6_3_15,600,3,15,66.876,52.279,encrusting_bryozoan_sp,6,7.767,"Grid Hanging off plate; Pattern of small, white dots, likely lettering"
-Tyler,2014,600ft_Year2_Rep3 (15b).JPG,6_3_15,600,3,15,66.876,52.279,branched_bryozoan_sp,15,5.55,NA
-Tyler,2014,600ft_Year2_Rep3 (15b).JPG,6_3_15,600,3,15,66.876,52.279,Pododesmus_macrochisma,1,0.252,NA
-Tyler,2014,600ft_Year2_Rep3 (15b).JPG,6_3_15,600,3,15,66.876,52.279,Crepidula,4,0.781,NA
-Tyler,2014,600ft_Year2_Rep3 (15b).JPG,6_3_15,600,3,15,66.876,52.279,branched_bryozoan_sp,1,0.264,NA
-Tyler,2014,600ft_Year2_Rep3 (15b).JPG,6_3_15,600,3,15,66.876,52.279,amphipod,1,0.076,NA
-Tyler,2014,600ft_Year2_Rep3 (15b).JPG,6_3_15,600,3,15,66.876,52.279,Hiatella_arctica,20,4.063,NA
-Tyler,2014,600ft_Year2_Rep3 (15b).JPG,6_3_15,600,3,15,66.876,52.279,barnacle,10,3.893,NA
-Tyler,2014,600ft_Year2_Rep3 (16).JPG,6_3_16,600,3,16,67.56,47.13,sabellariid_tubeworm,1,0.988,Metal Ring and wire in grid
-Tyler,2014,600ft_Year2_Rep3 (16).JPG,6_3_16,600,3,16,67.56,47.13,encrusting_bryozoan_sp,7,3.57,NA
-Tyler,2014,600ft_Year2_Rep3 (16).JPG,6_3_16,600,3,16,67.56,47.13,branched_bryozoan_sp,6,1.257,NA
-Tyler,2014,600ft_Year2_Rep3 (16).JPG,6_3_16,600,3,16,67.56,47.13,Pododesmus_macrochisma,2,0.251,NA
-Tyler,2014,600ft_Year2_Rep3 (16).JPG,6_3_16,600,3,16,67.56,47.13,amphipod,1,0.23,NA
-Tyler,2014,600ft_Year2_Rep3 (16).JPG,6_3_16,600,3,16,67.56,47.13,barnacle,17,7.325,NA
-Tyler,2014,600ft_Year2_Rep3 (17).JPG,6_3_17,600,3,17,79.439,38.031,encrusting_bryozoan_sp,7,3.509,NA
-Tyler,2014,600ft_Year2_Rep3 (17).JPG,6_3_17,600,3,17,79.439,38.031,Crisia_sp,7,1.333,NA
-Tyler,2014,600ft_Year2_Rep3 (17).JPG,6_3_17,600,3,17,79.439,38.031,sabellariid_tubeworm,6,1.408,NA
-Tyler,2014,600ft_Year2_Rep3 (17).JPG,6_3_17,600,3,17,79.439,38.031,Hiatella_arctica,13,2.283,NA
-Tyler,2014,600ft_Year2_Rep3 (18).JPG,6_3_18,600,3,18,86.775,52.327,encrusting_bryozoan_sp,9,8.874,NA
-Tyler,2014,600ft_Year2_Rep3 (18).JPG,6_3_18,600,3,18,86.775,52.327,sabellariid_tubeworm,6,1.476,NA
-Tyler,2014,600ft_Year2_Rep3 (18).JPG,6_3_18,600,3,18,86.775,52.327,Crisia_sp,2,0.694,NA
-Tyler,2014,600ft_Year2_Rep3 (18).JPG,6_3_18,600,3,18,86.775,52.327,barnacle,8,3.572,NA
-Tyler,2014,600ft_Year2_Rep3 (18).JPG,6_3_18,600,3,18,86.775,52.327,Hiatella_arctica,6,1.158,NA
-Tyler,2014,600ft_Year2_Rep3 (18).JPG,6_3_18,600,3,18,86.775,52.327,amphipod,1,0.085,NA
-Tyler,2014,600ft_Year2_Rep3 (19).JPG,6_3_19,600,3,19,74.043,31.95,encrusting_bryozoan_sp,4,0.706,Large label covering top right corner
-Tyler,2014,600ft_Year2_Rep3 (19).JPG,6_3_19,600,3,19,74.043,31.95,encrusting_bryozoan_sp,9,3.81,NA
-Tyler,2014,600ft_Year2_Rep3 (19).JPG,6_3_19,600,3,19,74.043,31.95,barnacle,9,4.368,NA
-Tyler,2014,600ft_Year2_Rep3 (19).JPG,6_3_19,600,3,19,74.043,31.95,Hiatella_arctica,8,1.578,NA
-Tyler,2014,600ft_Year2_Rep3 (19).JPG,6_3_19,600,3,19,74.043,31.95,Crisia_sp,3,0.265,NA
-Tyler,2014,600ft_Year2_Rep3 (20).JPG,6_3_20,600,3,20,82.045,37.705,encrusting_bryozoan_sp,9,8.89,NA
-Tyler,2014,600ft_Year2_Rep3 (20).JPG,6_3_20,600,3,20,82.045,37.705,calcareous_tubeworm,5,2.578,NA
-Tyler,2014,600ft_Year2_Rep3 (20).JPG,6_3_20,600,3,20,82.045,37.705,barnacle,4,2.588,NA
-Tyler,2014,600ft_Year2_Rep3 (20).JPG,6_3_20,600,3,20,82.045,37.705,Pododesmus_macrochisma,1,4.888,NA
-Tyler,2014,600ft_Year2_Rep3 (20).JPG,6_3_20,600,3,20,82.045,37.705,Hiatella_arctica,35,3.538,NA
-Tyler,2014,600ft_Year2_Rep3 (21).JPG,6_3_21,600,3,21,76.726,40.913,encrusting_bryozoan_sp,20,14.031,NA
-Tyler,2014,600ft_Year2_Rep3 (21).JPG,6_3_21,600,3,21,76.726,40.913,Crisia_sp,18,4.565,NA
-Tyler,2014,600ft_Year2_Rep3 (21).JPG,6_3_21,600,3,21,76.726,40.913,sabellariid_tubeworm,1,1.377,NA
-Tyler,2014,600ft_Year2_Rep3 (21).JPG,6_3_21,600,3,21,76.726,40.913,Crepidula,2,0.417,NA
-Tyler,2014,600ft_Year2_Rep3 (21).JPG,6_3_21,600,3,21,76.726,40.913,barnacle,4,2.146,NA
-Tyler,2014,600ft_Year2_Rep3 (21).JPG,6_3_21,600,3,21,76.726,40.913,Hiatella_arctica,3,0.572,NA
-Hailey,2014,600ft_Year2_Rep1(1).JPG,6_1_1,600,1,1,73.302,38.817,branched_bryozoan_sp,2,0.294,NA
-Hailey,2014,600ft_Year2_Rep1(1).JPG,6_1_1,600,1,1,73.302,38.817,encrusting_bryozoan_sp,3,4.329,NA
-Hailey,2014,600ft_Year2_Rep1(1).JPG,6_1_1,600,1,1,73.302,38.817,Hiatella_arctica,1,0.22,NA
-Hailey,2014,600ft_Year2_Rep1(1).JPG,6_1_1,600,1,1,73.302,38.817,Pododesmus_macrochisma,5,0.751,NA
-Hailey,2014,600ft_Year2_Rep1(1).JPG,6_1_1,600,1,1,73.302,38.817,sabellariid_tubeworm,1,1.928,NA
-Hailey,2014,600ft_Year2_Rep1(1).JPG,6_1_1,600,1,1,73.302,38.817,Corella_willmeriana,1,1.848,NA
-Hailey,2014,600ft_Year2_Rep1(1).JPG,6_1_1,600,1,1,73.302,38.817,unidentified,1,0.121,clam
-Hailey,2014,600ft_Year2_Rep1(2).JPG,6_1_2,600,1,2,74.575,49.219,Crisia_sp,3,1.92,NA
-Hailey,2014,600ft_Year2_Rep1(2).JPG,6_1_2,600,1,2,74.575,49.219,encrusting_bryozoan_sp,1,13.155,NA
-Hailey,2014,600ft_Year2_Rep1(2).JPG,6_1_2,600,1,2,74.575,49.219,Crepidula,1,0.183,NA
-Hailey,2014,600ft_Year2_Rep1(2).JPG,6_1_2,600,1,2,74.575,49.219,sabellariid_tubeworm,1,1.519,NA
-Hailey,2014,600ft_Year2_Rep1(2).JPG,6_1_2,600,1,2,74.575,49.219,branched_bryozoan_sp,2,2.85,NA
-Hailey,2014,600ft_Year2_Rep1(2).JPG,6_1_2,600,1,2,74.575,49.219,Pododesmus_macrochisma,1,0.172,NA
-Hailey,2014,600ft_Year2_Rep1(2).JPG,6_1_2,600,1,2,74.575,49.219,sabellariid_tubeworm,2,3.2,NA
-Hailey,2014,600ft_Year2_Rep1(2).JPG,6_1_2,600,1,2,74.575,49.219,amphipod,1,0.266,NA
-Hailey,2014,600ft_Year2_Rep1(3).JPG,6_1_3,600,1,3,85.673,49.104,branched_bryozoan_sp,5,1.231,NA
-Hailey,2014,600ft_Year2_Rep1(3).JPG,6_1_3,600,1,3,85.673,49.104,Crepidula,5,0.926,NA
-Hailey,2014,600ft_Year2_Rep1(3).JPG,6_1_3,600,1,3,85.673,49.104,sabellariid_tubeworm,1,1.27,NA
-Hailey,2014,600ft_Year2_Rep1(3).JPG,6_1_3,600,1,3,85.673,49.104,amphipod,1,0.27,NA
-Hailey,2014,600ft_Year2_Rep1(3).JPG,6_1_3,600,1,3,85.673,49.104,barnacle,1,0.071,NA
-Hailey,2014,600ft_Year2_Rep1(4).JPG,6_1_4,600,1,4,69.446,36.665,branched_bryozoan_sp,4,0.316,NA
-Hailey,2014,600ft_Year2_Rep1(4).JPG,6_1_4,600,1,4,69.446,36.665,encrusting_bryozoan_sp,4,0.939,NA
-Hailey,2014,600ft_Year2_Rep1(4).JPG,6_1_4,600,1,4,69.446,36.665,sabellariid_tubeworm,1,0.627,NA
-Hailey,2014,600ft_Year2_Rep1(4).JPG,6_1_4,600,1,4,69.446,36.665,amphipod,1,0.044,NA
-Hailey,2014,600ft_Year2_Rep1(4).JPG,6_1_4,600,1,4,69.446,36.665,Hiatella_arctica,29,6.186,NA
-Hailey,2014,600ft_Year2_Rep1(4).JPG,6_1_4,600,1,4,69.446,36.665,Chlamys_rhubida,1,0.285,NA
-Maia,2014,600ft_Year2_Rep1(4).JPG,6_1_4,600,1,4,69.446,36.665,Ericthonius_rubricornis,20,6.223,NA
-Maia,2014,600ft_Year2_Rep1(5).JPG,6_1_5,600,1,5,79.948,41.129,encrusting_bryozoan_sp,3,4.875,NA
-Maia,2014,600ft_Year2_Rep1(5).JPG,6_1_5,600,1,5,79.948,41.129,Chlamys_rhubida,1,0.212,NA
-Maia,2014,600ft_Year2_Rep1(5).JPG,6_1_5,600,1,5,79.948,41.129,Ericthonius_rubricornis,15,3.964,NA
-Maia,2014,600ft_Year2_Rep1(5).JPG,6_1_5,600,1,5,79.948,41.129,Crisia_sp,2,0.814,NA
-Maia,2014,600ft_Year2_Rep1(5).JPG,6_1_5,600,1,5,79.948,41.129,Hinnites_giganteous,2,3.904,NA
-Maia,2014,600ft_Year2_Rep1(5).JPG,6_1_5,600,1,5,79.948,41.129,sabellariid_tubeworm,2,0.946,NA
-Maia,2014,600ft_Year2_Rep1(5).JPG,6_1_5,600,1,5,79.948,41.129,Hiatella_arctica,43,8.458,NA
-Maia,2014,600ft_Year2_Rep1(5).JPG,6_1_5,600,1,5,79.948,41.129,Styaela_gibbsii,1,0.565,NA
-Maia,2014,600ft_Year2_Rep1(6).JPG,6_1_6,600,1,6,81.648,38.934,Chlamys_rhubida,1,0.27,NA
-Maia,2014,600ft_Year2_Rep1(6).JPG,6_1_6,600,1,6,81.648,38.934,Hiatella_arctica,28,3.194,NA
-Maia,2014,600ft_Year2_Rep1(6).JPG,6_1_6,600,1,6,81.648,38.934,sabellariid_tubeworm,2,3.49,NA
-Maia,2014,600ft_Year2_Rep1(6).JPG,6_1_6,600,1,6,81.648,38.934,encrusting_bryozoan_sp,1,2.137,NA
-Maia,2014,600ft_Year2_Rep1(6).JPG,6_1_6,600,1,6,81.648,38.934,Crisia_sp,5,0.664,NA
-Maia,2014,600ft_Year2_Rep1(6).JPG,6_1_6,600,1,6,81.648,38.934,Ericthonius_rubricornis,9,1.603,NA
-Maia,2014,600ft_Year2_Rep1(6).JPG,6_1_6,600,1,6,81.648,38.934,barnacle,1,0.14,NA
-Maia,2014,600ft_Year2_Rep1(7).JPG,6_1_7,600,1,7,63.377,39.986,Ericthonius_rubricornis,64,18.047,grid hanging off plate
-Maia,2014,600ft_Year2_Rep1(7).JPG,6_1_7,600,1,7,63.377,39.986,Pododesmus_macrochisma,1,1.454,NA
-Maia,2014,600ft_Year2_Rep1(7).JPG,6_1_7,600,1,7,63.377,39.986,encrusting_bryozoan_sp,4,4.616,NA
-Maia,2014,600ft_Year2_Rep1(7).JPG,6_1_7,600,1,7,63.377,39.986,Hiatella_arctica,14,2.352,NA
-Hailey,2014,600ft_Year2_Rep1(8).JPG,6_1_8,600,1,8,69.17,40.86,encrusting_bryozoan_sp,3,7.378,NA
-Hailey,2014,600ft_Year2_Rep1(8).JPG,6_1_8,600,1,8,69.17,40.86,branched_bryozoan_sp,4,1.029,NA
-Hailey,2014,600ft_Year2_Rep1(8).JPG,6_1_8,600,1,8,69.17,40.86,Pododesmus_macrochisma,1,0.164,NA
-Hailey,2014,600ft_Year2_Rep1(8).JPG,6_1_8,600,1,8,69.17,40.86,Ericthonius_rubricornis,1,0.665,NA
-Hailey,2014,600ft_Year2_Rep1(8).JPG,6_1_8,600,1,8,69.17,40.86,Hiatella_arctica,3,0.712,NA
-Hailey,2014,600ft_Year2_Rep1(8).JPG,6_1_8,600,1,8,69.17,40.86,Chlamys_rhubida,2,0.341,Grid hanging off plate
-Hailey,2014,600ft_Year2_Rep1(8).JPG,6_1_8,600,1,8,69.17,40.86,barnacle,2,0.663,NA
-Hailey,2014,600ft_Year2_Rep1(9).JPG,6_1_9,600,1,9,84.021,50.93,branched_bryozoan_sp,4,1.16,NA
-Hailey,2014,600ft_Year2_Rep1(9).JPG,6_1_9,600,1,9,84.021,50.93,encrusting_bryozoan_sp,5,5.93,NA
-Hailey,2014,600ft_Year2_Rep1(9).JPG,6_1_9,600,1,9,84.021,50.93,Crepidula,1,0.211,NA
-Hailey,2014,600ft_Year2_Rep1(9).JPG,6_1_9,600,1,9,84.021,50.93,sabellariid_tubeworm,1,1.43,NA
-Hailey,2014,600ft_Year2_Rep1(9).JPG,6_1_9,600,1,9,84.021,50.93,amphipod,1,12.87,NA
-Hailey,2014,600ft_Year2_Rep1(9).JPG,6_1_9,600,1,9,84.021,50.93,Hiatella_arctica,3,0.96,NA
-Hailey,2014,600ft_Year2_Rep1(9).JPG,6_1_9,600,1,9,84.021,50.93,barnacle,1,0.283,NA
-Hailey,2014,600ft_Year2_Rep1(9).JPG,6_1_9,600,1,9,84.021,50.93,Chlamys_rhubida,1,0.43,NA
-Hailey,2014,600ft_Year2_Rep1(10).JPG,6_1_10,600,1,10,82.935,48.527,encrusting_bryozoan_sp,5,10.703,NA
-Hailey,2014,600ft_Year2_Rep1(10).JPG,6_1_10,600,1,10,82.935,48.527,branched_bryozoan_sp,4,1.463,NA
-Hailey,2014,600ft_Year2_Rep1(10).JPG,6_1_10,600,1,10,82.935,48.527,sabellariid_tubeworm,4,3.34,NA
-Hailey,2014,600ft_Year2_Rep1(10).JPG,6_1_10,600,1,10,82.935,48.527,Ericthonius_rubricornis,5,4.537,NA
-Hailey,2014,600ft_Year2_Rep1(10).JPG,6_1_10,600,1,10,82.935,48.527,Hiatella_arctica,6,2.217,NA
-Hailey,2014,600ft_Year2_Rep1(11).JPG,6_1_11,600,1,11,83.698,39.411,encrusting_bryozoan_sp,5,4.78,NA
-Hailey,2014,600ft_Year2_Rep1(11).JPG,6_1_11,600,1,11,83.698,39.411,Pododesmus_macrochisma,3,1.33,NA
-Hailey,2014,600ft_Year2_Rep1(11).JPG,6_1_11,600,1,11,83.698,39.411,sabellariid_tubeworm,1,6.702,NA
-Hailey,2014,600ft_Year2_Rep1(12).JPG,6_1_12,600,1,11,83.698,39.411,Hiatella_arctica,10,11.039,NA
-Hailey,2014,600ft_Year2_Rep1(12).JPG,6_1_12,600,1,12,75.763,55.656,branched_bryozoan_sp,3,0.31,NA
-Hailey,2014,600ft_Year2_Rep1(12).JPG,6_1_12,600,1,12,75.763,55.656,encrusting_bryozoan_sp,6,8.247,NA
-Hailey,2014,600ft_Year2_Rep1(12).JPG,6_1_12,600,1,12,75.763,55.656,Pododesmus_macrochisma,3,0.35,NA
-Hailey,2014,600ft_Year2_Rep1(12).JPG,6_1_12,600,1,12,75.763,55.656,Crepidula,4,0.704,NA
-Hailey,2014,600ft_Year2_Rep1(12).JPG,6_1_12,600,1,12,75.763,55.656,sabellariid_tubeworm,1,1.759,NA
-Hailey,2014,600ft_Year2_Rep1(12).JPG,6_1_12,600,1,12,75.763,55.656,Ericthonius_rubricornis,4,2.11,NA
-Hailey,2014,600ft_Year2_Rep1(12).JPG,6_1_12,600,1,12,75.763,55.656,Hiatella_arctica,7,4.171,NA
-Hailey,2014,600ft_Year2_Rep1(12).JPG,6_1_12,600,1,12,75.763,55.656,Chlamys_rhubida,2,3.794,NA
-Hailey,2014,600ft_Year2_Rep1(13).JPG,6_1_13,600,1,13,76.334,52.774,branched_bryozoan_sp,3,1.152,NA
-Hailey,2014,600ft_Year2_Rep1(13).JPG,6_1_13,600,1,13,76.334,52.774,encrusting_bryozoan_sp,4,4.775,NA
-Hailey,2014,600ft_Year2_Rep1(13).JPG,6_1_13,600,1,13,76.334,52.774,Pododesmus_macrochisma,1,1.88,Large
-Hailey,2014,600ft_Year2_Rep1(13).JPG,6_1_13,600,1,13,76.334,52.774,Crepidula,3,0.421,NA
-Hailey,2014,600ft_Year2_Rep1(13).JPG,6_1_13,600,1,13,76.334,52.774,Ericthonius_rubricornis,1,1.968,NA
-Hailey,2014,600ft_Year2_Rep1(13).JPG,6_1_13,600,1,13,76.334,52.774,Hiatella_arctica,5,1.413,NA
-Hailey,2014,600ft_Year2_Rep1(14).JPG,6_1_14,600,1,14,60.516,29.491,branched_bryozoan_sp,4,1.444,Grid hanging off plate
-Hailey,2014,600ft_Year2_Rep1(14).JPG,6_1_14,600,1,14,60.516,29.491,encrusting_bryozoan_sp,4,1.308,NA
-Hailey,2014,600ft_Year2_Rep1(14).JPG,6_1_14,600,1,14,60.516,29.491,Hiatella_arctica,7,1.711,NA
-Hailey,2014,600ft_Year2_Rep1(14).JPG,6_1_14,600,1,14,60.516,29.491,Ericthonius_rubricornis,1,3.006,NA
-Hailey,2014,600ft_Year2_Rep1(15).JPG,6_1_15,600,1,15,80.894,53.046,encrusting_bryozoan_sp,4,6.665,Grid hanging off plate
-Hailey,2014,600ft_Year2_Rep1(15).JPG,6_1_15,600,1,15,80.894,53.046,Pododesmus_macrochisma,3,0.554,NA
-Hailey,2014,600ft_Year2_Rep1(15).JPG,6_1_15,600,1,15,80.894,53.046,Ericthonius_rubricornis,6,10.465,NA
-Hailey,2014,600ft_Year2_Rep1(15).JPG,6_1_15,600,1,15,80.894,53.046,Hiatella_arctica,4,1.908,NA
-Hailey,2014,600ft_Year2_Rep1(16).JPG,6_1_16,600,1,16,79.524,44.476,encrusting_bryozoan_sp,4,11.184,Huge patch
-Hailey,2014,600ft_Year2_Rep1(16).JPG,6_1_16,600,1,16,79.524,44.476,branched_bryozoan_sp,3,0.514,NA
-Hailey,2014,600ft_Year2_Rep1(16).JPG,6_1_16,600,1,16,79.524,44.476,Pododesmus_macrochisma,3,0.941,NA
-Hailey,2014,600ft_Year2_Rep1(16).JPG,6_1_16,600,1,16,79.524,44.476,Crepidula,3,0.918,NA
-Hailey,2014,600ft_Year2_Rep1(16).JPG,6_1_16,600,1,16,79.524,44.476,Ericthonius_rubricornis,4,2.189,NA
-Hailey,2014,600ft_Year2_Rep1(16).JPG,6_1_16,600,1,16,79.524,44.476,Hiatella_arctica,9,4.309,NA
-Hailey,2014,600ft_Year2_Rep1(17).JPG,6_1_17,600,1,17,76.075,37.215,encrusting_bryozoan_sp,7,4.8,Grid hanging off plate
-Hailey,2014,600ft_Year2_Rep1(17).JPG,6_1_17,600,1,17,76.075,37.215,branched_bryozoan_sp,3,0.31,NA
-Hailey,2014,600ft_Year2_Rep1(17).JPG,6_1_17,600,1,17,76.075,37.215,Crepidula,2,0.721,NA
-Hailey,2014,600ft_Year2_Rep1(17).JPG,6_1_17,600,1,17,76.075,37.215,sabellariid_tubeworm,2,0.7,NA
-Hailey,2014,600ft_Year2_Rep1(17).JPG,6_1_17,600,1,17,76.075,37.215,amphipod,2,0.213,NA
-Hailey,2014,600ft_Year2_Rep1(17).JPG,6_1_17,600,1,17,76.075,37.215,Hiatella_arctica,4,1.177,NA
-Hailey,2014,600ft_Year2_Rep1(18).JPG,6_1_18,600,1,18,82.05,42.998,branched_bryozoan_sp,2,0.427,NA
-Hailey,2014,600ft_Year2_Rep1(18).JPG,6_1_18,600,1,18,82.05,42.998,encrusting_bryozoan_sp,4,12.535,NA
-Hailey,2014,600ft_Year2_Rep1(18).JPG,6_1_18,600,1,18,82.05,42.998,Pododesmus_macrochisma,3,1.818,NA
-Hailey,2014,600ft_Year2_Rep1(18).JPG,6_1_18,600,1,18,82.05,42.998,calcareous_tubeworm,1,0.492,NA
-Hailey,2014,600ft_Year2_Rep1(18).JPG,6_1_18,600,1,18,82.05,42.998,Ericthonius_rubricornis,3,0.854,NA
-Hailey,2014,600ft_Year2_Rep1(18).JPG,6_1_18,600,1,18,82.05,42.998,Chlamys_rhubida,1,0.582,NA
-Hailey,2014,600ft_Year2_Rep1(19).JPG,6_1_19,600,1,19,80.794,44.718,branched_bryozoan_sp,2,0.307,Grid hanging off plate
-Hailey,2014,600ft_Year2_Rep1(19).JPG,6_1_19,600,1,19,80.794,44.718,encrusting_bryozoan_sp,4,10.174,NA
-Hailey,2014,600ft_Year2_Rep1(19).JPG,6_1_19,600,1,19,80.794,44.718,Pododesmus_macrochisma,3,0.864,NA
-Hailey,2014,600ft_Year2_Rep1(19).JPG,6_1_19,600,1,19,80.794,44.718,sabellariid_tubeworm,1,0.243,NA
-Hailey,2014,600ft_Year2_Rep1(19).JPG,6_1_19,600,1,19,80.794,44.718,Hiatella_arctica,2,0.51,NA
-Hailey,2014,600ft_Year2_Rep1(19).JPG,6_1_19,600,1,19,80.794,44.718,barnacle,4,1.341,NA
-Hailey,2014,600ft_Year2_Rep1(20).JPG,6_1_20,600,1,20,78.389,42.725,branched_bryozoan_sp,3,1.326,NA
-Hailey,2014,600ft_Year2_Rep1(20).JPG,6_1_20,600,1,20,78.389,42.725,encrusting_bryozoan_sp,5,10.137,NA
-Hailey,2014,600ft_Year2_Rep1(20).JPG,6_1_20,600,1,20,78.389,42.725,Pododesmus_macrochisma,2,2.522,NA
-Hailey,2014,600ft_Year2_Rep1(20).JPG,6_1_20,600,1,20,78.389,42.725,Ericthonius_rubricornis,3,1.656,NA
-Hailey,2014,600ft_Year2_Rep1(20).JPG,6_1_20,600,1,20,78.389,42.725,Hiatella_arctica,2,1.334,NA
-Hailey,2014,600ft_Year2_Rep1(20).JPG,6_1_20,600,1,20,78.389,42.725,barnacle,3,0.796,NA
-Maia,2014,600ft_Year2_Rep1(21).JPG,6_1_21,600,1,21,73.334,47.355,calcareous_tubeworm,1,0.082,grid hanging off plate
-Maia,2014,600ft_Year2_Rep1(21).JPG,6_1_21,600,1,21,73.334,47.355,encrusting_bryozoan_sp,1,7.078,NA
-Maia,2014,600ft_Year2_Rep1(21).JPG,6_1_21,600,1,21,73.334,47.355,encrusting_bryozoan_sp,4,9.613,NA
-Maia,2014,600ft_Year2_Rep1(21).JPG,6_1_21,600,1,21,73.334,47.355,Hiatella_arctica,10,1.943,NA
-Maia,2014,600ft_Year2_Rep1(21).JPG,6_1_21,600,1,21,73.334,47.355,Ericthonius_rubricornis,17,4.553,NA
-Maia,2014,600ft_Year2_Rep1(21).JPG,6_1_21,600,1,21,73.334,47.355,Chlamys_rhubida,1,0.184,NA
-Maia,2014,600ft_Year2_Rep1(21).JPG,6_1_21,600,1,21,73.334,47.355,sabellariid_tubeworm,1,0.541,NA
-Aakriti,2022,DSCN8847,6_1_1,600,1,1,81.062,29.144,Crisia_sp,4,23.996,NA
-Aakriti,2022,DSCN8847,6_1_1,600,1,1,81.062,29.144,encrusting_bryozoan_sp,2,1.818,NA
-Aakriti,2022,DSCN8847,6_1_1,600,1,1,81.062,29.144,Pododesmus_macrochisma,1,1.458,NA
-Aakriti,2022,DSCN8847,6_1_1,600,1,1,81.062,29.144,brachiopod,1,0.068,"Those are definitely brachiopods, probably Terebratalia. Axis of symmetry rotated 90 degrees relative to a clam (so that the 2 shells are not mirror images, as they are in a clam)"
-Aakriti,2022,DSCN8848,6_1_2,600,1,2,83.134,28.894,Pododesmus_macrochisma,1,2.536,NA
-Aakriti,2022,DSCN8848,6_1_2,600,1,2,83.134,28.894,Crisia_sp,12,9.598,NA
-Aakriti,2022,DSCN8848,6_1_2,600,1,2,83.134,28.894,encrusting_bryozoan_sp,4,1.509,NA
-Aakriti,2022,DSCN8848,6_1_2,600,1,2,83.134,28.894,colonial tunicate,1,0.076,red gelatinous mass
-Aakriti,2022,DSCN8849,6_1_3,600,1,3,87.105,31.76,Crisia_sp,2,2.375,NA
-Aakriti,2022,DSCN8849,6_1_3,600,1,3,87.105,31.76,branched_bryozoan_sp,3,1.933,NA
-Aakriti,2022,DSCN8849,6_1_3,600,1,3,87.105,31.76,encrusting_bryozoan_sp,9,6.728,NA
-Aakriti,2022,DSCN8849,6_1_3,600,1,3,87.105,31.76,colonial tunicate,1,0.194,red gelatinou smass
-Aakriti,2022,DSCN8850,6_1_4,600,1,4,81.58,35.838,encrusting_bryozoan_sp,6,7.803,NA
-Aakriti,2022,DSCN8850,6_1_4,600,1,4,81.58,35.838,Crisia_sp,4,1.41,NA
-Aakriti,2022,DSCN8850,6_1_4,600,1,4,81.58,35.838,polychaete_sp,1,2.132,NA
-Aakriti,2022,DSCN8850,6_1_4,600,1,4,81.58,35.838,Pododesmus_macrochisma,1,22.564,NA
-Aakriti,2022,DSCN8850,6_1_4,600,1,4,81.58,35.838,brachiopod,1,0.223,"on pododesmusThose are definitely brachiopods, probably Terebratalia.  Axis of symmetry rotated 90 degrees relative to a clam (so that the 2 shells are not mirror images, as they are in a clam)"
-Aakriti,2022,DSCN8851,6_1_5,600,1,5,88.255,53.8,Pododesmus_macrochisma,3,46.129,NA
-Aakriti,2022,DSCN8851,6_1_5,600,1,5,88.255,53.8,Crisia_sp,5,6.849,NA
-Aakriti,2022,DSCN8852,6_1_6,600,1,6,74.673,22.421,Crisia_sp,4,10.425,NA
-Aakriti,2022,DSCN8852,6_1_6,600,1,6,74.673,22.421,encrusting_bryozoan_sp,4,4.098,NA
-Aakriti,2022,DSCN8853,6_1_7,600,1,7,89.677,31.465,Pododesmus_macrochisma,1,11.912,NA
-Aakriti,2022,DSCN8853,6_1_7,600,1,7,89.677,31.465,Crisia_sp,7,16.052,NA
-Aakriti,2022,DSCN8853,6_1_7,600,1,7,89.677,31.465,encrusting_bryozoan_sp,3,3.098,NA
-Aakriti,2022,DSCN8853,6_1_7,600,1,7,89.677,31.465,Chlamys_rhubida,1,0.139,on pododesmus
-Aakriti,2022,DSCN8854,6_1_8,600,1,8,75.265,39.269,Pododesmus_macrochisma,3,18.245,NA
-Aakriti,2022,DSCN8854,6_1_8,600,1,8,75.265,39.269,Crisia_sp,5,18.013,grid has no id tag
-Aakriti,2022,DSCN8854,6_1_8,600,1,8,75.265,39.269,encrusting_bryozoan_sp,1,1.981,NA
-Aakriti,2022,DSCN8854,6_1_8,600,1,8,75.265,39.269,colonial tunicate,1,0.228,NA
-Aakriti,2022,DSCN8855,6_1_9,600,1,9,68.103,44.285,Pododesmus_macrochisma,2,28.081,NA
-Aakriti,2022,DSCN8855,6_1_9,600,1,9,68.103,44.285,Metridium,1,2.583,NA
-Aakriti,2022,DSCN8855,6_1_9,600,1,9,68.103,44.285,encrusting_bryozoan_sp,6,3.885,NA
-Aakriti,2022,DSCN8855,6_1_9,600,1,9,68.103,44.285,Crisia_sp,2,1.751,NA
-Aakriti,2022,DSCN8856,6_1_10,600,1,10,88.559,37.66,Crisia_sp,1,26.672,NA
-Aakriti,2022,DSCN8856,6_1_10,600,1,10,88.559,37.66,Pododesmus_macrochisma,1,5.29,NA
-Aakriti,2022,DSCN8856,6_1_10,600,1,10,88.559,37.66,encrusting_bryozoan_sp,4,2.014,NA
-Aakriti,2022,DSCN8857,6_1_11,600,1,11,86.258,61.307,Pododesmus_macrochisma,5,53.756,NA
-Aakriti,2022,DSCN8857,6_1_11,600,1,11,86.258,61.307,branched_bryozoan_sp,3,8.212,NA
-Aakriti,2022,DSCN8858,6_1_13,600,1,13,88.463,35.041,encrusting_bryozoan_sp,6,13.467,NA
-Aakriti,2022,DSCN8858,6_1_13,600,1,13,88.463,35.041,Crisia_sp,5,24.302,NA
-Aakriti,2022,DSCN8859,6_1_14,600,1,14,77.248,52.757,Pododesmus_macrochisma,4,42.264,NA
-Aakriti,2022,DSCN8859,6_1_14,600,1,14,77.248,52.757,encrusting_bryozoan_sp,2,2.44,NA
-Aakriti,2022,DSCN8859,6_1_14,600,1,14,77.248,52.757,unidentified,1,0.54,NA
-Aakriti,2022,DSCN8859,6_1_14,600,1,14,77.248,52.757,Crisia_sp,3,7.146,NA
-Aakriti,2022,DSCN8860,6_1_15,600,1,15,70.267,46.813,Pododesmus_macrochisma,3,26.176,NA
-Aakriti,2022,DSCN8860,6_1_15,600,1,15,70.267,46.813,encrusting_bryozoan_sp,4,7.909,NA
-Aakriti,2022,DSCN8860,6_1_15,600,1,15,70.267,46.813,Crisia_sp,4,4.056,NA
-Aakriti,2022,DSCN8860,6_1_15,600,1,15,70.267,46.813,calcareous_tubeworm,2,3.166,NA
-Aakriti,2022,DSCN8861,6_1_16,600,1,16,89.061,46.663,encrusting_bryozoan_sp,5,20.119,NA
-Aakriti,2022,DSCN8861,6_1_16,600,1,16,89.061,46.663,Pododesmus_macrochisma,1,2.378,NA
-Aakriti,2022,DSCN8861,6_1_16,600,1,16,89.061,46.663,branched_bryozoan_sp,3,12.78,NA
-Aakriti,2022,DSCN8862,6_1_17,600,1,17,79.892,27.692,Pododesmus_macrochisma,2,5.26,NA
-Aakriti,2022,DSCN8862,6_1_17,600,1,17,79.892,27.692,encrusting_bryozoan_sp,4,6.871,NA
-Aakriti,2022,DSCN8862,6_1_17,600,1,17,79.892,27.692,branched_bryozoan_sp,5,18.164,NA
-Aakriti,2022,DSCN8862,6_1_17,600,1,17,79.892,27.692,Amphissa,1,0.408,NA
-Aakriti,2022,DSCN8864,6_1_12,600,1,12,66.592,24.094,Crisia_sp,6,17.756,NA
-Aakriti,2022,DSCN8865,6_1_18,600,1,18,56.132,27.159,Pododesmus_macrochisma,1,13.891,NA
-Aakriti,2022,DSCN8865,6_1_18,600,1,18,56.132,27.159,Crisia_sp,2,11.934,NA
-Aakriti,2022,DSCN8865,6_1_18,600,1,18,56.132,27.159,Amphissa,1,0.337,NA
-Aakriti,2022,DSCN8877,6_2_1,600,2,1,87.713,87.369,Metridium,1,87.369,orange
-Aakriti,2022,DSCN8878,6_2_2,600,2,2,91.097,68.574,Metridium,1,65.868,orange
-Aakriti,2022,DSCN8878,6_2_2,600,2,2,91.097,68.574,sabellariid_tubeworm,1,0.44,NA
-Aakriti,2022,DSCN8879,6_2_3,600,2,3,79.117,31.606,Pododesmus_macrochisma,3,29.587,NA
-Aakriti,2022,DSCN8879,6_2_3,600,2,3,79.117,31.606,branched_bryozoan_sp,2,7.359,NA
-Aakriti,2022,DSCN8879,6_2_3,600,2,3,79.117,31.606,encrusting_bryozoan_sp,2,0.922,NA
-Aakriti,2022,DSCN8879,6_2_3,600,2,3,79.117,31.606,unidentified,1,0.091,NA
-Aakriti,2022,DSCN8880,6_2_4,600,2,4,86.334,25.154,Pododesmus_macrochisma,1,13.745,NA
-Aakriti,2022,DSCN8880,6_2_4,600,2,4,86.334,25.154,Strongylocentrotus_sp,1,0.073,NA
-Aakriti,2022,DSCN8880,6_2_4,600,2,4,86.334,25.154,branched_bryozoan_sp,1,0.553,NA
-Aakriti,2022,DSCN8880,6_2_4,600,2,4,86.334,25.154,colonial tunicate,1,0.115,NA
-Aakriti,2022,DSCN8881,6_2_5,600,2,5,95.27,9.239,Pododesmus_macrochisma,1,3.098,grid was uneven
-Aakriti,2022,DSCN8881,6_2_5,600,2,5,95.27,9.239,sabellariid_tubeworm,1,4.818,NA
-Aakriti,2022,DSCN8881,6_2_5,600,2,5,95.27,9.239,Chlamys_rhubida,1,0.333,grid was uneven
-Aakriti,2022,DSCN8882,6_2_6,600,2,6,97.925,9.547,encrusting_bryozoan_sp,2,0.062,NA
-Aakriti,2022,DSCN8882,6_2_6,600,2,6,97.925,9.547,Crisia_sp,5,2.136,NA
-Aakriti,2022,DSCN8883,6_2_7,600,2,7,83.935,31.891,Metridium,1,22.176,NA
-Aakriti,2022,DSCN8883,6_2_7,600,2,7,83.935,31.891,encrusting_bryozoan_sp,8,3.523,NA
-Aakriti,2022,DSCN8883,6_2_7,600,2,7,83.935,31.891,branched_bryozoan_sp,9,2.82,NA
-Aakriti,2022,DSCN8884,6_2_8,600,2,8,91.4,28.364,calcareous_tubeworm,1,6.779,NA
-Aakriti,2022,DSCN8884,6_2_8,600,2,8,91.4,28.364,Metridium,1,12.186,orange
-Aakriti,2022,DSCN8884,6_2_8,600,2,8,91.4,28.364,encrusting_bryozoan_sp,5,2.174,NA
-Aakriti,2022,DSCN8884,6_2_8,600,2,8,91.4,28.364,branched_bryozoan_sp,1,2.837,NA
-Aakriti,2022,DSCN8885,6_2_9,600,2,9,88.651,52.977,Pododesmus_macrochisma,2,35.201,NA
-Aakriti,2022,DSCN8885,6_2_9,600,2,9,88.651,52.977,encrusting_bryozoan_sp,2,11.793,NA
-Aakriti,2022,DSCN8886,6_2_10,600,2,10,88.116,19.219,Pododesmus_macrochisma,1,14.336,NA
-Aakriti,2022,DSCN8887,6_2_11,600,2,11,77.219,24.76,Pododesmus_macrochisma,1,17.851,NA
-Aakriti,2022,DSCN8887,6_2_11,600,2,11,77.219,24.76,encrusting_bryozoan_sp,4,2.973,NA
-Aakriti,2022,DSCN8887,6_2_11,600,2,11,77.219,24.76,polychaete_sp,1,0.828,NA
-Aakriti,2022,DSCN8888,6_2_12,600,2,12,81.452,14.387,Crisia_sp,2,3.201,NA
-Aakriti,2022,DSCN8888,6_2_12,600,2,12,81.452,14.387,encrusting_bryozoan_sp,4,1.961,NA
-Aakriti,2022,DSCN8888,6_2_12,600,2,12,81.452,14.387,Pododesmus_macrochisma,2,4.587,NA
-Aakriti,2022,DSCN8893,6_2_13,600,2,13,77.419,23.873,encrusting_bryozoan_sp,5,5.211,NA
-Aakriti,2022,DSCN8893,6_2_13,600,2,13,77.419,23.873,branched_bryozoan_sp,2,2.309,NA
-Aakriti,2022,DSCN8893,6_2_13,600,2,13,77.419,23.873,calcareous_tubeworm,2,0.219,NA
-Aakriti,2022,DSCN8894,6_2_14,600,2,14,74.578,9.434,barnacle,1,1.611,NA
-Aakriti,2022,DSCN8894,6_2_14,600,2,14,74.578,9.434,encrusting_bryozoan_sp,5,2.829,NA
-Aakriti,2022,DSCN8894,6_2_14,600,2,14,74.578,9.434,Crisia_sp,1,0.13,NA
-Aakriti,2022,DSCN8895,6_2_15,600,2,15,74.194,28.015,Pododesmus_macrochisma,1,1.701,NA
-Aakriti,2022,DSCN8895,6_2_15,600,2,15,74.194,28.015,encrusting_bryozoan_sp,5,6.678,NA
-Aakriti,2022,DSCN8895,6_2_15,600,2,15,74.194,28.015,branched_bryozoan_sp,4,1.774,NA
-Aakriti,2022,DSCN8896,6_2_16,600,2,16,75.52,36.436,Pododesmus_macrochisma,1,12.483,NA
-Aakriti,2022,DSCN8896,6_2_16,600,2,16,75.52,36.436,encrusting_bryozoan_sp,6,4.09,NA
-Aakriti,2022,DSCN8896,6_2_16,600,2,16,75.52,36.436,branched_bryozoan_sp,1,0.319,NA
-Aakriti,2022,DSCN8896,6_2_16,600,2,16,75.52,36.436,Crisia_sp,2,1.077,NA
-Aakriti,2022,DSCN8897,6_2_17,600,2,17,92.038,59.023,Pododesmus_macrochisma,6,47.848,NA
-Aakriti,2022,DSCN8897,6_2_17,600,2,17,92.038,59.023,encrusting_bryozoan_sp,3,2.328,NA
-Aakriti,2022,DSCN8898,6_2_18,600,2,18,95.782,47.838,Pododesmus_macrochisma,3,51.466,had to estimate grid size.
-Aakriti,2022,DSCN8898,6_2_18,600,2,18,95.782,47.838,Crisia_sp,2,7.314,NA
-Aakriti,2022,DSCN8898,6_2_18,600,2,18,95.782,47.838,encrusting_bryozoan_sp,1,5.611,NA
-Clara,2014,600ft_Year2_Rep2(1),6_2_1,600,2,1,69.881,37.112,Hiatella_arctica,24,5.18,NA
-Clara,2014,600ft_Year2_Rep2(1),6_2_1,600,2,1,69.881,37.112,barnacle,13,2.815,NA
-Clara,2014,600ft_Year2_Rep2(1),6_2_1,600,2,1,69.881,37.112,encrusting_bryozoan_sp,13,1.923,NA
-Clara,2014,600ft_Year2_Rep2(1),6_2_1,600,2,1,69.881,37.112,Pododesmus_macrochisma,2,0.244,NA
-Clara,2014,600ft_Year2_Rep2(1),6_2_1,600,2,1,69.881,37.112,polychaete_sp,2,0.751,NA
-Clara,2014,600ft_Year2_Rep2(2b),6_2_2,600,2,2,69.352,39.003,barnacle,8,1.708,NA
-Clara,2014,600ft_Year2_Rep2(2b),6_2_2,600,2,2,69.352,39.003,encrusting_bryozoan_sp,10,11.243,NA
-Clara,2014,600ft_Year2_Rep2(2b),6_2_2,600,2,2,69.352,39.003,Strongylocentrotus_sp,1,0.302,NA
-Clara,2014,600ft_Year2_Rep2(2b),6_2_2,600,2,2,69.352,39.003,Hiatella_arctica,15,3.165,NA
-Clara,2014,600ft_Year2_Rep2(2b),6_2_2,600,2,2,69.352,39.003,Ericthonius_rubricornis,6,3.841,NA
-Clara,2014,600ft_Year2_Rep2(3),6_2_3,600,2,3,83.564,59.287,Hiatella_arctica,35,8.813,NA
-Clara,2014,600ft_Year2_Rep2(3),6_2_3,600,2,3,83.564,59.287,encrusting_bryozoan_sp,9,15.056,NA
-Clara,2014,600ft_Year2_Rep2(3),6_2_3,600,2,3,83.564,59.287,barnacle,25,9.166,NA
-Clara,2014,600ft_Year2_Rep2(3),6_2_3,600,2,3,83.564,59.287,Strongylocentrotus_sp,1,0.484,NA
-Clara,2014,600ft_Year2_Rep2(3),6_2_3,600,2,3,83.564,59.287,sabellariid_tubeworm,1,1.088,NA
-Clara,2014,600ft_Year2_Rep2(3),6_2_3,600,2,3,83.564,59.287,Pododesmus_macrochisma,1,0.501,NA
-Clara,2014,600ft_Year2_Rep2(4),6_2_4,600,2,4,78.025,46.108,barnacle,14,3.612,NA
-Clara,2014,600ft_Year2_Rep2(4),6_2_4,600,2,4,78.025,46.108,encrusting_bryozoan_sp,13,10.926,NA
-Clara,2014,600ft_Year2_Rep2(4),6_2_4,600,2,4,78.025,46.108,Hiatella_arctica,14,4.235,NA
-Clara,2014,600ft_Year2_Rep2(4),6_2_4,600,2,4,78.025,46.108,sabellariid_tubeworm,1,0.261,NA
-Clara,2014,600ft_Year2_Rep2(4),6_2_4,600,2,4,78.025,46.108,polychaete_sp,2,1.26,NA
-Clara,2014,600ft_Year2_Rep2(4),6_2_4,600,2,4,78.025,46.108,Pododesmus_macrochisma,2,0.551,NA
-Clara,2014,600ft_Year2_Rep2(5),6_2_5,600,2,5,82.05,53.287,Strongylocentrotus_sp,1,0.619,NA
-Clara,2014,600ft_Year2_Rep2(5),6_2_5,600,2,5,82.05,53.287,Hiatella_arctica,13,2.756,NA
-Clara,2014,600ft_Year2_Rep2(5),6_2_5,600,2,5,82.05,53.287,barnacle,17,3.949,NA
-Clara,2014,600ft_Year2_Rep2(5),6_2_5,600,2,5,82.05,53.287,encrusting_bryozoan_sp,16,7.416,NA
-Clara,2014,600ft_Year2_Rep2(5),6_2_5,600,2,5,82.05,53.287,branched_bryozoan_sp,11,1.578,NA
-Clara,2014,600ft_Year2_Rep2(5),6_2_5,600,2,5,82.05,53.287,Pododesmus_macrochisma,1,0.143,NA
-Clara,2014,600ft_Year2_Rep2(5),6_2_5,600,2,5,82.05,53.287,Chorilia_longipes,1,0.478,NA
-Clara,2014,600ft_Year2_Rep2(5),6_2_5,600,2,5,82.05,53.287,Ericthonius_rubricornis,1,2.19,NA
-Clara,2014,600ft_Year2_Rep2(6),6_2_6,600,2,6,73.704,50.331,Hiatella_arctica,23,4.55,NA
-Clara,2014,600ft_Year2_Rep2(6),6_2_6,600,2,6,73.704,50.331,barnacle,16,3.039,NA
-Clara,2014,600ft_Year2_Rep2(6),6_2_6,600,2,6,73.704,50.331,encrusting_bryozoan_sp,12,9.604,NA
-Clara,2014,600ft_Year2_Rep2(6),6_2_6,600,2,6,73.704,50.331,branched_bryozoan_sp,3,0.427,NA
-Clara,2014,600ft_Year2_Rep2(6),6_2_6,600,2,6,73.704,50.331,Ericthonius_rubricornis,7,3.477,NA
-Clara,2014,600ft_Year2_Rep2(6),6_2_6,600,2,6,73.704,50.331,Pododesmus_macrochisma,1,0.203,NA
-Clara,2014,600ft_Year2_Rep2(8),6_2_8,600,2,8,64.855,18.093,barnacle,5,2.43,hanging off plate
-Clara,2014,600ft_Year2_Rep2(8),6_2_8,600,2,8,64.855,18.093,Hiatella_arctica,3,0.682,hanging off plate
-Clara,2014,600ft_Year2_Rep2(8),6_2_8,600,2,8,64.855,18.093,sabellariid_tubeworm,1,1.789,hanging off plate
-Clara,2014,600ft_Year2_Rep2(8),6_2_8,600,2,8,64.855,18.093,encrusting_bryozoan_sp,2,2.738,hanging off plate
-Clara,2014,600ft_Year2_Rep2(7),6_2_7,600,2,7,78.992,49.586,barnacle,31,12.015,NA
-Clara,2014,600ft_Year2_Rep2(7),6_2_7,600,2,7,78.992,49.586,Hiatella_arctica,16,4.437,NA
-Clara,2014,600ft_Year2_Rep2(7),6_2_7,600,2,7,78.992,49.586,Ericthonius_rubricornis,11,3.259,NA
-Clara,2014,600ft_Year2_Rep2(7),6_2_7,600,2,7,78.992,49.586,encrusting_bryozoan_sp,9,6.692,NA
-Clara,2014,600ft_Year2_Rep2(7),6_2_7,600,2,7,78.992,49.586,Amphissa,1,0.382,NA
-Clara,2014,600ft_Year2_Rep2(7),6_2_7,600,2,7,78.992,49.586,unidentified,1,1.043,Modiolus modiolus? (not on dropdown)
-Clara,2014,600ft_Year2_Rep2(7),6_2_7,600,2,7,78.992,49.586,Pododesmus_macrochisma,2,1.659,NA
-Clara,2014,600ft_Year2_Rep2(9),6_2_9,600,2,9,66.154,37.999,Pododesmus_macrochisma,2,1.158,NA
-Clara,2014,600ft_Year2_Rep2(9),6_2_9,600,2,9,76.154,37.999,Ericthonius_rubricornis,2,6.717,NA
-Clara,2014,600ft_Year2_Rep2(9),6_2_9,600,2,9,76.154,37.999,sabellariid_tubeworm,4,3.268,NA
-Clara,2014,600ft_Year2_Rep2(9),6_2_9,600,2,9,76.154,37.999,Hiatella_arctica,17,4.255,NA
-Clara,2014,600ft_Year2_Rep2(9),6_2_9,600,2,9,76.154,37.999,barnacle,2,0.575,NA
-Clara,2014,600ft_Year2_Rep2(9),6_2_9,600,2,9,76.154,37.999,branched_bryozoan_sp,2,0.362,NA
-Clara,2014,600ft_Year2_Rep2(9),6_2_9,600,2,9,76.154,37.999,encrusting_bryozoan_sp,6,2.989,NA
-Clara,2014,600ft_Year2_Rep2(10),6_2_10,600,2,10,71.992,40.336,Strongylocentrotus_sp,1,0.713,NA
-Clara,2014,600ft_Year2_Rep2(10),6_2_10,600,2,10,71.992,40.336,Ericthonius_rubricornis,2,2.301,NA
-Clara,2014,600ft_Year2_Rep2(10),6_2_10,600,2,10,71.992,40.336,branched_bryozoan_sp,3,1.002,NA
-Clara,2014,600ft_Year2_Rep2(10),6_2_10,600,2,10,71.992,40.336,barnacle,7,2.128,NA
-Clara,2014,600ft_Year2_Rep2(10),6_2_10,600,2,10,71.992,40.336,Hiatella_arctica,37,7.076,NA
-Clara,2014,600ft_Year2_Rep2(10),6_2_10,600,2,10,71.992,40.336,encrusting_bryozoan_sp,9,5.596,NA
-Clara,2014,600ft_Year2_Rep2(11),6_2_11,600,2,11,66.434,36.346,barnacle,7,2.475,center piece with hole
-Clara,2014,600ft_Year2_Rep2(11),6_2_11,600,2,11,66.434,36.346,Hiatella_arctica,4,0.764,center piece with hole
-Clara,2014,600ft_Year2_Rep2(11),6_2_11,600,2,11,66.434,36.346,encrusting_bryozoan_sp,17,9.275,center piece with hole
-Clara,2014,600ft_Year2_Rep2(11),6_2_11,600,2,11,66.434,36.346,Pododesmus_macrochisma,1,0.322,center piece with hole
-Clara,2014,600ft_Year2_Rep2(12),6_2_12,600,2,12,82.041,41.807,Pododesmus_macrochisma,1,0.936,NA
-Clara,2014,600ft_Year2_Rep2(12),6_2_12,600,2,12,82.041,41.807,Strongylocentrotus_sp,1,0.878,NA
-Clara,2014,600ft_Year2_Rep2(12),6_2_12,600,2,12,82.041,41.807,barnacle,7,3.184,NA
-Clara,2014,600ft_Year2_Rep2(12),6_2_12,600,2,12,82.041,41.807,Hiatella_arctica,24,5.546,NA
-Clara,2014,600ft_Year2_Rep2(12),6_2_12,600,2,12,82.041,41.807,encrusting_bryozoan_sp,10,10.858,NA
-Clara,2014,600ft_Year2_Rep2(12),6_2_12,600,2,12,82.041,41.807,branched_bryozoan_sp,1,0.195,NA
-Clara,2014,600ft_Year2_Rep2(13),6_2_13,600,2,13,85.325,54.189,branched_bryozoan_sp,2,0.71,NA
-Clara,2014,600ft_Year2_Rep2(13),6_2_13,600,2,13,85.325,54.189,Strongylocentrotus_sp,2,1.601,NA
-Clara,2014,600ft_Year2_Rep2(13),6_2_13,600,2,13,85.325,54.189,Scallop_sp,1,0.621,black shell
-Clara,2014,600ft_Year2_Rep2(13),6_2_13,600,2,13,85.325,54.189,Pododesmus_macrochisma,2,4.699,NA
-Clara,2014,600ft_Year2_Rep2(13),6_2_13,600,2,13,85.325,54.189,barnacle,13,4.594,NA
-Clara,2014,600ft_Year2_Rep2(13),6_2_13,600,2,13,85.325,54.189,Hiatella_arctica,42,10.424,NA
-Clara,2014,600ft_Year2_Rep2(13),6_2_13,600,2,13,85.325,54.189,encrusting_bryozoan_sp,4,4.552,NA
-Clara,2014,600ft_Year2_Rep2(14),6_2_14,600,2,14,65.154,48.953,Ericthonius_rubricornis,5,10.641,hanging off plate
-Clara,2014,600ft_Year2_Rep2(14),6_2_14,600,2,14,65.154,48.953,Pododesmus_macrochisma,1,0.938,hanging off plate
-Clara,2014,600ft_Year2_Rep2(14),6_2_14,600,2,14,65.154,48.953,barnacle,16,9.971,hanging off plate
-Clara,2014,600ft_Year2_Rep2(14),6_2_14,600,2,14,65.154,48.953,Hiatella_arctica,4,1.688,hanging off plate
-Clara,2014,600ft_Year2_Rep2(14),6_2_14,600,2,14,65.154,48.953,encrusting_bryozoan_sp,14,18.196,hanging off plate
-Clara,2014,600ft_Year2_Rep2(15),6_2_15,600,2,15,35.896,15.888,barnacle,5,1.424,corner
-Clara,2014,600ft_Year2_Rep2(15),6_2_15,600,2,15,35.896,15.888,Hiatella_arctica,36,4.244,corner
-Clara,2014,600ft_Year2_Rep2(15),6_2_15,600,2,15,35.896,15.888,encrusting_bryozoan_sp,15,5.215,corner
-Clara,2014,600ft_Year2_Rep2(15),6_2_15,600,2,15,35.896,15.888,branched_bryozoan_sp,8,0.444,corner
-Clara,2014,600ft_Year2_Rep2(15),6_2_15,600,2,15,35.896,15.888,Ericthonius_rubricornis,2,2.721,corner
-Clara,2014,600ft_Year2_Rep2(15),6_2_15,600,2,15,35.896,15.888,polychaete_sp,2,1.101,corner
-Clara,2014,600ft_Year2_Rep2(15),6_2_15,600,2,15,35.896,15.888,Pododesmus_macrochisma,1,0.157,corner
-Clara,2014,600ft_Year2_Rep2(16),6_2_16,600,2,16,51.724,22.377,polychaete_sp,1,0.663,NA
-Clara,2014,600ft_Year2_Rep2(16),6_2_16,600,2,16,51.724,22.377,Pododesmus_macrochisma,1,0.539,hanging off plate
-Clara,2014,600ft_Year2_Rep2(16),6_2_16,600,2,16,51.724,22.377,barnacle,5,1.537,hanging off plate
-Clara,2014,600ft_Year2_Rep2(16),6_2_16,600,2,16,51.724,22.377,encrusting_bryozoan_sp,5,4.31,hanging off plate
-Clara,2014,600ft_Year2_Rep2(16),6_2_16,600,2,16,51.724,22.377,branched_bryozoan_sp,2,0.443,hanging off plate
-Clara,2014,600ft_Year2_Rep2(16),6_2_16,600,2,16,51.724,22.377,Hiatella_arctica,31,4.795,hanging off plate
-Clara,2014,600ft_Year2_Rep2(16),6_2_16,600,2,16,51.724,22.377,sabellariid_tubeworm,1,1.01,hanging off plate
-Clara,2014,600ft_Year2_Rep2(16),6_2_16,600,2,16,51.724,22.377,Ericthonius_rubricornis,2,3.365,hanging off plate
-Clara,2014,600ft_Year2_Rep2(17),6_2_17,600,2,17,61.71,29.007,barnacle,6,1.784,hanging off plate
-Clara,2014,600ft_Year2_Rep2(17),6_2_17,600,2,17,61.71,29.007,Hiatella_arctica,33,4.928,hanging off plate
-Clara,2014,600ft_Year2_Rep2(17),6_2_17,600,2,17,61.71,29.007,polychaete_sp,2,1.401,hanging off plate
-Clara,2014,600ft_Year2_Rep2(17),6_2_17,600,2,17,61.71,29.007,Ericthonius_rubricornis,2,5.959,hanging off plate
-Clara,2014,600ft_Year2_Rep2(17),6_2_17,600,2,17,61.71,29.007,encrusting_bryozoan_sp,10,4.341,hanging off plate
-Clara,2014,600ft_Year2_Rep2(17),6_2_17,600,2,17,61.71,29.007,Strongylocentrotus_sp,1,0.552,hanging off plate
-Clara,2014,600ft_Year2_Rep2(18),6_2_18,600,2,18,59.883,28.908,Ericthonius_rubricornis,1,0.848,hanging off plate
-Clara,2014,600ft_Year2_Rep2(18),6_2_18,600,2,18,59.883,28.908,unidentified,2,1.354,"red thing, hanging off plate"
-Clara,2014,600ft_Year2_Rep2(18),6_2_18,600,2,18,59.883,28.908,Hiatella_arctica,16,2.221,hanging off plate
-Clara,2014,600ft_Year2_Rep2(18),6_2_18,600,2,18,59.883,28.908,barnacle,7,1.252,hanging off plate
-Clara,2014,600ft_Year2_Rep2(18),6_2_18,600,2,18,59.883,28.908,encrusting_bryozoan_sp,9,6.374,hanging off plate
-Clara,2014,600ft_Year2_Rep2(18),6_2_18,600,2,18,59.883,28.908,sabellariid_tubeworm,1,0.132,hanging off plate
-Clara,2014,600ft_Year2_Rep2(18),6_2_18,600,2,18,59.883,28.908,branched_bryozoan_sp,2,0.111,hanging off plate
-Clara,2014,600ft_Year2_Rep2(18),6_2_18,600,2,18,59.883,28.908,Strongylocentrotus_sp,1,0.263,hanging off plate
-Clara,2014,600ft_Year2_Rep2(19),6_2_19,600,2,19,53.916,26.078,Strongylocentrotus_sp,1,0.364,hanging off plate
-Clara,2014,600ft_Year2_Rep2(19),6_2_19,600,2,19,53.916,26.078,Ericthonius_rubricornis,3,1.853,hanging off plate
-Clara,2014,600ft_Year2_Rep2(19),6_2_19,600,2,19,53.916,26.078,Hiatella_arctica,36,4.236,hanging off plate
-Clara,2014,600ft_Year2_Rep2(19),6_2_19,600,2,19,53.916,26.078,barnacle,6,1.613,hanging off plate
-Clara,2014,600ft_Year2_Rep2(19),6_2_19,600,2,19,53.916,26.078,encrusting_bryozoan_sp,14,6.664,hanging off plate
-Clara,2014,600ft_Year2_Rep2(19),6_2_19,600,2,19,53.916,26.078,branched_bryozoan_sp,2,0.2,hanging off plate
-Clara,2014,600ft_Year2_Rep2(20),6_2_20,600,2,20,57.698,37.261,unidentified,1,0.708,Modiolus modiolus (not on dropdown)
-Clara,2014,600ft_Year2_Rep2(20),6_2_20,600,2,20,57.698,37.261,Ericthonius_rubricornis,2,1.265,hanging off plate
-Clara,2014,600ft_Year2_Rep2(20),6_2_20,600,2,20,57.698,37.261,Hiatella_arctica,16,2.68,hanging off plate
-Clara,2014,600ft_Year2_Rep2(20),6_2_20,600,2,20,57.698,37.261,barnacle,6,1.554,hanging off plate
-Clara,2014,600ft_Year2_Rep2(20),6_2_20,600,2,20,57.698,37.261,encrusting_bryozoan_sp,16,9.273,hanging off plate
-Clara,2014,600ft_Year2_Rep2(20),6_2_20,600,2,20,57.698,37.261,Pododesmus_macrochisma,2,0.261,hanging off plate
-Clara,2014,600ft_Year2_Rep2(20),6_2_20,600,2,20,57.698,37.261,branched_bryozoan_sp,1,0.165,hanging off plate
-Clara,2014,600ft_Year2_Rep2(21),6_2_21,600,2,21,79.073,48.372,barnacle,9,3.611,NA
-Clara,2014,600ft_Year2_Rep2(21),6_2_21,600,2,21,79.073,48.372,Hiatella_arctica,7,1.167,NA
-Clara,2014,600ft_Year2_Rep2(21),6_2_21,600,2,21,79.073,48.372,encrusting_bryozoan_sp,10,15.674,NA
-Clara,2014,600ft_Year2_Rep2(21),6_2_21,600,2,21,79.073,48.372,sabellariid_tubeworm,2,0.634,NA
-Clara,2014,600ft_Year2_Rep2(21),6_2_21,600,2,21,79.073,48.372,Ericthonius_rubricornis,2,2.834,NA
-Clara,2014,600ft_Year2_Rep2(21),6_2_21,600,2,21,79.073,48.372,unidentified,1,0.691,Modiolus modiolus (not on dropdown)
-Maia,2017,6_1_1_a,6_1_1,600,1,1,65.794,37.277,Crisia_sp,4,29.331,Grid heavily misaligned
-Maia,2017,6_1_1_a,6_1_1,600,1,1,65.794,37.277,encrusting_bryozoan_sp,20,4.144,NA
-Maia,2017,6_1_1_a,6_1_1,600,1,1,65.794,37.277,sabellariid_tubeworm,1,1.595,NA
-Maia,2017,6_1_1_a,6_1_1,600,1,1,65.794,37.277,calcareous_tubeworm,2,0.226,NA
-Maia,2017,6_1_2_b,6_1_2,600,1,2,65.559,28.794,Crisia_sp,13,16.371,Grid heavily misaligned
-Maia,2017,6_1_2_b,6_1_2,600,1,2,65.559,28.794,encrusting_bryozoan_sp,3,0.725,NA
-Maia,2017,6_1_2_b,6_1_2,600,1,2,65.559,28.794,calcareous_tubeworm,3,1.213,NA
-Maia,2017,6_1_2_b,6_1_2,600,1,2,65.559,28.794,sabellariid_tubeworm,1,0.813,NA
-Maia,2017,6_1_2_b,6_1_2,600,1,2,65.559,28.794,Chlamys_rhubida,1,0.103,NA
-Maia,2017,6_1_3_a,6_1_3,600,1,3,72.808,36.687,Crisia_sp,7,19.666,Grid hanging off plate
-Maia,2017,6_1_3_a,6_1_3,600,1,3,72.808,36.687,Pododesmus_macrochisma,1,10.932,NA
-Maia,2017,6_1_3_a,6_1_3,600,1,3,72.808,36.687,encrusting_bryozoan_sp,12,2.609,NA
-Maia,2017,6_1_4_b,6_1_4,600,1,4,66.999,32.113,Hinnites_giganteous,1,10.8,Grid hanging off plate
-Maia,2017,6_1_4_b,6_1_4,600,1,4,66.999,32.113,Crisia_sp,8,11.158,NA
-Maia,2017,6_1_4_b,6_1_4,600,1,4,66.999,32.113,calcareous_tubeworm,1,0.368,NA
-Maia,2017,6_1_4_b,6_1_4,600,1,4,66.999,32.113,encrusting_bryozoan_sp,5,6.157,NA
-Maia,2017,6_1_4_b,6_1_4,600,1,4,66.999,32.113,unidentified,1,1.14,goo?
-Maia,2017,6_1_5_a,6_1_5,600,1,5,70.813,39.854,Crisia_sp,5,9.105,NA
-Maia,2017,6_1_5_a,6_1_5,600,1,5,70.813,39.854,Hinnites_giganteous,3,29.502,NA
-Maia,2017,6_1_5_a,6_1_5,600,1,5,70.813,39.854,encrusting_bryozoan_sp,2,6.706,NA
-Maia,2017,6_1_5_a,6_1_5,600,1,5,70.813,39.854,calcareous_tubeworm,1,0.027,NA
-Maia,2017,6_1_6_b,6_1_6,600,1,6,81.114,41.582,Crisia_sp,5,15.775,Misaligned grid
-Maia,2017,6_1_6_b,6_1_6,600,1,6,81.114,41.582,Hinnites_giganteous,1,13.054,NA
-Maia,2017,6_1_6_b,6_1_6,600,1,6,81.114,41.582,encrusting_bryozoan_sp,7,4.858,NA
-Maia,2017,6_1_6_b,6_1_6,600,1,6,81.114,41.582,calcareous_tubeworm,3,0.685,NA
-Maia,2017,6_1_7_a,6_1_7,600,1,7,61.825,33.62,Crisia_sp,6,12.364,Grid hanging off plate
-Maia,2017,6_1_7_a,6_1_7,600,1,7,61.825,33.62,Pododesmus_macrochisma,1,22.772,NA
-Maia,2017,6_1_7_a,6_1_7,600,1,7,61.825,33.62,encrusting_bryozoan_sp,1,0.354,NA
-Maia,2017,6_1_8_a,6_1_8,600,1,8,81.329,26.006,calcareous_tubeworm,1,0.564,NA
-Maia,2017,6_1_8_a,6_1_8,600,1,8,81.329,26.006,Crisia_sp,7,17.86,NA
-Maia,2017,6_1_8_a,6_1_8,600,1,8,81.329,26.006,polychaete_sp,1,0.863,NA
-Maia,2017,6_1_8_a,6_1_8,600,1,8,81.329,26.006,encrusting_bryozoan_sp,4,0.899,NA
-Maia,2017,6_1_9_b,6_1_9,600,1,9,80.361,18.827,calcareous_tubeworm,3,1.714,NA
-Maia,2017,6_1_9_b,6_1_9,600,1,9,80.361,18.827,encrusting_bryozoan_sp,11,5.833,NA
-Maia,2017,6_1_9_b,6_1_9,600,1,9,80.361,18.827,Crisia_sp,7,7.159,NA
-Maia,2017,6_1_10_a,6_1_10,600,1,10,81.43,31.627,encrusting_bryozoan_sp,11,10.188,NA
-Maia,2017,6_1_10_a,6_1_10,600,1,10,81.43,31.627,Hinnites_giganteous,2,16.614,NA
-Maia,2017,6_1_10_a,6_1_10,600,1,10,81.43,31.627,Crisia_sp,2,2.041,NA
-Maia,2017,6_1_10_a,6_1_10,600,1,10,81.43,31.627,calcareous_tubeworm,2,0.832,NA
-Maia,2017,6_1_10_a,6_1_10,600,1,10,81.43,31.627,sabellariid_tubeworm,1,1.127,NA
-Maia,2017,6_1_11_a,6_1_11,600,1,11,58.819,23.925,Hinnites_giganteous,1,9.94,NA
-Maia,2017,6_1_11_a,6_1_11,600,1,11,58.819,23.925,calcareous_tubeworm,3,0.9,NA
-Maia,2017,6_1_11_a,6_1_11,600,1,11,58.819,23.925,encrusting_bryozoan_sp,5,6.851,NA
-Maia,2017,6_1_11_a,6_1_11,600,1,11,58.819,23.925,Crisia_sp,2,3.284,NA
-Maia,2017,6_1_12_b,6_1_12,600,1,12,79.372,26.768,Hinnites_giganteous,1,17.069,NA
-Maia,2017,6_1_12_b,6_1_12,600,1,12,79.372,26.768,encrusting_bryozoan_sp,5,4.924,NA
-Maia,2017,6_1_12_b,6_1_12,600,1,12,79.372,26.768,Crisia_sp,6,4.775,NA
-Maia,2017,6_1_13_a,6_1_13,600,1,13,76.737,23.125,encrusting_bryozoan_sp,5,9.079,NA
-Maia,2017,6_1_13_a,6_1_13,600,1,13,76.737,23.125,Crisia_sp,6,5.351,NA
-Maia,2017,6_1_13_a,6_1_13,600,1,13,76.737,23.125,unidentified,1,0.243,white thing
-Maia,2017,6_1_13_a,6_1_13,600,1,13,76.737,23.125,unidentified,5,2.473,goo
-Maia,2017,6_1_14_a,6_1_14,600,1,14,57.755,23.407,Crisia_sp,12,22.622,Grid hanging off plate
-Maia,2017,6_1_14_a,6_1_14,600,1,14,57.755,23.407,encrusting_bryozoan_sp,2,0.785,NA
-Maia,2017,6_1_15_a,6_1_15,600,1,15,81.265,19.475,Crisia_sp,6,9.95,NA
-Maia,2017,6_1_15_a,6_1_15,600,1,15,81.265,19.475,encrusting_bryozoan_sp,2,0.315,NA
-Maia,2017,6_1_15_a,6_1_15,600,1,15,81.265,19.475,calcareous_tubeworm,1,0.319,NA
-Maia,2017,6_1_15_a,6_1_15,600,1,15,81.265,19.475,sabellariid_tubeworm,1,1.871,NA
-Maia,2017,6_1_16_a,6_1_16,600,1,16,80.347,11.905,Crisia_sp,7,6.887,NA
-Maia,2017,6_1_16_a,6_1_16,600,1,16,80.347,11.905,encrusting_bryozoan_sp,8,1.306,NA
-Maia,2017,6_1_16_a,6_1_16,600,1,16,80.347,11.905,calcareous_tubeworm,1,0.346,NA
-Maia,2017,6_1_17_b,6_1_17,600,1,17,83.06,7.244,Crisia_sp,5,4.484,NA
-Maia,2017,6_1_17_b,6_1_17,600,1,17,83.06,7.244,calcareous_tubeworm,1,0.396,NA
-Maia,2017,6_1_17_b,6_1_17,600,1,17,83.06,7.244,encrusting_bryozoan_sp,1,0.241,NA
-Maia,2017,6_1_18_b,6_1_18,600,1,18,79.089,31.515,encrusting_bryozoan_sp,9,6.298,NA
-Maia,2017,6_1_18_b,6_1_18,600,1,18,79.089,31.515,Hinnites_giganteous,1,19.768,NA
-Maia,2017,6_1_18_b,6_1_18,600,1,18,79.089,31.515,Crisia_sp,4,4.209,NA
-Maia,2017,6_1_19_b,6_1_19,600,1,19,78.619,5.296,Pododesmus_macrochisma,1,1.961,NA
-Maia,2017,6_1_19_b,6_1_19,600,1,19,78.619,5.296,encrusting_bryozoan_sp,7,1.381,NA
-Maia,2017,6_1_19_b,6_1_19,600,1,19,78.619,5.296,Crisia_sp,2,0.756,NA
-Maia,2017,6_1_20_a,6_1_20,600,1,20,75.163,15.979,encrusting_bryozoan_sp,7,1.799,NA
-Maia,2017,6_1_20_a,6_1_20,600,1,20,75.163,15.979,Crisia_sp,10,9.642,NA
-Maia,2017,6_1_20_a,6_1_20,600,1,20,75.163,15.979,sabellariid_tubeworm,1,0.785,Grid hanging off plate
-Maia,2017,6_1_21_b,6_1_21,600,1,21,59.6,16.17,Crisia_sp,8,10.273,NA
-Maia,2017,6_1_21_b,6_1_21,600,1,21,59.6,16.17,calcareous_tubeworm,1,0.253,NA
-Maia,2017,6_1_21_b,6_1_21,600,1,21,59.6,16.17,encrusting_bryozoan_sp,3,1.241,NA
-Maia,2017,6_1_21_b,6_1_21,600,1,21,59.6,16.17,sabellariid_tubeworm,1,0.757,NA
-Aakriti,2022,DSCN8910,6_3_1,600,3,1,76.817,4.575,calcareous_tubeworm,1,0.339,NA
-Aakriti,2022,DSCN8911,6_3_2,600,3,2,94.894,38.627,Pododesmus_macrochisma,2,29.821,NA
-Aakriti,2022,DSCN8911,6_3_2,600,3,2,94.894,38.627,sabellariid_tubeworm,1,1.183,NA
-Aakriti,2022,DSCN8911,6_3_2,600,3,2,94.894,38.627,encrusting_bryozoan_sp,1,1.74,NA
-Aakriti,2022,DSCN8912,6_3_3,600,3,3,90.224,34.453,Pododesmus_macrochisma,2,21.297,NA
-Aakriti,2022,DSCN8912,6_3_3,600,3,3,90.224,34.453,sabellariid_tubeworm,2,4.66,NA
-Aakriti,2022,DSCN8912,6_3_3,600,3,3,90.224,34.453,encrusting_bryozoan_sp,2,2.133,NA
-Aakriti,2022,DSCN8912,6_3_3,600,3,3,90.224,34.453,amphipod,1,0.53,NA
-Aakriti,2022,DSCN8912,6_3_3,600,3,3,90.224,34.453,branched_bryozoan_sp,1,0.952,NA
-Aakriti,2022,DSCN8913,6_3_4,600,3,4,90.379,20.44,Pododesmus_macrochisma,1,15.475,NA
-Aakriti,2022,DSCN8913,6_3_4,600,3,4,90.379,20.44,unidentified,1,0.13,NA
-Aakriti,2022,DSCN8914,6_3_5,600,3,5,72.133,18.341,Metridium,1,12.818,NA
-Aakriti,2022,DSCN8914,6_3_5,600,3,5,72.133,18.341,Pododesmus_macrochisma,1,5.022,NA
-Aakriti,2022,DSCN8914,6_3_5,600,3,5,72.133,18.341,calcareous_tubeworm,1,0.115,NA
-Aakriti,2022,DSCN8914,6_3_5,600,3,5,72.133,18.341,encrusting_bryozoan_sp,3,1.117,NA
-Aakriti,2022,DSCN8915,6_3_6,600,3,6,73.56,72.219,Metridium,1,72.219,NA
-Aakriti,2022,DSCN8916,6_3_7,600,3,7,79.178,77.283,Metridium,1,77.283,NA
-Aakriti,2022,DSCN8917,6_3_8,600,3,8,79.115,49.703,Pododesmus_macrochisma,1,18.474,NA
-Aakriti,2022,DSCN8917,6_3_8,600,3,8,79.115,49.703,encrusting_bryozoan_sp,7,5.371,NA
-Aakriti,2022,DSCN8918,6_3_9,600,3,9,88.3,54.729,Pododesmus_macrochisma,2,27.944,NA
-Aakriti,2022,DSCN8918,6_3_9,600,3,9,88.3,54.729,encrusting_bryozoan_sp,1,3.283,NA
-Aakriti,2022,DSCN8918,6_3_9,600,3,9,88.3,54.729,branched_bryozoan_sp,1,19.798,NA
-Aakriti,2022,DSCN8918,6_3_9,600,3,9,88.3,54.729,sabellariid_tubeworm,4,7.661,NA
-Aakriti,2022,DSCN8919,6_3_10,600,3,10,85.538,63.029,Pododesmus_macrochisma,2,46.817,NA
-Aakriti,2022,DSCN8919,6_3_10,600,3,10,85.538,63.029,branched_bryozoan_sp,3,7.069,NA
-Aakriti,2022,DSCN8920,6_3_11,600,3,11,85.824,36.053,Pododesmus_macrochisma,1,13.66,NA
-Aakriti,2022,DSCN8920,6_3_11,600,3,11,85.824,36.053,branched_bryozoan_sp,1,4.771,NA
-Aakriti,2022,DSCN8920,6_3_11,600,3,11,85.824,36.053,encrusting_bryozoan_sp,3,1.226,grid with hole
-Aakriti,2022,DSCN8921,6_3_12,600,3,12,74.867,4.31,Pododesmus_macrochisma,1,0.678,NA
-Aakriti,2022,DSCN8921,6_3_12,600,3,12,74.867,4.31,encrusting_bryozoan_sp,3,0.282,NA
-Aakriti,2022,DSCN8921,6_3_12,600,3,12,74.867,4.31,branched_bryozoan_sp,1,0.329,NA
-Aakriti,2022,DSCN8922,6_3_13,600,3,13,73.279,34.569,Metridium,1,34.368,NA
-Aakriti,2022,DSCN8923,6_3_14,600,3,14,76.565,38.935,Metridium,2,38.185,NA
-Aakriti,2022,DSCN8924,6_3_15,600,3,15,86.656,48.018,Pododesmus_macrochisma,3,46.368,NA
-Aakriti,2022,DSCN8924,6_3_15,600,3,15,86.656,48.018,encrusting_bryozoan_sp,1,3.604,NA
-Aakriti,2022,DSCN8924,6_3_15,600,3,15,86.656,48.018,branched_bryozoan_sp,1,4.63,NA
-Aakriti,2022,DSCN8924,6_3_15,600,3,15,86.656,48.018,encrusting_bryozoan_sp,3,0.598,NA
-Aakriti,2022,DSCN8925,6_3_16,600,3,16,83.361,47.473,encrusting_bryozoan_sp,4,14.628,NA
-Aakriti,2022,DSCN8925,6_3_16,600,3,16,83.361,47.473,Pododesmus_macrochisma,1,11.036,NA
-Aakriti,2022,DSCN8926,6_3_17,600,3,17,79.635,12.195,encrusting_bryozoan_sp,1,4.39,NA
-Aakriti,2022,DSCN8926,6_3_17,600,3,17,79.635,12.195,branched_bryozoan_sp,1,1.107,NA
-Aakriti,2022,DSCN8926,6_3_17,600,3,17,79.635,12.195,calcareous_tubeworm,1,0.148,NA
-Aakriti,2022,DSCN8926,6_3_17,600,3,17,79.635,12.195,barnacle,2,0.205,NA
-Aakriti,2022,DSCN8927,6_3_18,600,3,18,92.547,7.087,encrusting_bryozoan_sp,4,1.246,NA
-Aakriti,2022,DSCN8927,6_3_18,600,3,18,92.547,7.087,barnacle,1,0.139,NA
-Aakriti,2022,DSCN8928,6_3_19,600,3,19,78.242,32.643,encrusting_bryozoan_sp,2,21.433,NA
-Aakriti,2022,DSCN8928,6_3_19,600,3,19,78.242,32.643,branched_bryozoan_sp,2,0.217,NA
-Aakriti,2022,DSCN8929,6_3_20,600,3,20,72.262,34.885,encrusting_bryozoan_sp,1,25.346,NA
-Aakriti,2022,DSCN8929,6_3_20,600,3,20,72.262,34.885,calcareous_tubeworm,2,1.091,NA
-Aakriti,2022,DSCN8929,6_3_20,600,3,20,72.262,34.885,branched_bryozoan_sp,1,2.503,NA
-Aakriti,2022,DSCN8929,6_3_20,600,3,20,72.262,34.885,Trichotropis,1,0.561,NA
-Aakriti,2022,DSCN8930,6_3_21,600,3,21,69.892,23.2,encrusting_bryozoan_sp,6,15.899,NA
-Aakriti,2022,DSCN8930,6_3_21,600,3,21,69.892,23.2,branched_bryozoan_sp,1,0.926,NA
+﻿Analyzer,Year,PhotoID,Grid.ID,Depth,Replicate,Grid.No,Grid.Area.cm,Area.Covered.cm,SpeciesID,Species.Count,Org.Area.cm,Notes,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (1).JPG,6_3_1,600,3,1,63.105,50.245,encrusting_bryozoan_sp,3,40.314,Grid Hanging off plate,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (1).JPG,6_3_1,600,3,1,63.105,50.245,barnacle,5,2.570,"Kim's sheet did not say barnacles, appear alive",,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (1).JPG,6_3_1,600,3,1,63.105,50.245,Pododesmus_macrochisma,1,0.755,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (1).JPG,6_3_1,600,3,1,63.105,50.245,Crisia_sp,1,0.129,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (1).JPG,6_3_1,600,3,1,63.105,50.245,Hinnites_giganteous,1,0.339,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (2).JPG,6_3_2,600,3,2,75.000,54.053,encrusting_bryozoan_sp,3,20.660,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (2).JPG,6_3_2,600,3,2,75.000,54.053,Hinnites_giganteous,1,2.375,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (2).JPG,6_3_2,600,3,2,75.000,54.053,Pododesmus_macrochisma,6,6.238,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (2).JPG,6_3_2,600,3,2,75.000,54.053,calcareous_tubeworm,2,0.236,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (2).JPG,6_3_2,600,3,2,75.000,54.053,sabellariid_tubeworm,2,1.201,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (2).JPG,6_3_2,600,3,2,75.000,54.053,Crisia_sp,5,0.836,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (3b).JPG,6_3_3,600,3,3,70.237,57.274,encrusting_bryozoan_sp,10,28.429,Grid Hanging off plate,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (3b).JPG,6_3_3,600,3,3,70.237,57.274,Crisia_sp,1,0.169,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (3b).JPG,6_3_3,600,3,3,70.237,57.274,Hinnites_giganteous,1,1.108,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (3b).JPG,6_3_3,600,3,3,70.237,57.274,Pododesmus_macrochisma,6,3.141,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (3b).JPG,6_3_3,600,3,3,70.237,57.274,barnacle,4,2.260,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (3b).JPG,6_3_3,600,3,3,70.237,57.274,amphipod,1,0.104,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (3b).JPG,6_3_3,600,3,3,70.237,57.274,branched_bryozoan_sp,2,0.960,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (4).JPG,6_3_4,600,3,4,86.413,69.000,encrusting_bryozoan_sp,8,5.740,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (4).JPG,6_3_4,600,3,4,86.413,69.000,Crisia_sp,2,1.261,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (4).JPG,6_3_4,600,3,4,86.413,69.000,sabellariid_tubeworm,1,1.373,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (4).JPG,6_3_4,600,3,4,86.413,69.000,Hinnites_giganteous,2,1.471,Standby for clairfication on sp,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (4).JPG,6_3_4,600,3,4,86.413,69.000,Pododesmus_macrochisma,4,1.882,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (4).JPG,6_3_4,600,3,4,86.413,69.000,Chlamys_rhubida,1,0.155,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (4).JPG,6_3_4,600,3,4,86.413,69.000,Trichotropis,1,0.257,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (4).JPG,6_3_4,600,3,4,86.413,69.000,amphipod,1,0.129,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (4).JPG,6_3_4,600,3,4,86.413,69.000,barnacle,14,6.469,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (4).JPG,6_3_4,600,3,4,86.413,69.000,Hiatella_arctica,7,1.600,Wait for clarification sp,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (5).JPG,6_3_5,600,3,5,84.417,57.850,encrusting_bryozoan_sp,8,16.934,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (5).JPG,6_3_5,600,3,5,84.417,57.850,Hinnites_giganteous,1,7.886,Wait for clarification sp,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (5).JPG,6_3_5,600,3,5,84.417,57.850,Chlamys_rhubida,1,0.172,ar,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (5).JPG,6_3_5,600,3,5,84.417,57.850,sabellariid_tubeworm,1,0.376,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (5).JPG,6_3_5,600,3,5,84.417,57.850,Pododesmus_macrochisma,5,1.219,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (5).JPG,6_3_5,600,3,5,84.417,57.850,branched_bryozoan_sp,2,0.253,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (5).JPG,6_3_5,600,3,5,84.417,57.850,barnacle,35,10.315,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (5).JPG,6_3_5,600,3,5,84.417,57.850,Hiatella_arctica,7,1.390,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (6b).JPG,6_3_6,600,3,6,64.781,43.802,Crisia_sp,13,3.867,Grid hanging off plate,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (6b).JPG,6_3_6,600,3,6,64.781,43.802,sabellariid_tubeworm,1,2.260,Looks different from NC,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (6b).JPG,6_3_6,600,3,6,64.781,43.802,calcareous_tubeworm,3,0.256,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (6b).JPG,6_3_6,600,3,6,64.781,43.802,Hiatella_arctica,10,1.987,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (6b).JPG,6_3_6,600,3,6,64.781,43.802,encrusting_bryozoan_sp,6,8.901,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (6b).JPG,6_3_6,600,3,6,64.781,43.802,Pododesmus_macrochisma,3,1.427,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (6b).JPG,6_3_6,600,3,6,64.781,43.802,barnacle,24,7.695,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (6b).JPG,6_3_6,600,3,6,64.781,43.802,Trichotropis,1,0.100,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (6b).JPG,6_3_6,600,3,6,64.781,43.802,amphipod,1,0.238,Possibly Sea flea?- could be a scaled polychaete,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (7b).JPG,6_3_7,600,3,7,59.951,36.594,encrusting_bryozoan_sp,3,9.196,Grid Hanging off square,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (7b).JPG,6_3_7,600,3,7,59.951,36.594,branched_bryozoan_sp,5,1.302,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (7b).JPG,6_3_7,600,3,7,59.951,36.594,Pododesmus_macrochisma,2,0.803,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (7b).JPG,6_3_7,600,3,7,59.951,36.594,sabellariid_tubeworm,2,1.442,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (7b).JPG,6_3_7,600,3,7,59.951,36.594,Hiatella_arctica,6,1.364,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (7b).JPG,6_3_7,600,3,7,59.951,36.594,Hiatella_arctica,28,9.023,"none are present in 8, only six in 7",,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (8c).JPG,6_3_8,600,3,8,77.850,49.218,encrusting_bryozoan_sp,5,18.789,Grid hanging off plate,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (8c).JPG,6_3_8,600,3,8,77.850,49.218,Pododesmus_macrochisma,2,1.248,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (8c).JPG,6_3_8,600,3,8,77.850,49.218,branched_bryozoan_sp,5,2.898,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (8c).JPG,6_3_8,600,3,8,77.850,49.218,sabellariid_tubeworm,1,0.371,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (8c).JPG,6_3_8,600,3,8,77.850,49.218,branched_bryozoan_sp,1,0.580,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (9b).JPG,6_3_9,600,3,9,71.396,58.986,encrusting_bryozoan_sp,5,11.222,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (9b).JPG,6_3_9,600,3,9,71.396,58.986,Pododesmus_macrochisma,2,0.501,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (9b).JPG,6_3_9,600,3,9,71.396,58.986,Hiatella_arctica,17,3.905,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (9b).JPG,6_3_9,600,3,9,71.396,58.986,branched_bryozoan_sp,2,0.182,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (9b).JPG,6_3_9,600,3,9,71.396,58.986,amphipod,1,0.137,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (10).JPG,6_3_10,600,3,10,73.437,63.719,encrusting_bryozoan_sp,2,2.738,Large ammounts of sediment covering plate,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (10).JPG,6_3_10,600,3,10,73.437,63.719,Crisia_sp,7,0.845,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (10).JPG,6_3_10,600,3,10,73.437,63.719,sabellariid_tubeworm,1,1.783,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (10).JPG,6_3_10,600,3,10,73.437,63.719,Hiatella_arctica,12,2.220,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (10).JPG,6_3_10,600,3,10,73.437,63.719,barnacle,29,11.078,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (11).JPG,6_3_11,600,3,11,86.797,26.802,encrusting_bryozoan_sp,10,7.564,Ring thing in the middle,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (11).JPG,6_3_11,600,3,11,86.797,26.802,sabellariid_tubeworm,1,2.578,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (11).JPG,6_3_11,600,3,11,86.797,26.802,Crisia_sp,3,4.993,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (11).JPG,6_3_11,600,3,11,86.797,26.802,Hiatella_arctica,6,2.136,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (11).JPG,6_3_11,600,3,11,86.797,26.802,barnacle,8,2.494,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (12).JPG,6_3_12,600,3,12,80.830,45.796,encrusting_bryozoan_sp,11,9.936,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (12).JPG,6_3_12,600,3,12,80.830,45.796,branched_bryozoan_sp,2,0.715,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (12).JPG,6_3_12,600,3,12,80.830,45.796,Pododesmus_macrochisma,1,0.177,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (12).JPG,6_3_12,600,3,12,80.830,45.796,Hiatella_arctica,24,5.822,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (12).JPG,6_3_12,600,3,12,80.830,45.796,sabellariid_tubeworm,1,1.450,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (12).JPG,6_3_12,600,3,12,80.830,45.796,calcareous_tubeworm,1,0.299,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (12).JPG,6_3_12,600,3,12,80.830,45.796,barnacle,5,3.000,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (13).JPG,6_3_13,600,3,13,88.418,67.980,encrusting_bryozoan_sp,3,18.086,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (13).JPG,6_3_13,600,3,13,88.418,67.980,Crisia_sp,6,5.529,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (13).JPG,6_3_13,600,3,13,88.418,67.980,sabellariid_tubeworm,1,0.360,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (13).JPG,6_3_13,600,3,13,88.418,67.980,branched_bryozoan_sp,1,1.247,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (13).JPG,6_3_13,600,3,13,88.418,67.980,amphipod,1,0.158,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (13).JPG,6_3_13,600,3,13,88.418,67.980,barnacle,12,6.532,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (13).JPG,6_3_13,600,3,13,88.418,67.980,Hiatella_arctica,32,9.487,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (13).JPG,6_3_14,600,3,14,78.542,65.975,encrusting_bryozoan_sp,7,2.639,Grid Hannging off plate,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (14b).JPG,6_3_14,600,3,14,78.542,65.975,Crisia_sp,10,5.259,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (14b).JPG,6_3_14,600,3,14,78.542,65.975,sabellariid_tubeworm,3,1.825,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (14b).JPG,6_3_14,600,3,14,78.542,65.975,Hiatella_arctica,24,4.778,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (14b).JPG,6_3_14,600,3,14,78.542,65.975,amphipod,1,0.151,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (14b).JPG,6_3_14,600,3,14,78.542,65.975,Trichotropis,6,0.674,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (14b).JPG,6_3_14,600,3,14,78.542,65.975,barnacle,19,7.739,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (15b).JPG,6_3_15,600,3,15,66.876,52.279,encrusting_bryozoan_sp,6,7.767,"Grid Hanging off plate; Pattern of small, white dots, likely lettering",,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (15b).JPG,6_3_15,600,3,15,66.876,52.279,branched_bryozoan_sp,15,5.550,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (15b).JPG,6_3_15,600,3,15,66.876,52.279,Pododesmus_macrochisma,1,0.252,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (15b).JPG,6_3_15,600,3,15,66.876,52.279,Crepidula,4,0.781,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (15b).JPG,6_3_15,600,3,15,66.876,52.279,branched_bryozoan_sp,1,0.264,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (15b).JPG,6_3_15,600,3,15,66.876,52.279,amphipod,1,0.076,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (15b).JPG,6_3_15,600,3,15,66.876,52.279,Hiatella_arctica,20,4.063,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (15b).JPG,6_3_15,600,3,15,66.876,52.279,barnacle,10,3.893,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (16).JPG,6_3_16,600,3,16,67.560,47.130,sabellariid_tubeworm,1,0.988,Metal Ring and wire in grid,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (16).JPG,6_3_16,600,3,16,67.560,47.130,encrusting_bryozoan_sp,7,3.570,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (16).JPG,6_3_16,600,3,16,67.560,47.130,branched_bryozoan_sp,6,1.257,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (16).JPG,6_3_16,600,3,16,67.560,47.130,Pododesmus_macrochisma,2,0.251,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (16).JPG,6_3_16,600,3,16,67.560,47.130,amphipod,1,0.230,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (16).JPG,6_3_16,600,3,16,67.560,47.130,barnacle,17,7.325,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (17).JPG,6_3_17,600,3,17,79.439,38.031,encrusting_bryozoan_sp,7,3.509,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (17).JPG,6_3_17,600,3,17,79.439,38.031,Crisia_sp,7,1.333,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (17).JPG,6_3_17,600,3,17,79.439,38.031,sabellariid_tubeworm,6,1.408,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (17).JPG,6_3_17,600,3,17,79.439,38.031,Hiatella_arctica,13,2.283,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (18).JPG,6_3_18,600,3,18,86.775,52.327,encrusting_bryozoan_sp,9,8.874,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (18).JPG,6_3_18,600,3,18,86.775,52.327,sabellariid_tubeworm,6,1.476,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (18).JPG,6_3_18,600,3,18,86.775,52.327,Crisia_sp,2,0.694,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (18).JPG,6_3_18,600,3,18,86.775,52.327,barnacle,8,3.572,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (18).JPG,6_3_18,600,3,18,86.775,52.327,Hiatella_arctica,6,1.158,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (18).JPG,6_3_18,600,3,18,86.775,52.327,amphipod,1,0.085,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (19).JPG,6_3_19,600,3,19,74.043,31.950,encrusting_bryozoan_sp,4,0.706,Large label covering top right corner,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (19).JPG,6_3_19,600,3,19,74.043,31.950,encrusting_bryozoan_sp,9,3.810,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (19).JPG,6_3_19,600,3,19,74.043,31.950,barnacle,9,4.368,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (19).JPG,6_3_19,600,3,19,74.043,31.950,Hiatella_arctica,8,1.578,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (19).JPG,6_3_19,600,3,19,74.043,31.950,Crisia_sp,3,0.265,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (20).JPG,6_3_20,600,3,20,82.045,37.705,encrusting_bryozoan_sp,9,8.890,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (20).JPG,6_3_20,600,3,20,82.045,37.705,calcareous_tubeworm,5,2.578,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (20).JPG,6_3_20,600,3,20,82.045,37.705,barnacle,4,2.588,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (20).JPG,6_3_20,600,3,20,82.045,37.705,Pododesmus_macrochisma,1,4.888,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (20).JPG,6_3_20,600,3,20,82.045,37.705,Hiatella_arctica,35,3.538,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (21).JPG,6_3_21,600,3,21,76.726,40.913,encrusting_bryozoan_sp,20,14.031,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (21).JPG,6_3_21,600,3,21,76.726,40.913,Crisia_sp,18,4.565,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (21).JPG,6_3_21,600,3,21,76.726,40.913,sabellariid_tubeworm,1,1.377,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (21).JPG,6_3_21,600,3,21,76.726,40.913,Crepidula,2,0.417,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (21).JPG,6_3_21,600,3,21,76.726,40.913,barnacle,4,2.146,,,,,,,,,,
+Tyler,2014,600ft_Year2_Rep3 (21).JPG,6_3_21,600,3,21,76.726,40.913,Hiatella_arctica,3,0.572,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(1).JPG,6_1_1,600,1,1,73.302,38.817,branched_bryozoan_sp,2,0.294,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(1).JPG,6_1_1,600,1,1,73.302,38.817,encrusting_bryozoan_sp,3,4.329,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(1).JPG,6_1_1,600,1,1,73.302,38.817,Hiatella_arctica,1,0.220,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(1).JPG,6_1_1,600,1,1,73.302,38.817,Pododesmus_macrochisma,5,0.751,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(1).JPG,6_1_1,600,1,1,73.302,38.817,sabellariid_tubeworm,1,1.928,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(1).JPG,6_1_1,600,1,1,73.302,38.817,Corella_willmeriana,1,1.848,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(1).JPG,6_1_1,600,1,1,73.302,38.817,unidentified,1,0.121,clam,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(2).JPG,6_1_2,600,1,2,74.575,49.219,Crisia_sp,3,1.920,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(2).JPG,6_1_2,600,1,2,74.575,49.219,encrusting_bryozoan_sp,1,13.155,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(2).JPG,6_1_2,600,1,2,74.575,49.219,Crepidula,1,0.183,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(2).JPG,6_1_2,600,1,2,74.575,49.219,sabellariid_tubeworm,1,1.519,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(2).JPG,6_1_2,600,1,2,74.575,49.219,branched_bryozoan_sp,2,2.850,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(2).JPG,6_1_2,600,1,2,74.575,49.219,Pododesmus_macrochisma,1,0.172,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(2).JPG,6_1_2,600,1,2,74.575,49.219,sabellariid_tubeworm,2,3.200,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(2).JPG,6_1_2,600,1,2,74.575,49.219,amphipod,1,0.266,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(3).JPG,6_1_3,600,1,3,85.673,49.104,branched_bryozoan_sp,5,1.231,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(3).JPG,6_1_3,600,1,3,85.673,49.104,Crepidula,5,0.926,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(3).JPG,6_1_3,600,1,3,85.673,49.104,sabellariid_tubeworm,1,1.270,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(3).JPG,6_1_3,600,1,3,85.673,49.104,amphipod,1,0.270,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(3).JPG,6_1_3,600,1,3,85.673,49.104,barnacle,1,0.071,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(4).JPG,6_1_4,600,1,4,69.446,36.665,branched_bryozoan_sp,4,0.316,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(4).JPG,6_1_4,600,1,4,69.446,36.665,encrusting_bryozoan_sp,4,0.939,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(4).JPG,6_1_4,600,1,4,69.446,36.665,sabellariid_tubeworm,1,0.627,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(4).JPG,6_1_4,600,1,4,69.446,36.665,amphipod,1,0.044,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(4).JPG,6_1_4,600,1,4,69.446,36.665,Hiatella_arctica,29,6.186,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(4).JPG,6_1_4,600,1,4,69.446,36.665,Chlamys_rhubida,1,0.285,,,,,,,,,,
+Maia,2014,600ft_Year2_Rep1(4).JPG,6_1_4,600,1,4,69.446,36.665,Ericthonius_rubricornis,20,6.223,,,,,,,,,,
+Maia,2014,600ft_Year2_Rep1(5).JPG,6_1_5,600,1,5,79.948,41.129,encrusting_bryozoan_sp,3,4.875,,,,,,,,,,
+Maia,2014,600ft_Year2_Rep1(5).JPG,6_1_5,600,1,5,79.948,41.129,Chlamys_rhubida,1,0.212,,,,,,,,,,
+Maia,2014,600ft_Year2_Rep1(5).JPG,6_1_5,600,1,5,79.948,41.129,Ericthonius_rubricornis,15,3.964,,,,,,,,,,
+Maia,2014,600ft_Year2_Rep1(5).JPG,6_1_5,600,1,5,79.948,41.129,Crisia_sp,2,0.814,,,,,,,,,,
+Maia,2014,600ft_Year2_Rep1(5).JPG,6_1_5,600,1,5,79.948,41.129,Hinnites_giganteous,2,3.904,,,,,,,,,,
+Maia,2014,600ft_Year2_Rep1(5).JPG,6_1_5,600,1,5,79.948,41.129,sabellariid_tubeworm,2,0.946,,,,,,,,,,
+Maia,2014,600ft_Year2_Rep1(5).JPG,6_1_5,600,1,5,79.948,41.129,Hiatella_arctica,43,8.458,,,,,,,,,,
+Maia,2014,600ft_Year2_Rep1(5).JPG,6_1_5,600,1,5,79.948,41.129,Styaela_gibbsii,1,0.565,,,,,,,,,,
+Maia,2014,600ft_Year2_Rep1(6).JPG,6_1_6,600,1,6,81.648,38.934,Chlamys_rhubida,1,0.270,,,,,,,,,,
+Maia,2014,600ft_Year2_Rep1(6).JPG,6_1_6,600,1,6,81.648,38.934,Hiatella_arctica,28,3.194,,,,,,,,,,
+Maia,2014,600ft_Year2_Rep1(6).JPG,6_1_6,600,1,6,81.648,38.934,sabellariid_tubeworm,2,3.490,,,,,,,,,,
+Maia,2014,600ft_Year2_Rep1(6).JPG,6_1_6,600,1,6,81.648,38.934,encrusting_bryozoan_sp,1,2.137,,,,,,,,,,
+Maia,2014,600ft_Year2_Rep1(6).JPG,6_1_6,600,1,6,81.648,38.934,Crisia_sp,5,0.664,,,,,,,,,,
+Maia,2014,600ft_Year2_Rep1(6).JPG,6_1_6,600,1,6,81.648,38.934,Ericthonius_rubricornis,9,1.603,,,,,,,,,,
+Maia,2014,600ft_Year2_Rep1(6).JPG,6_1_6,600,1,6,81.648,38.934,barnacle,1,0.140,,,,,,,,,,
+Maia,2014,600ft_Year2_Rep1(7).JPG,6_1_7,600,1,7,63.377,39.986,Ericthonius_rubricornis,64,18.047,grid hanging off plate,,,,,,,,,
+Maia,2014,600ft_Year2_Rep1(7).JPG,6_1_7,600,1,7,63.377,39.986,Pododesmus_macrochisma,1,1.454,,,,,,,,,,
+Maia,2014,600ft_Year2_Rep1(7).JPG,6_1_7,600,1,7,63.377,39.986,encrusting_bryozoan_sp,4,4.616,,,,,,,,,,
+Maia,2014,600ft_Year2_Rep1(7).JPG,6_1_7,600,1,7,63.377,39.986,Hiatella_arctica,14,2.352,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(8).JPG,6_1_8,600,1,8,69.170,40.860,encrusting_bryozoan_sp,3,7.378,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(8).JPG,6_1_8,600,1,8,69.170,40.860,branched_bryozoan_sp,4,1.029,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(8).JPG,6_1_8,600,1,8,69.170,40.860,Pododesmus_macrochisma,1,0.164,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(8).JPG,6_1_8,600,1,8,69.170,40.860,Ericthonius_rubricornis,1,0.665,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(8).JPG,6_1_8,600,1,8,69.170,40.860,Hiatella_arctica,3,0.712,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(8).JPG,6_1_8,600,1,8,69.170,40.860,Chlamys_rhubida,2,0.341,Grid hanging off plate,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(8).JPG,6_1_8,600,1,8,69.170,40.860,barnacle,2,0.663,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(9).JPG,6_1_9,600,1,9,84.021,50.930,branched_bryozoan_sp,4,1.160,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(9).JPG,6_1_9,600,1,9,84.021,50.930,encrusting_bryozoan_sp,5,5.930,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(9).JPG,6_1_9,600,1,9,84.021,50.930,Crepidula,1,0.211,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(9).JPG,6_1_9,600,1,9,84.021,50.930,sabellariid_tubeworm,1,1.430,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(9).JPG,6_1_9,600,1,9,84.021,50.930,amphipod,1,12.870,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(9).JPG,6_1_9,600,1,9,84.021,50.930,Hiatella_arctica,3,0.960,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(9).JPG,6_1_9,600,1,9,84.021,50.930,barnacle,1,0.283,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(9).JPG,6_1_9,600,1,9,84.021,50.930,Chlamys_rhubida,1,0.430,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(10).JPG,6_1_10,600,1,10,82.935,48.527,encrusting_bryozoan_sp,5,10.703,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(10).JPG,6_1_10,600,1,10,82.935,48.527,branched_bryozoan_sp,4,1.463,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(10).JPG,6_1_10,600,1,10,82.935,48.527,sabellariid_tubeworm,4,3.340,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(10).JPG,6_1_10,600,1,10,82.935,48.527,Ericthonius_rubricornis,5,4.537,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(10).JPG,6_1_10,600,1,10,82.935,48.527,Hiatella_arctica,6,2.217,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(11).JPG,6_1_11,600,1,11,83.698,39.411,encrusting_bryozoan_sp,5,4.780,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(11).JPG,6_1_11,600,1,11,83.698,39.411,Pododesmus_macrochisma,3,1.330,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(11).JPG,6_1_11,600,1,11,83.698,39.411,sabellariid_tubeworm,1,6.702,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(12).JPG,6_1_12,600,1,11,83.698,39.411,Hiatella_arctica,10,11.039,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(12).JPG,6_1_12,600,1,12,75.763,55.656,branched_bryozoan_sp,3,0.310,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(12).JPG,6_1_12,600,1,12,75.763,55.656,encrusting_bryozoan_sp,6,8.247,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(12).JPG,6_1_12,600,1,12,75.763,55.656,Pododesmus_macrochisma,3,0.350,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(12).JPG,6_1_12,600,1,12,75.763,55.656,Crepidula,4,0.704,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(12).JPG,6_1_12,600,1,12,75.763,55.656,sabellariid_tubeworm,1,1.759,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(12).JPG,6_1_12,600,1,12,75.763,55.656,Ericthonius_rubricornis,4,2.110,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(12).JPG,6_1_12,600,1,12,75.763,55.656,Hiatella_arctica,7,4.171,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(12).JPG,6_1_12,600,1,12,75.763,55.656,Chlamys_rhubida,2,3.794,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(13).JPG,6_1_13,600,1,13,76.334,52.774,branched_bryozoan_sp,3,1.152,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(13).JPG,6_1_13,600,1,13,76.334,52.774,encrusting_bryozoan_sp,4,4.775,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(13).JPG,6_1_13,600,1,13,76.334,52.774,Pododesmus_macrochisma,1,1.880,Large,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(13).JPG,6_1_13,600,1,13,76.334,52.774,Crepidula,3,0.421,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(13).JPG,6_1_13,600,1,13,76.334,52.774,Ericthonius_rubricornis,1,1.968,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(13).JPG,6_1_13,600,1,13,76.334,52.774,Hiatella_arctica,5,1.413,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(14).JPG,6_1_14,600,1,14,60.516,29.491,branched_bryozoan_sp,4,1.444,Grid hanging off plate,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(14).JPG,6_1_14,600,1,14,60.516,29.491,encrusting_bryozoan_sp,4,1.308,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(14).JPG,6_1_14,600,1,14,60.516,29.491,Hiatella_arctica,7,1.711,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(14).JPG,6_1_14,600,1,14,60.516,29.491,Ericthonius_rubricornis,1,3.006,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(15).JPG,6_1_15,600,1,15,80.894,53.046,encrusting_bryozoan_sp,4,6.665,Grid hanging off plate ,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(15).JPG,6_1_15,600,1,15,80.894,53.046,Pododesmus_macrochisma,3,0.554,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(15).JPG,6_1_15,600,1,15,80.894,53.046,Ericthonius_rubricornis,6,10.465,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(15).JPG,6_1_15,600,1,15,80.894,53.046,Hiatella_arctica,4,1.908,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(16).JPG,6_1_16,600,1,16,79.524,44.476,encrusting_bryozoan_sp,4,11.184,Huge patch ,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(16).JPG,6_1_16,600,1,16,79.524,44.476,branched_bryozoan_sp,3,0.514,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(16).JPG,6_1_16,600,1,16,79.524,44.476,Pododesmus_macrochisma,3,0.941,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(16).JPG,6_1_16,600,1,16,79.524,44.476,Crepidula,3,0.918,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(16).JPG,6_1_16,600,1,16,79.524,44.476,Ericthonius_rubricornis,4,2.189,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(16).JPG,6_1_16,600,1,16,79.524,44.476,Hiatella_arctica,9,4.309,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(17).JPG,6_1_17,600,1,17,76.075,37.215,encrusting_bryozoan_sp,7,4.800,Grid hanging off plate ,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(17).JPG,6_1_17,600,1,17,76.075,37.215,branched_bryozoan_sp,3,0.310,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(17).JPG,6_1_17,600,1,17,76.075,37.215,Crepidula,2,0.721,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(17).JPG,6_1_17,600,1,17,76.075,37.215,sabellariid_tubeworm,2,0.700,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(17).JPG,6_1_17,600,1,17,76.075,37.215,amphipod,2,0.213,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(17).JPG,6_1_17,600,1,17,76.075,37.215,Hiatella_arctica,4,1.177,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(18).JPG,6_1_18,600,1,18,82.050,42.998,branched_bryozoan_sp,2,0.427,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(18).JPG,6_1_18,600,1,18,82.050,42.998,encrusting_bryozoan_sp,4,12.535,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(18).JPG,6_1_18,600,1,18,82.050,42.998,Pododesmus_macrochisma,3,1.818,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(18).JPG,6_1_18,600,1,18,82.050,42.998,calcareous_tubeworm,1,0.492,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(18).JPG,6_1_18,600,1,18,82.050,42.998,Ericthonius_rubricornis,3,0.854,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(18).JPG,6_1_18,600,1,18,82.050,42.998,Chlamys_rhubida,1,0.582,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(19).JPG,6_1_19,600,1,19,80.794,44.718,branched_bryozoan_sp,2,0.307,Grid hanging off plate ,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(19).JPG,6_1_19,600,1,19,80.794,44.718,encrusting_bryozoan_sp,4,10.174,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(19).JPG,6_1_19,600,1,19,80.794,44.718,Pododesmus_macrochisma,3,0.864,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(19).JPG,6_1_19,600,1,19,80.794,44.718,sabellariid_tubeworm,1,0.243,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(19).JPG,6_1_19,600,1,19,80.794,44.718,Hiatella_arctica,2,0.510,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(19).JPG,6_1_19,600,1,19,80.794,44.718,barnacle,4,1.341,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(20).JPG,6_1_20,600,1,20,78.389,42.725,branched_bryozoan_sp,3,1.326,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(20).JPG,6_1_20,600,1,20,78.389,42.725,encrusting_bryozoan_sp,5,10.137,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(20).JPG,6_1_20,600,1,20,78.389,42.725,Pododesmus_macrochisma,2,2.522,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(20).JPG,6_1_20,600,1,20,78.389,42.725,Ericthonius_rubricornis,3,1.656,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(20).JPG,6_1_20,600,1,20,78.389,42.725,Hiatella_arctica,2,1.334,,,,,,,,,,
+Hailey,2014,600ft_Year2_Rep1(20).JPG,6_1_20,600,1,20,78.389,42.725,barnacle,3,0.796,,,,,,,,,,
+Maia,2014,600ft_Year2_Rep1(21).JPG,6_1_21,600,1,21,73.334,47.355,calcareous_tubeworm,1,0.082,grid hanging off plate,,,,,,,,,
+Maia,2014,600ft_Year2_Rep1(21).JPG,6_1_21,600,1,21,73.334,47.355,encrusting_bryozoan_sp,1,7.078,,,,,,,,,,
+Maia,2014,600ft_Year2_Rep1(21).JPG,6_1_21,600,1,21,73.334,47.355,encrusting_bryozoan_sp,4,9.613,,,,,,,,,,
+Maia,2014,600ft_Year2_Rep1(21).JPG,6_1_21,600,1,21,73.334,47.355,Hiatella_arctica,10,1.943,,,,,,,,,,
+Maia,2014,600ft_Year2_Rep1(21).JPG,6_1_21,600,1,21,73.334,47.355,Ericthonius_rubricornis,17,4.553,,,,,,,,,,
+Maia,2014,600ft_Year2_Rep1(21).JPG,6_1_21,600,1,21,73.334,47.355,Chlamys_rhubida,1,0.184,,,,,,,,,,
+Maia,2014,600ft_Year2_Rep1(21).JPG,6_1_21,600,1,21,73.334,47.355,sabellariid_tubeworm,1,0.541,,,,,,,,,,
+Aakriti,2022,DSCN8847,6_1_1,600,1,1,81.062,29.144,Crisia_sp,4,23.996,,,,,,,,,,
+Aakriti,2022,DSCN8847,6_1_1,600,1,1,81.062,29.144,encrusting_bryozoan_sp,2,1.818,,,,,,,,,,
+Aakriti,2022,DSCN8847,6_1_1,600,1,1,81.062,29.144,Pododesmus_macrochisma,1,1.458,,,,,,,,,,
+Aakriti,2022,DSCN8847,6_1_1,600,1,1,81.062,29.144,brachiopod,1,0.068,"Those are definitely brachiopods, probably Terebratalia. Axis of symmetry rotated 90 degrees relative to a clam (so that the 2 shells are not mirror images, as they are in a clam)",,,,,,,,,
+Aakriti,2022,DSCN8848,6_1_2,600,1,2,83.134,28.894,Pododesmus_macrochisma,1,2.536,,,,,,,,,,
+Aakriti,2022,DSCN8848,6_1_2,600,1,2,83.134,28.894,Crisia_sp,12,9.598,,,,,,,,,,
+Aakriti,2022,DSCN8848,6_1_2,600,1,2,83.134,28.894,encrusting_bryozoan_sp,4,1.509,,,,,,,,,,
+Aakriti,2022,DSCN8848,6_1_2,600,1,2,83.134,28.894,colonial tunicate,1,0.076,red gelatinous mass,,,,,,,,,
+Aakriti,2022,DSCN8849,6_1_3,600,1,3,87.105,31.760,Crisia_sp,2,2.375,,,,,,,,,,
+Aakriti,2022,DSCN8849,6_1_3,600,1,3,87.105,31.760,branched_bryozoan_sp,3,1.933,,,,,,,,,,
+Aakriti,2022,DSCN8849,6_1_3,600,1,3,87.105,31.760,encrusting_bryozoan_sp,9,6.728,,,,,,,,,,
+Aakriti,2022,DSCN8849,6_1_3,600,1,3,87.105,31.760,colonial tunicate,1,0.194,red gelatinou smass,,,,,,,,,
+Aakriti,2022,DSCN8850,6_1_4,600,1,4,81.580,35.838,encrusting_bryozoan_sp,6,7.803,,,,,,,,,,
+Aakriti,2022,DSCN8850,6_1_4,600,1,4,81.580,35.838,Crisia_sp,4,1.410,,,,,,,,,,
+Aakriti,2022,DSCN8850,6_1_4,600,1,4,81.580,35.838,polychaete_sp,1,2.132,,,,,,,,,,
+Aakriti,2022,DSCN8850,6_1_4,600,1,4,81.580,35.838,Pododesmus_macrochisma,1,22.564,,,,,,,,,,
+Aakriti,2022,DSCN8850,6_1_4,600,1,4,81.580,35.838,brachiopod,1,0.223,"on pododesmusThose are definitely brachiopods, probably Terebratalia.  Axis of symmetry rotated 90 degrees relative to a clam (so that the 2 shells are not mirror images, as they are in a clam)",,,,,,,,,
+Aakriti,2022,DSCN8851,6_1_5,600,1,5,88.255,53.800,Pododesmus_macrochisma,3,46.129,,,,,,,,,,
+Aakriti,2022,DSCN8851,6_1_5,600,1,5,88.255,53.800,Crisia_sp,5,6.849,,,,,,,,,,
+Aakriti,2022,DSCN8852,6_1_6,600,1,6,74.673,22.421,Crisia_sp,4,10.425,,,,,,,,,,
+Aakriti,2022,DSCN8852,6_1_6,600,1,6,74.673,22.421,encrusting_bryozoan_sp,4,4.098,,,,,,,,,,
+Aakriti,2022,DSCN8853,6_1_7,600,1,7,89.677,31.465,Pododesmus_macrochisma,1,11.912,,,,,,,,,,
+Aakriti,2022,DSCN8853,6_1_7,600,1,7,89.677,31.465,Crisia_sp,7,16.052,,,,,,,,,,
+Aakriti,2022,DSCN8853,6_1_7,600,1,7,89.677,31.465,encrusting_bryozoan_sp,3,3.098,,,,,,,,,,
+Aakriti,2022,DSCN8853,6_1_7,600,1,7,89.677,31.465,Chlamys_rhubida,1,0.139,on pododesmus,,,,,,,,,
+Aakriti,2022,DSCN8854,6_1_8,600,1,8,75.265,39.269,Pododesmus_macrochisma,3,18.245,,,,,,,,,,
+Aakriti,2022,DSCN8854,6_1_8,600,1,8,75.265,39.269,Crisia_sp,5,18.013,grid has no id tag,,,,,,,,,
+Aakriti,2022,DSCN8854,6_1_8,600,1,8,75.265,39.269,encrusting_bryozoan_sp,1,1.981,,,,,,,,,,
+Aakriti,2022,DSCN8854,6_1_8,600,1,8,75.265,39.269,colonial tunicate,1,0.228,,,,,,,,,,
+Aakriti,2022,DSCN8855,6_1_9,600,1,9,68.103,44.285,Pododesmus_macrochisma,2,28.081,,,,,,,,,,
+Aakriti,2022,DSCN8855,6_1_9,600,1,9,68.103,44.285,Metridium,1,2.583,,,,,,,,,,
+Aakriti,2022,DSCN8855,6_1_9,600,1,9,68.103,44.285,encrusting_bryozoan_sp,6,3.885,,,,,,,,,,
+Aakriti,2022,DSCN8855,6_1_9,600,1,9,68.103,44.285,Crisia_sp,2,1.751,,,,,,,,,,
+Aakriti,2022,DSCN8856,6_1_10,600,1,10,88.559,37.660,Crisia_sp,1,26.672,,,,,,,,,,
+Aakriti,2022,DSCN8856,6_1_10,600,1,10,88.559,37.660,Pododesmus_macrochisma,1,5.290,,,,,,,,,,
+Aakriti,2022,DSCN8856,6_1_10,600,1,10,88.559,37.660,encrusting_bryozoan_sp,4,2.014,,,,,,,,,,
+Aakriti,2022,DSCN8857,6_1_11,600,1,11,86.258,61.307,Pododesmus_macrochisma,5,53.756,,,,,,,,,,
+Aakriti,2022,DSCN8857,6_1_11,600,1,11,86.258,61.307,branched_bryozoan_sp,3,8.212,,,,,,,,,,
+Aakriti,2022,DSCN8858,6_1_13,600,1,13,88.463,35.041,encrusting_bryozoan_sp,6,13.467,,,,,,,,,,
+Aakriti,2022,DSCN8858,6_1_13,600,1,13,88.463,35.041,Crisia_sp,5,24.302,,,,,,,,,,
+Aakriti,2022,DSCN8859,6_1_14,600,1,14,77.248,52.757,Pododesmus_macrochisma,4,42.264,,,,,,,,,,
+Aakriti,2022,DSCN8859,6_1_14,600,1,14,77.248,52.757,encrusting_bryozoan_sp,2,2.440,,,,,,,,,,
+Aakriti,2022,DSCN8859,6_1_14,600,1,14,77.248,52.757,unidentified,1,0.540,,,,,,,,,,
+Aakriti,2022,DSCN8859,6_1_14,600,1,14,77.248,52.757,Crisia_sp,3,7.146,,,,,,,,,,
+Aakriti,2022,DSCN8860,6_1_15,600,1,15,70.267,46.813,Pododesmus_macrochisma,3,26.176,,,,,,,,,,
+Aakriti,2022,DSCN8860,6_1_15,600,1,15,70.267,46.813,encrusting_bryozoan_sp,4,7.909,,,,,,,,,,
+Aakriti,2022,DSCN8860,6_1_15,600,1,15,70.267,46.813,Crisia_sp,4,4.056,,,,,,,,,,
+Aakriti,2022,DSCN8860,6_1_15,600,1,15,70.267,46.813,calcareous_tubeworm,2,3.166,,,,,,,,,,
+Aakriti,2022,DSCN8861,6_1_16,600,1,16,89.061,46.663,encrusting_bryozoan_sp,5,20.119,,,,,,,,,,
+Aakriti,2022,DSCN8861,6_1_16,600,1,16,89.061,46.663,Pododesmus_macrochisma,1,2.378,,,,,,,,,,
+Aakriti,2022,DSCN8861,6_1_16,600,1,16,89.061,46.663,branched_bryozoan_sp,3,12.780,,,,,,,,,,
+Aakriti,2022,DSCN8862,6_1_17,600,1,17,79.892,27.692,Pododesmus_macrochisma,2,5.260,,,,,,,,,,
+Aakriti,2022,DSCN8862,6_1_17,600,1,17,79.892,27.692,encrusting_bryozoan_sp,4,6.871,,,,,,,,,,
+Aakriti,2022,DSCN8862,6_1_17,600,1,17,79.892,27.692,branched_bryozoan_sp,5,18.164,,,,,,,,,,
+Aakriti,2022,DSCN8862,6_1_17,600,1,17,79.892,27.692,Amphissa,1,0.408,,,,,,,,,,
+Aakriti,2022,DSCN8864,6_1_12,600,1,12,66.592,24.094,Crisia_sp,6,17.756,,,,,,,,,,
+Aakriti,2022,DSCN8865,6_1_18,600,1,18,56.132,27.159,Pododesmus_macrochisma,1,13.891,,,,,,,,,,
+Aakriti,2022,DSCN8865,6_1_18,600,1,18,56.132,27.159,Crisia_sp,2,11.934,,,,,,,,,,
+Aakriti,2022,DSCN8865,6_1_18,600,1,18,56.132,27.159,Amphissa,1,0.337,,,,,,,,,,
+Aakriti,2022,DSCN8877,6_2_1,600,2,1,87.713,87.369,Metridium,1,87.369,orange,,,,,,,,,
+Aakriti,2022,DSCN8878,6_2_2,600,2,2,91.097,68.574,Metridium,1,65.868,orange,,,,,,,,,
+Aakriti,2022,DSCN8878,6_2_2,600,2,2,91.097,68.574,sabellariid_tubeworm,1,0.440,,,,,,,,,,
+Aakriti,2022,DSCN8879,6_2_3,600,2,3,79.117,31.606,Pododesmus_macrochisma,3,29.587,,,,,,,,,,
+Aakriti,2022,DSCN8879,6_2_3,600,2,3,79.117,31.606,branched_bryozoan_sp,2,7.359,,,,,,,,,,
+Aakriti,2022,DSCN8879,6_2_3,600,2,3,79.117,31.606,encrusting_bryozoan_sp,2,0.922,,,,,,,,,,
+Aakriti,2022,DSCN8879,6_2_3,600,2,3,79.117,31.606,unidentified,1,0.091,,,,,,,,,,
+Aakriti,2022,DSCN8880,6_2_4,600,2,4,86.334,25.154,Pododesmus_macrochisma,1,13.745,,,,,,,,,,
+Aakriti,2022,DSCN8880,6_2_4,600,2,4,86.334,25.154,Strongylocentrotus_sp,1,0.073,,,,,,,,,,
+Aakriti,2022,DSCN8880,6_2_4,600,2,4,86.334,25.154,branched_bryozoan_sp,1,0.553,,,,,,,,,,
+Aakriti,2022,DSCN8880,6_2_4,600,2,4,86.334,25.154,colonial tunicate,1,0.115,,,,,,,,,,
+Aakriti,2022,DSCN8881,6_2_5,600,2,5,95.270,9.239,Pododesmus_macrochisma,1,3.098,grid was uneven,,,,,,,,,
+Aakriti,2022,DSCN8881,6_2_5,600,2,5,95.270,9.239,sabellariid_tubeworm,1,4.818,,,,,,,,,,
+Aakriti,2022,DSCN8881,6_2_5,600,2,5,95.270,9.239,Chlamys_rhubida,1,0.333,grid was uneven,,,,,,,,,
+Aakriti,2022,DSCN8882,6_2_6,600,2,6,97.925,9.547,encrusting_bryozoan_sp,2,0.062,,,,,,,,,,
+Aakriti,2022,DSCN8882,6_2_6,600,2,6,97.925,9.547,Crisia_sp,5,2.136,,,,,,,,,,
+Aakriti,2022,DSCN8883,6_2_7,600,2,7,83.935,31.891,Metridium,1,22.176,,,,,,,,,,
+Aakriti,2022,DSCN8883,6_2_7,600,2,7,83.935,31.891,encrusting_bryozoan_sp,8,3.523,,,,,,,,,,
+Aakriti,2022,DSCN8883,6_2_7,600,2,7,83.935,31.891,branched_bryozoan_sp,9,2.820,,,,,,,,,,
+Aakriti,2022,DSCN8884,6_2_8,600,2,8,91.400,28.364,calcareous_tubeworm,1,6.779,,,,,,,,,,
+Aakriti,2022,DSCN8884,6_2_8,600,2,8,91.400,28.364,Metridium,1,12.186,orange,,,,,,,,,
+Aakriti,2022,DSCN8884,6_2_8,600,2,8,91.400,28.364,encrusting_bryozoan_sp,5,2.174,,,,,,,,,,
+Aakriti,2022,DSCN8884,6_2_8,600,2,8,91.400,28.364,branched_bryozoan_sp,1,2.837,,,,,,,,,,
+Aakriti,2022,DSCN8885,6_2_9,600,2,9,88.651,52.977,Pododesmus_macrochisma,2,35.201,,,,,,,,,,
+Aakriti,2022,DSCN8885,6_2_9,600,2,9,88.651,52.977,encrusting_bryozoan_sp,2,11.793,,,,,,,,,,
+Aakriti,2022,DSCN8886,6_2_10,600,2,10,88.116,19.219,Pododesmus_macrochisma,1,14.336,,,,,,,,,,
+Aakriti,2022,DSCN8887,6_2_11,600,2,11,77.219,24.760,Pododesmus_macrochisma,1,17.851,,,,,,,,,,
+Aakriti,2022,DSCN8887,6_2_11,600,2,11,77.219,24.760,encrusting_bryozoan_sp,4,2.973,,,,,,,,,,
+Aakriti,2022,DSCN8887,6_2_11,600,2,11,77.219,24.760,polychaete_sp,1,0.828,,,,,,,,,,
+Aakriti,2022,DSCN8888,6_2_12,600,2,12,81.452,14.387,Crisia_sp,2,3.201,,,,,,,,,,
+Aakriti,2022,DSCN8888,6_2_12,600,2,12,81.452,14.387,encrusting_bryozoan_sp,4,1.961,,,,,,,,,,
+Aakriti,2022,DSCN8888,6_2_12,600,2,12,81.452,14.387,Pododesmus_macrochisma,2,4.587,,,,,,,,,,
+Aakriti,2022,DSCN8893,6_2_13,600,2,13,77.419,23.873,encrusting_bryozoan_sp,5,5.211,,,,,,,,,,
+Aakriti,2022,DSCN8893,6_2_13,600,2,13,77.419,23.873,branched_bryozoan_sp,2,2.309,,,,,,,,,,
+Aakriti,2022,DSCN8893,6_2_13,600,2,13,77.419,23.873,calcareous_tubeworm,2,0.219,,,,,,,,,,
+Aakriti,2022,DSCN8894,6_2_14,600,2,14,74.578,9.434,barnacle,1,1.611,,,,,,,,,,
+Aakriti,2022,DSCN8894,6_2_14,600,2,14,74.578,9.434,encrusting_bryozoan_sp,5,2.829,,,,,,,,,,
+Aakriti,2022,DSCN8894,6_2_14,600,2,14,74.578,9.434,Crisia_sp,1,0.130,,,,,,,,,,
+Aakriti,2022,DSCN8895,6_2_15,600,2,15,74.194,28.015,Pododesmus_macrochisma,1,1.701,,,,,,,,,,
+Aakriti,2022,DSCN8895,6_2_15,600,2,15,74.194,28.015,encrusting_bryozoan_sp,5,6.678,,,,,,,,,,
+Aakriti,2022,DSCN8895,6_2_15,600,2,15,74.194,28.015,branched_bryozoan_sp,4,1.774,,,,,,,,,,
+Aakriti,2022,DSCN8896,6_2_16,600,2,16,75.520,36.436,Pododesmus_macrochisma,1,12.483,,,,,,,,,,
+Aakriti,2022,DSCN8896,6_2_16,600,2,16,75.520,36.436,encrusting_bryozoan_sp,6,4.090,,,,,,,,,,
+Aakriti,2022,DSCN8896,6_2_16,600,2,16,75.520,36.436,branched_bryozoan_sp,1,0.319,,,,,,,,,,
+Aakriti,2022,DSCN8896,6_2_16,600,2,16,75.520,36.436,Crisia_sp,2,1.077,,,,,,,,,,
+Aakriti,2022,DSCN8897,6_2_17,600,2,17,92.038,59.023,Pododesmus_macrochisma,6,47.848,,,,,,,,,,
+Aakriti,2022,DSCN8897,6_2_17,600,2,17,92.038,59.023,encrusting_bryozoan_sp,3,2.328,,,,,,,,,,
+Aakriti,2022,DSCN8898,6_2_18,600,2,18,95.782,47.838,Pododesmus_macrochisma,3,51.466,had to estimate grid size. ,,,,,,,,,
+Aakriti,2022,DSCN8898,6_2_18,600,2,18,95.782,47.838,Crisia_sp,2,7.314,,,,,,,,,,
+Aakriti,2022,DSCN8898,6_2_18,600,2,18,95.782,47.838,encrusting_bryozoan_sp,1,5.611,,,,,,,,,,
+Clara ,2014,600ft_Year2_Rep2(1),6_2_1,600,2,1,69.881,37.112,Hiatella_arctica,24,5.180,,,,,,,,,,
+Clara ,2014,600ft_Year2_Rep2(1),6_2_1,600,2,1,69.881,37.112,barnacle,13,2.815,,,,,,,,,,
+Clara ,2014,600ft_Year2_Rep2(1),6_2_1,600,2,1,69.881,37.112,encrusting_bryozoan_sp,13,1.923,,,,,,,,,,
+Clara ,2014,600ft_Year2_Rep2(1),6_2_1,600,2,1,69.881,37.112,Pododesmus_macrochisma,2,0.244,,,,,,,,,,
+Clara ,2014,600ft_Year2_Rep2(1),6_2_1,600,2,1,69.881,37.112,polychaete_sp,2,0.751,,,,,,,,,,
+Clara ,2014,600ft_Year2_Rep2(2b),6_2_2,600,2,2,69.352,39.003,barnacle,8,1.708,,,,,,,,,,
+Clara ,2014,600ft_Year2_Rep2(2b),6_2_2,600,2,2,69.352,39.003,encrusting_bryozoan_sp,10,11.243,,,,,,,,,,
+Clara ,2014,600ft_Year2_Rep2(2b),6_2_2,600,2,2,69.352,39.003,Strongylocentrotus_sp,1,0.302,,,,,,,,,,
+Clara ,2014,600ft_Year2_Rep2(2b),6_2_2,600,2,2,69.352,39.003,Hiatella_arctica,15,3.165,,,,,,,,,,
+Clara ,2014,600ft_Year2_Rep2(2b),6_2_2,600,2,2,69.352,39.003,Ericthonius_rubricornis,6,3.841,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(3),6_2_3,600,2,3,83.564,59.287,Hiatella_arctica,35,8.813,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(3),6_2_3,600,2,3,83.564,59.287,encrusting_bryozoan_sp,9,15.056,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(3),6_2_3,600,2,3,83.564,59.287,barnacle,25,9.166,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(3),6_2_3,600,2,3,83.564,59.287,Strongylocentrotus_sp,1,0.484,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(3),6_2_3,600,2,3,83.564,59.287,sabellariid_tubeworm,1,1.088,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(3),6_2_3,600,2,3,83.564,59.287,Pododesmus_macrochisma,1,0.501,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(4),6_2_4,600,2,4,78.025,46.108,barnacle,14,3.612,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(4),6_2_4,600,2,4,78.025,46.108,encrusting_bryozoan_sp,13,10.926,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(4),6_2_4,600,2,4,78.025,46.108,Hiatella_arctica,14,4.235,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(4),6_2_4,600,2,4,78.025,46.108,sabellariid_tubeworm,1,0.261,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(4),6_2_4,600,2,4,78.025,46.108,polychaete_sp,2,1.260,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(4),6_2_4,600,2,4,78.025,46.108,Pododesmus_macrochisma,2,0.551,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(5),6_2_5,600,2,5,82.050,53.287,Strongylocentrotus_sp,1,0.619,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(5),6_2_5,600,2,5,82.050,53.287,Hiatella_arctica,13,2.756,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(5),6_2_5,600,2,5,82.050,53.287,barnacle,17,3.949,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(5),6_2_5,600,2,5,82.050,53.287,encrusting_bryozoan_sp,16,7.416,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(5),6_2_5,600,2,5,82.050,53.287,branched_bryozoan_sp,11,1.578,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(5),6_2_5,600,2,5,82.050,53.287,Pododesmus_macrochisma,1,0.143,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(5),6_2_5,600,2,5,82.050,53.287,Chorilia_longipes,1,0.478,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(5),6_2_5,600,2,5,82.050,53.287,Ericthonius_rubricornis,1,2.190,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(6),6_2_6,600,2,6,73.704,50.331,Hiatella_arctica,23,4.550,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(6),6_2_6,600,2,6,73.704,50.331,barnacle,16,3.039,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(6),6_2_6,600,2,6,73.704,50.331,encrusting_bryozoan_sp,12,9.604,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(6),6_2_6,600,2,6,73.704,50.331,branched_bryozoan_sp,3,0.427,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(6),6_2_6,600,2,6,73.704,50.331,Ericthonius_rubricornis,7,3.477,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(6),6_2_6,600,2,6,73.704,50.331,Pododesmus_macrochisma,1,0.203,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(8),6_2_8,600,2,8,64.855,18.093,barnacle,5,2.430,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(8),6_2_8,600,2,8,64.855,18.093,Hiatella_arctica,3,0.682,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(8),6_2_8,600,2,8,64.855,18.093,sabellariid_tubeworm,1,1.789,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(8),6_2_8,600,2,8,64.855,18.093,encrusting_bryozoan_sp,2,2.738,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(7),6_2_7,600,2,7,78.992,49.586,barnacle,31,12.015,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(7),6_2_7,600,2,7,78.992,49.586,Hiatella_arctica,16,4.437,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(7),6_2_7,600,2,7,78.992,49.586,Ericthonius_rubricornis,11,3.259,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(7),6_2_7,600,2,7,78.992,49.586,encrusting_bryozoan_sp,9,6.692,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(7),6_2_7,600,2,7,78.992,49.586,Amphissa,1,0.382,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(7),6_2_7,600,2,7,78.992,49.586,unidentified,1,1.043,Modiolus modiolus? (not on dropdown),,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(7),6_2_7,600,2,7,78.992,49.586,Pododesmus_macrochisma,2,1.659,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(9),6_2_9,600,2,9,66.154,37.999,Pododesmus_macrochisma,2,1.158,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(9),6_2_9,600,2,9,76.154,37.999,Ericthonius_rubricornis,2,6.717,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(9),6_2_9,600,2,9,76.154,37.999,sabellariid_tubeworm,4,3.268,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(9),6_2_9,600,2,9,76.154,37.999,Hiatella_arctica,17,4.255,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(9),6_2_9,600,2,9,76.154,37.999,barnacle,2,0.575,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(9),6_2_9,600,2,9,76.154,37.999,branched_bryozoan_sp,2,0.362,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(9),6_2_9,600,2,9,76.154,37.999,encrusting_bryozoan_sp,6,2.989,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(10),6_2_10,600,2,10,71.992,40.336,Strongylocentrotus_sp,1,0.713,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(10),6_2_10,600,2,10,71.992,40.336,Ericthonius_rubricornis,2,2.301,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(10),6_2_10,600,2,10,71.992,40.336,branched_bryozoan_sp,3,1.002,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(10),6_2_10,600,2,10,71.992,40.336,barnacle,7,2.128,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(10),6_2_10,600,2,10,71.992,40.336,Hiatella_arctica,37,7.076,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(10),6_2_10,600,2,10,71.992,40.336,encrusting_bryozoan_sp,9,5.596,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(11),6_2_11,600,2,11,66.434,36.346,barnacle,7,2.475,center piece with hole,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(11),6_2_11,600,2,11,66.434,36.346,Hiatella_arctica,4,0.764,center piece with hole,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(11),6_2_11,600,2,11,66.434,36.346,encrusting_bryozoan_sp,17,9.275,center piece with hole,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(11),6_2_11,600,2,11,66.434,36.346,Pododesmus_macrochisma,1,0.322,center piece with hole,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(12),6_2_12,600,2,12,82.041,41.807,Pododesmus_macrochisma,1,0.936,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(12),6_2_12,600,2,12,82.041,41.807,Strongylocentrotus_sp,1,0.878,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(12),6_2_12,600,2,12,82.041,41.807,barnacle,7,3.184,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(12),6_2_12,600,2,12,82.041,41.807,Hiatella_arctica,24,5.546,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(12),6_2_12,600,2,12,82.041,41.807,encrusting_bryozoan_sp,10,10.858,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(12),6_2_12,600,2,12,82.041,41.807,branched_bryozoan_sp,1,0.195,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(13),6_2_13,600,2,13,85.325,54.189,branched_bryozoan_sp,2,0.710,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(13),6_2_13,600,2,13,85.325,54.189,Chlamys_rhubida,2,1.601,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(13),6_2_13,600,2,13,85.325,54.189,Scallop_sp,1,0.621,black shell ,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(13),6_2_13,600,2,13,85.325,54.189,Pododesmus_macrochisma,2,4.699,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(13),6_2_13,600,2,13,85.325,54.189,barnacle,13,4.594,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(13),6_2_13,600,2,13,85.325,54.189,Hiatella_arctica,42,10.424,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(13),6_2_13,600,2,13,85.325,54.189,encrusting_bryozoan_sp,4,4.552,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(14),6_2_14,600,2,14,65.154,48.953,Ericthonius_rubricornis,5,10.641,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(14),6_2_14,600,2,14,65.154,48.953,Pododesmus_macrochisma,1,0.938,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(14),6_2_14,600,2,14,65.154,48.953,barnacle,16,9.971,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(14),6_2_14,600,2,14,65.154,48.953,Hiatella_arctica,4,1.688,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(14),6_2_14,600,2,14,65.154,48.953,encrusting_bryozoan_sp,14,18.196,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(15),6_2_15,600,2,15,35.896,15.888,barnacle,5,1.424,corner,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(15),6_2_15,600,2,15,35.896,15.888,Hiatella_arctica,36,4.244,corner,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(15),6_2_15,600,2,15,35.896,15.888,encrusting_bryozoan_sp,15,5.215,corner,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(15),6_2_15,600,2,15,35.896,15.888,branched_bryozoan_sp,8,0.444,corner,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(15),6_2_15,600,2,15,35.896,15.888,Ericthonius_rubricornis,2,2.721,corner,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(15),6_2_15,600,2,15,35.896,15.888,polychaete_sp,2,1.101,corner ,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(15),6_2_15,600,2,15,35.896,15.888,Pododesmus_macrochisma,1,0.157,corner,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(16),6_2_16,600,2,16,51.724,22.377,polychaete_sp,1,0.663,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(16),6_2_16,600,2,16,51.724,22.377,Pododesmus_macrochisma,1,0.539,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(16),6_2_16,600,2,16,51.724,22.377,barnacle,5,1.537,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(16),6_2_16,600,2,16,51.724,22.377,encrusting_bryozoan_sp,5,4.310,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(16),6_2_16,600,2,16,51.724,22.377,branched_bryozoan_sp,2,0.443,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(16),6_2_16,600,2,16,51.724,22.377,Hiatella_arctica,31,4.795,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(16),6_2_16,600,2,16,51.724,22.377,sabellariid_tubeworm,1,1.010,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(16),6_2_16,600,2,16,51.724,22.377,Ericthonius_rubricornis,2,3.365,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(17),6_2_17,600,2,17,61.710,29.007,barnacle,6,1.784,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(17),6_2_17,600,2,17,61.710,29.007,Hiatella_arctica,33,4.928,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(17),6_2_17,600,2,17,61.710,29.007,polychaete_sp,2,1.401,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(17),6_2_17,600,2,17,61.710,29.007,Ericthonius_rubricornis,2,5.959,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(17),6_2_17,600,2,17,61.710,29.007,encrusting_bryozoan_sp,10,4.341,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(17),6_2_17,600,2,17,61.710,29.007,Strongylocentrotus_sp,1,0.552,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(18),6_2_18,600,2,18,59.883,28.908,Ericthonius_rubricornis,1,0.848,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(18),6_2_18,600,2,18,59.883,28.908,unidentified,2,1.354,"red thing, hanging off plate",,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(18),6_2_18,600,2,18,59.883,28.908,Hiatella_arctica,16,2.221,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(18),6_2_18,600,2,18,59.883,28.908,barnacle,7,1.252,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(18),6_2_18,600,2,18,59.883,28.908,encrusting_bryozoan_sp,9,6.374,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(18),6_2_18,600,2,18,59.883,28.908,sabellariid_tubeworm,1,0.132,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(18),6_2_18,600,2,18,59.883,28.908,branched_bryozoan_sp,2,0.111,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(18),6_2_18,600,2,18,59.883,28.908,Strongylocentrotus_sp,1,0.263,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(19),6_2_19,600,2,19,53.916,26.078,Strongylocentrotus_sp,1,0.364,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(19),6_2_19,600,2,19,53.916,26.078,Ericthonius_rubricornis,3,1.853,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(19),6_2_19,600,2,19,53.916,26.078,Hiatella_arctica,36,4.236,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(19),6_2_19,600,2,19,53.916,26.078,barnacle,6,1.613,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(19),6_2_19,600,2,19,53.916,26.078,encrusting_bryozoan_sp,14,6.664,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(19),6_2_19,600,2,19,53.916,26.078,branched_bryozoan_sp,2,0.200,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(20),6_2_20,600,2,20,57.698,37.261,unidentified,1,0.708,Modiolus modiolus (not on dropdown),,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(20),6_2_20,600,2,20,57.698,37.261,Ericthonius_rubricornis,2,1.265,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(20),6_2_20,600,2,20,57.698,37.261,Hiatella_arctica,16,2.680,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(20),6_2_20,600,2,20,57.698,37.261,barnacle,6,1.554,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(20),6_2_20,600,2,20,57.698,37.261,encrusting_bryozoan_sp,16,9.273,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(20),6_2_20,600,2,20,57.698,37.261,Pododesmus_macrochisma,2,0.261,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(20),6_2_20,600,2,20,57.698,37.261,branched_bryozoan_sp,1,0.165,hanging off plate,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(21),6_2_21,600,2,21,79.073,48.372,barnacle,9,3.611,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(21),6_2_21,600,2,21,79.073,48.372,Hiatella_arctica,7,1.167,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(21),6_2_21,600,2,21,79.073,48.372,encrusting_bryozoan_sp,10,15.674,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(21),6_2_21,600,2,21,79.073,48.372,sabellariid_tubeworm,2,0.634,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(21),6_2_21,600,2,21,79.073,48.372,Ericthonius_rubricornis,2,2.834,,,,,,,,,,
+Clara,2014,600ft_Year2_Rep2(21),6_2_21,600,2,21,79.073,48.372,unidentified,1,0.691,Modiolus modiolus (not on dropdown),,,,,,,,,
+Maia,2017,6_1_1_a,6_1_1,600,1,1,65.794,37.277,Crisia_sp,4,29.331,Grid heavily misaligned,,,,,,,,,
+Maia,2017,6_1_1_a,6_1_1,600,1,1,65.794,37.277,encrusting_bryozoan_sp,20,4.144,,,,,,,,,,
+Maia,2017,6_1_1_a,6_1_1,600,1,1,65.794,37.277,sabellariid_tubeworm,1,1.595,,,,,,,,,,
+Maia,2017,6_1_1_a,6_1_1,600,1,1,65.794,37.277,calcareous_tubeworm,2,0.226,,,,,,,,,,
+Maia,2017,6_1_2_b,6_1_2,600,1,2,65.559,28.794,Crisia_sp,13,16.371,Grid heavily misaligned,,,,,,,,,
+Maia,2017,6_1_2_b,6_1_2,600,1,2,65.559,28.794,encrusting_bryozoan_sp,3,0.725,,,,,,,,,,
+Maia,2017,6_1_2_b,6_1_2,600,1,2,65.559,28.794,calcareous_tubeworm,3,1.213,,,,,,,,,,
+Maia,2017,6_1_2_b,6_1_2,600,1,2,65.559,28.794,sabellariid_tubeworm,1,0.813,,,,,,,,,,
+Maia,2017,6_1_2_b,6_1_2,600,1,2,65.559,28.794,Chlamys_rhubida,1,0.103,,,,,,,,,,
+Maia,2017,6_1_3_a,6_1_3,600,1,3,72.808,36.687,Crisia_sp,7,19.666,Grid hanging off plate,,,,,,,,,
+Maia,2017,6_1_3_a,6_1_3,600,1,3,72.808,36.687,Pododesmus_macrochisma,1,10.932,,,,,,,,,,
+Maia,2017,6_1_3_a,6_1_3,600,1,3,72.808,36.687,encrusting_bryozoan_sp,12,2.609,,,,,,,,,,
+Maia,2017,6_1_4_b,6_1_4,600,1,4,66.999,32.113,Hinnites_giganteous,1,10.800,Grid hanging off plate,,,,,,,,,
+Maia,2017,6_1_4_b,6_1_4,600,1,4,66.999,32.113,Crisia_sp,8,11.158,,,,,,,,,,
+Maia,2017,6_1_4_b,6_1_4,600,1,4,66.999,32.113,calcareous_tubeworm,1,0.368,,,,,,,,,,
+Maia,2017,6_1_4_b,6_1_4,600,1,4,66.999,32.113,encrusting_bryozoan_sp,5,6.157,,,,,,,,,,
+Maia,2017,6_1_4_b,6_1_4,600,1,4,66.999,32.113,unidentified,1,1.140,goo?,,,,,,,,,
+Maia,2017,6_1_5_a,6_1_5,600,1,5,70.813,39.854,Crisia_sp,5,9.105,,,,,,,,,,
+Maia,2017,6_1_5_a,6_1_5,600,1,5,70.813,39.854,Hinnites_giganteous,3,29.502,,,,,,,,,,
+Maia,2017,6_1_5_a,6_1_5,600,1,5,70.813,39.854,encrusting_bryozoan_sp,2,6.706,,,,,,,,,,
+Maia,2017,6_1_5_a,6_1_5,600,1,5,70.813,39.854,calcareous_tubeworm,1,0.027,,,,,,,,,,
+Maia,2017,6_1_6_b,6_1_6,600,1,6,81.114,41.582,Crisia_sp,5,15.775,Misaligned grid,,,,,,,,,
+Maia,2017,6_1_6_b,6_1_6,600,1,6,81.114,41.582,Hinnites_giganteous,1,13.054,,,,,,,,,,
+Maia,2017,6_1_6_b,6_1_6,600,1,6,81.114,41.582,encrusting_bryozoan_sp,7,4.858,,,,,,,,,,
+Maia,2017,6_1_6_b,6_1_6,600,1,6,81.114,41.582,calcareous_tubeworm,3,0.685,,,,,,,,,,
+Maia,2017,6_1_7_a,6_1_7,600,1,7,61.825,33.620,Crisia_sp,6,12.364,Grid hanging off plate,,,,,,,,,
+Maia,2017,6_1_7_a,6_1_7,600,1,7,61.825,33.620,Pododesmus_macrochisma,1,22.772,,,,,,,,,,
+Maia,2017,6_1_7_a,6_1_7,600,1,7,61.825,33.620,encrusting_bryozoan_sp,1,0.354,,,,,,,,,,
+Maia,2017,6_1_8_a,6_1_8,600,1,8,81.329,26.006,calcareous_tubeworm,1,0.564,,,,,,,,,,
+Maia,2017,6_1_8_a,6_1_8,600,1,8,81.329,26.006,Crisia_sp,7,17.860,,,,,,,,,,
+Maia,2017,6_1_8_a,6_1_8,600,1,8,81.329,26.006,polychaete_sp,1,0.863,,,,,,,,,,
+Maia,2017,6_1_8_a,6_1_8,600,1,8,81.329,26.006,encrusting_bryozoan_sp,4,0.899,,,,,,,,,,
+Maia,2017,6_1_9_b,6_1_9,600,1,9,80.361,18.827,calcareous_tubeworm,3,1.714,,,,,,,,,,
+Maia,2017,6_1_9_b,6_1_9,600,1,9,80.361,18.827,encrusting_bryozoan_sp,11,5.833,,,,,,,,,,
+Maia,2017,6_1_9_b,6_1_9,600,1,9,80.361,18.827,Crisia_sp,7,7.159,,,,,,,,,,
+Maia,2017,6_1_10_a,6_1_10,600,1,10,81.430,31.627,encrusting_bryozoan_sp,11,10.188,,,,,,,,,,
+Maia,2017,6_1_10_a,6_1_10,600,1,10,81.430,31.627,Hinnites_giganteous,2,16.614,,,,,,,,,,
+Maia,2017,6_1_10_a,6_1_10,600,1,10,81.430,31.627,Crisia_sp,2,2.041,,,,,,,,,,
+Maia,2017,6_1_10_a,6_1_10,600,1,10,81.430,31.627,calcareous_tubeworm,2,0.832,,,,,,,,,,
+Maia,2017,6_1_10_a,6_1_10,600,1,10,81.430,31.627,sabellariid_tubeworm,1,1.127,,,,,,,,,,
+Maia,2017,6_1_11_a,6_1_11,600,1,11,58.819,23.925,Hinnites_giganteous,1,9.940,,,,,,,,,,
+Maia,2017,6_1_11_a,6_1_11,600,1,11,58.819,23.925,calcareous_tubeworm,3,0.900,,,,,,,,,,
+Maia,2017,6_1_11_a,6_1_11,600,1,11,58.819,23.925,encrusting_bryozoan_sp,5,6.851,,,,,,,,,,
+Maia,2017,6_1_11_a,6_1_11,600,1,11,58.819,23.925,Crisia_sp,2,3.284,,,,,,,,,,
+Maia,2017,6_1_12_b,6_1_12,600,1,12,79.372,26.768,Hinnites_giganteous,1,17.069,,,,,,,,,,
+Maia,2017,6_1_12_b,6_1_12,600,1,12,79.372,26.768,encrusting_bryozoan_sp,5,4.924,,,,,,,,,,
+Maia,2017,6_1_12_b,6_1_12,600,1,12,79.372,26.768,Crisia_sp,6,4.775,,,,,,,,,,
+Maia,2017,6_1_13_a,6_1_13,600,1,13,76.737,23.125,encrusting_bryozoan_sp,5,9.079,,,,,,,,,,
+Maia,2017,6_1_13_a,6_1_13,600,1,13,76.737,23.125,Crisia_sp,6,5.351,,,,,,,,,,
+Maia,2017,6_1_13_a,6_1_13,600,1,13,76.737,23.125,unidentified,1,0.243,white thing,,,,,,,,,
+Maia,2017,6_1_13_a,6_1_13,600,1,13,76.737,23.125,unidentified,5,2.473,goo,,,,,,,,,
+Maia,2017,6_1_14_a,6_1_14,600,1,14,57.755,23.407,Crisia_sp,12,22.622,Grid hanging off plate,,,,,,,,,
+Maia,2017,6_1_14_a,6_1_14,600,1,14,57.755,23.407,encrusting_bryozoan_sp,2,0.785,,,,,,,,,,
+Maia,2017,6_1_15_a,6_1_15,600,1,15,81.265,19.475,Crisia_sp,6,9.950,,,,,,,,,,
+Maia,2017,6_1_15_a,6_1_15,600,1,15,81.265,19.475,encrusting_bryozoan_sp,2,0.315,,,,,,,,,,
+Maia,2017,6_1_15_a,6_1_15,600,1,15,81.265,19.475,calcareous_tubeworm,1,0.319,,,,,,,,,,
+Maia,2017,6_1_15_a,6_1_15,600,1,15,81.265,19.475,sabellariid_tubeworm,1,1.871,,,,,,,,,,
+Maia,2017,6_1_16_a,6_1_16,600,1,16,80.347,11.905,Crisia_sp,7,6.887,,,,,,,,,,
+Maia,2017,6_1_16_a,6_1_16,600,1,16,80.347,11.905,encrusting_bryozoan_sp,8,1.306,,,,,,,,,,
+Maia,2017,6_1_16_a,6_1_16,600,1,16,80.347,11.905,calcareous_tubeworm,1,0.346,,,,,,,,,,
+Maia,2017,6_1_17_b,6_1_17,600,1,17,83.060,7.244,Crisia_sp,5,4.484,,,,,,,,,,
+Maia,2017,6_1_17_b,6_1_17,600,1,17,83.060,7.244,calcareous_tubeworm,1,0.396,,,,,,,,,,
+Maia,2017,6_1_17_b,6_1_17,600,1,17,83.060,7.244,encrusting_bryozoan_sp,1,0.241,,,,,,,,,,
+Maia,2017,6_1_18_b,6_1_18,600,1,18,79.089,31.515,encrusting_bryozoan_sp,9,6.298,,,,,,,,,,
+Maia,2017,6_1_18_b,6_1_18,600,1,18,79.089,31.515,Hinnites_giganteous,1,19.768,,,,,,,,,,
+Maia,2017,6_1_18_b,6_1_18,600,1,18,79.089,31.515,Crisia_sp,4,4.209,,,,,,,,,,
+Maia,2017,6_1_19_b,6_1_19,600,1,19,78.619,5.296,Pododesmus_macrochisma,1,1.961,,,,,,,,,,
+Maia,2017,6_1_19_b,6_1_19,600,1,19,78.619,5.296,encrusting_bryozoan_sp,7,1.381,,,,,,,,,,
+Maia,2017,6_1_19_b,6_1_19,600,1,19,78.619,5.296,Crisia_sp,2,0.756,,,,,,,,,,
+Maia,2017,6_1_20_a,6_1_20,600,1,20,75.163,15.979,encrusting_bryozoan_sp,7,1.799,,,,,,,,,,
+Maia,2017,6_1_20_a,6_1_20,600,1,20,75.163,15.979,Crisia_sp,10,9.642,,,,,,,,,,
+Maia,2017,6_1_20_a,6_1_20,600,1,20,75.163,15.979,sabellariid_tubeworm,1,0.785,Grid hanging off plate,,,,,,,,,
+Maia,2017,6_1_21_b,6_1_21,600,1,21,59.600,16.170,Crisia_sp,8,10.273,,,,,,,,,,
+Maia,2017,6_1_21_b,6_1_21,600,1,21,59.600,16.170,calcareous_tubeworm,1,0.253,,,,,,,,,,
+Maia,2017,6_1_21_b,6_1_21,600,1,21,59.600,16.170,encrusting_bryozoan_sp,3,1.241,,,,,,,,,,
+Maia,2017,6_1_21_b,6_1_21,600,1,21,59.600,16.170,sabellariid_tubeworm,1,0.757,,,,,,,,,,
+Aakriti,2022,DSCN8910,6_3_1,600,3,1,76.817,4.575,calcareous_tubeworm,1,0.339,,,,,,,,,,
+Aakriti,2022,DSCN8911,6_3_2,600,3,2,94.894,38.627,Pododesmus_macrochisma,2,29.821,,,,,,,,,,
+Aakriti,2022,DSCN8911,6_3_2,600,3,2,94.894,38.627,sabellariid_tubeworm,1,1.183,,,,,,,,,,
+Aakriti,2022,DSCN8911,6_3_2,600,3,2,94.894,38.627,encrusting_bryozoan_sp,1,1.740,,,,,,,,,,
+Aakriti,2022,DSCN8912,6_3_3,600,3,3,90.224,34.453,Pododesmus_macrochisma,2,21.297,,,,,,,,,,
+Aakriti,2022,DSCN8912,6_3_3,600,3,3,90.224,34.453,sabellariid_tubeworm,2,4.660,,,,,,,,,,
+Aakriti,2022,DSCN8912,6_3_3,600,3,3,90.224,34.453,encrusting_bryozoan_sp,2,2.133,,,,,,,,,,
+Aakriti,2022,DSCN8912,6_3_3,600,3,3,90.224,34.453,amphipod,1,0.530,,,,,,,,,,
+Aakriti,2022,DSCN8912,6_3_3,600,3,3,90.224,34.453,branched_bryozoan_sp,1,0.952,,,,,,,,,,
+Aakriti,2022,DSCN8913,6_3_4,600,3,4,90.379,20.440,Pododesmus_macrochisma,1,15.475,,,,,,,,,,
+Aakriti,2022,DSCN8913,6_3_4,600,3,4,90.379,20.440,unidentified,1,0.130,,,,,,,,,,
+Aakriti,2022,DSCN8914,6_3_5,600,3,5,72.133,18.341,Metridium,1,12.818,,,,,,,,,,
+Aakriti,2022,DSCN8914,6_3_5,600,3,5,72.133,18.341,Pododesmus_macrochisma,1,5.022,,,,,,,,,,
+Aakriti,2022,DSCN8914,6_3_5,600,3,5,72.133,18.341,calcareous_tubeworm,1,0.115,,,,,,,,,,
+Aakriti,2022,DSCN8914,6_3_5,600,3,5,72.133,18.341,encrusting_bryozoan_sp,3,1.117,,,,,,,,,,
+Aakriti,2022,DSCN8915,6_3_6,600,3,6,73.560,72.219,Metridium,1,72.219,,,,,,,,,,
+Aakriti,2022,DSCN8916,6_3_7,600,3,7,79.178,77.283,Metridium,1,77.283,,,,,,,,,,
+Aakriti,2022,DSCN8917,6_3_8,600,3,8,79.115,49.703,Pododesmus_macrochisma,1,18.474,,,,,,,,,,
+Aakriti,2022,DSCN8917,6_3_8,600,3,8,79.115,49.703,encrusting_bryozoan_sp,7,5.371,,,,,,,,,,
+Aakriti,2022,DSCN8918,6_3_9,600,3,9,88.300,54.729,Pododesmus_macrochisma,2,27.944,,,,,,,,,,
+Aakriti,2022,DSCN8918,6_3_9,600,3,9,88.300,54.729,encrusting_bryozoan_sp,1,3.283,,,,,,,,,,
+Aakriti,2022,DSCN8918,6_3_9,600,3,9,88.300,54.729,branched_bryozoan_sp,1,19.798,,,,,,,,,,
+Aakriti,2022,DSCN8918,6_3_9,600,3,9,88.300,54.729,sabellariid_tubeworm,4,7.661,,,,,,,,,,
+Aakriti,2022,DSCN8919,6_3_10,600,3,10,85.538,63.029,Pododesmus_macrochisma,2,46.817,,,,,,,,,,
+Aakriti,2022,DSCN8919,6_3_10,600,3,10,85.538,63.029,branched_bryozoan_sp,3,7.069,,,,,,,,,,
+Aakriti,2022,DSCN8920,6_3_11,600,3,11,85.824,36.053,Pododesmus_macrochisma,1,13.660,,,,,,,,,,
+Aakriti,2022,DSCN8920,6_3_11,600,3,11,85.824,36.053,branched_bryozoan_sp,1,4.771,,,,,,,,,,
+Aakriti,2022,DSCN8920,6_3_11,600,3,11,85.824,36.053,encrusting_bryozoan_sp,3,1.226,grid with hole,,,,,,,,,
+Aakriti,2022,DSCN8921,6_3_12,600,3,12,74.867,4.310,Pododesmus_macrochisma,1,0.678,,,,,,,,,,
+Aakriti,2022,DSCN8921,6_3_12,600,3,12,74.867,4.310,encrusting_bryozoan_sp,3,0.282,,,,,,,,,,
+Aakriti,2022,DSCN8921,6_3_12,600,3,12,74.867,4.310,branched_bryozoan_sp,1,0.329,,,,,,,,,,
+Aakriti,2022,DSCN8922,6_3_13,600,3,13,73.279,34.569,Metridium,1,34.368,,,,,,,,,,
+Aakriti,2022,DSCN8923,6_3_14,600,3,14,76.565,38.935,Metridium,2,38.185,,,,,,,,,,
+Aakriti,2022,DSCN8924,6_3_15,600,3,15,86.656,48.018,Pododesmus_macrochisma,3,46.368,,,,,,,,,,
+Aakriti,2022,DSCN8924,6_3_15,600,3,15,86.656,48.018,encrusting_bryozoan_sp,1,3.604,,,,,,,,,,
+Aakriti,2022,DSCN8924,6_3_15,600,3,15,86.656,48.018,branched_bryozoan_sp,1,4.630,,,,,,,,,,
+Aakriti,2022,DSCN8924,6_3_15,600,3,15,86.656,48.018,encrusting_bryozoan_sp,3,0.598,,,,,,,,,,
+Aakriti,2022,DSCN8925,6_3_16,600,3,16,83.361,47.473,encrusting_bryozoan_sp,4,14.628,,,,,,,,,,
+Aakriti,2022,DSCN8925,6_3_16,600,3,16,83.361,47.473,Pododesmus_macrochisma,1,11.036,,,,,,,,,,
+Aakriti,2022,DSCN8926,6_3_17,600,3,17,79.635,12.195,encrusting_bryozoan_sp,1,4.390,,,,,,,,,,
+Aakriti,2022,DSCN8926,6_3_17,600,3,17,79.635,12.195,branched_bryozoan_sp,1,1.107,,,,,,,,,,
+Aakriti,2022,DSCN8926,6_3_17,600,3,17,79.635,12.195,calcareous_tubeworm,1,0.148,,,,,,,,,,
+Aakriti,2022,DSCN8926,6_3_17,600,3,17,79.635,12.195,barnacle,2,0.205,,,,,,,,,,
+Aakriti,2022,DSCN8927,6_3_18,600,3,18,92.547,7.087,encrusting_bryozoan_sp,4,1.246,,,,,,,,,,
+Aakriti,2022,DSCN8927,6_3_18,600,3,18,92.547,7.087,barnacle,1,0.139,,,,,,,,,,
+Aakriti,2022,DSCN8928,6_3_19,600,3,19,78.242,32.643,encrusting_bryozoan_sp,2,21.433,,,,,,,,,,
+Aakriti,2022,DSCN8928,6_3_19,600,3,19,78.242,32.643,branched_bryozoan_sp,2,0.217,,,,,,,,,,
+Aakriti,2022,DSCN8929,6_3_20,600,3,20,72.262,34.885,encrusting_bryozoan_sp,1,25.346,,,,,,,,,,
+Aakriti,2022,DSCN8929,6_3_20,600,3,20,72.262,34.885,calcareous_tubeworm,2,1.091,,,,,,,,,,
+Aakriti,2022,DSCN8929,6_3_20,600,3,20,72.262,34.885,branched_bryozoan_sp,1,2.503,,,,,,,,,,
+Aakriti,2022,DSCN8929,6_3_20,600,3,20,72.262,34.885,Trichotropis,1,0.561,,,,,,,,,,
+Aakriti,2022,DSCN8930,6_3_21,600,3,21,69.892,23.200,encrusting_bryozoan_sp,6,15.899,,,,,,,,,,
+Aakriti,2022,DSCN8930,6_3_21,600,3,21,69.892,23.200,branched_bryozoan_sp,1,0.926,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,

@@ -19,8 +19,9 @@ set.seed(2025)
 ##### prepare dataframes for analysis ####
 
 #combine dataframes
-combined_import <- bind_rows(import_100ft, import_300ft, import_600ft, import_600ft_ref) #combine imported data into a single dataframe
-
+combined_import <- bind_rows(import_100ft, import_300ft, import_600ft, import_600ft_ref) %>% #combine imported data into a single dataframe
+  select(!contains("..."))
+  
 #extract QC rows 
 QC_data <- combined_import %>% #these rows are repeats of data we already have so we can set them aside for now
   filter(grepl("QC", Notes))
@@ -34,24 +35,45 @@ combined_tidy <- combined_import %>%
          Replicate = as.factor(Replicate), 
          Year = factor(Year, labels = c("2", "10"))) %>% #recode as deployment intervals
   mutate(Depth = ifelse(grepl("R", Grid.ID), paste0(Depth, "_ref"), Depth)) %>% #recode reference plates
-  full_join(species_metadata, by = "SpeciesID")
+  full_join(species_metadata, by = "SpeciesID") %>% 
+  filter(!is.na(Year))
 
 #create motile and nonmotile dataframes for separate analysis
-motile_tidy <- combined_tidy %>% filter(Mobility == "Motile")
-nonmotile_tidy <- combined_tidy %>% filter(Mobility == "Nonmotile")
+motile_tidy <- combined_tidy %>% 
+  filter(Mobility == "Motile") %>% 
+  group_by(Year, Depth, Replicate, Phylum, 
+           Recode_for_MS, MS_Species_Group) %>% 
+  summarize(Species_count = sum(Species.Count)) %>% 
+  ungroup()
+
+nonmotile_tidy <- combined_tidy %>% 
+  filter(Mobility == "Nonmotile") %>% 
+  group_by(PhotoID, Year, Depth, Replicate, Grid.Area.cm, Area.Covered.cm, 
+           Phylum, Recode_for_MS, MS_Species_Group) %>% 
+  summarize(Org.Area = sum(Org.Area.cm)) %>% 
+  ungroup()
+
+remove_algae <- combined_tidy %>% 
+  filter(is.na(Recode_for_MS)) %>% 
+  mutate(Grid.Area.cm = Grid.Area.cm - Org.Area.cm)
+
+nonmotile_tidy_test <- nonmotile_tidy %>% 
+  # mutate(Grid.Area.cm = ifelse(PhotoID %in% remove_algae$PhotoID, 
+  #                              remove_algae$Grid.Area.cm, Grid.Area.cm)) #this doesn't work, need to
+  #revisit how to adjust the grid area for removing algae
 
 #### summary of nonmotile phyla ####
 #phylum proportion values 
 area_sum <- nonmotile_tidy %>% 
   group_by(Year, Depth) %>% 
-  mutate(total_live_area = sum(Org.Area.cm)) %>% 
+  mutate(total_live_area = sum(Org.Area)) %>% 
   dplyr::select(Year, Depth, total_live_area) %>% 
   distinct()
 
 #breakdown by organism category
 group_perc_live_cover <- nonmotile_tidy %>% 
-  group_by(Year, Depth, Species_Group) %>% 
-  summarize(group_area = sum(Org.Area.cm)) %>% 
+  group_by(Year, Depth, Recode_for_MS) %>% 
+  summarize(group_area = sum(Org.Area)) %>% 
   right_join(area_sum) %>% 
   mutate(group_prop = round(group_area/total_live_area, 4)*100)
 
@@ -63,9 +85,8 @@ top_10group_perc <- group_perc_live_cover %>%
 ## plot proportions of nonmotile taxa
 nonmotile_tidy %>% 
   ggplot(aes(x = factor(Depth, 
-                        # labels = c("30 m\noutfall", "90 m\noutfall", "200 m\noutfall", "200 m\nreference")), 
-             labels = c("30", "90", "200", "200\nref")), 
-             y = Org.Area.cm, fill = Genera)) +
+                        labels = c("Upper\noutfall", "Mid\noutfall", "Deep\noutfall", "Deep\nreference")), 
+             y = Org.Area, fill = Phylum)) +
   geom_col(position = "fill") +
   theme_classic() + 
   facet_wrap(~Year) + 
@@ -82,7 +103,7 @@ nonmotile_tidy %>%
 perc_cover_df <- nonmotile_tidy %>% 
   group_by(Year, Depth, Replicate) %>% 
   summarize(grid.area.sum = sum(Grid.Area.cm), #sum the total area across all grids on a given plate
-            live.area.covered = sum(Org.Area.cm)) %>% 
+            live.area.covered = sum(Org.Area)) %>% 
   ungroup() %>% #we're done summarizing data so we can remove the groupings
   mutate(perc.live.cover = round((live.area.covered/grid.area.sum)*100, 2)) #divide the area covered by the total area to get % cover
 
@@ -97,7 +118,7 @@ perc_cover_df %>%
        x = "Pipe material deployment time (years)",
        fill = "Site") +
   scale_fill_manual(values = depth_colors,
-                    labels = c("30", "90", "200", "200 ref")) +
+                    labels = c("Upper outfall", "Mid outfall", "Deep outfall", "Deep reference")) +
   theme(text = element_text(size = 14))
 
 # ggsave("figures/figure3.tiff", width = 8, height = 6, dpi = 300)
@@ -138,19 +159,20 @@ summary(aov(perc.live.cover ~ Depth + Year + Depth*Year, data = compare_live_wo_
 
 #convert the data to wide format
 nonmotile_tidy_w <- nonmotile_tidy %>% 
-  group_by(Year, Depth, Replicate, Species_Group) %>% 
+  group_by(Year, Depth, Replicate, Recode_for_MS) %>% 
   summarize(sum_area = sum(Area.Covered.cm)) %>% 
-  filter(!is.na(Species_Group)) %>% 
+  filter(!is.na(Recode_for_MS)) %>% 
   ungroup() %>% 
-  arrange(Species_Group) %>% 
-  pivot_wider(names_from = Species_Group, values_from = sum_area, values_fill = 0) %>% 
+  arrange(Recode_for_MS) %>% 
+  pivot_wider(names_from = Recode_for_MS, values_from = sum_area, values_fill = 0) %>% 
   clean_names() %>% 
   arrange(year, depth, replicate)
 
 #prep abundance and metadata matrices
 
 abund <- nonmotile_tidy_w %>%
-  select(amphipod_tube:ulva_sp) #not including unidentified orgs
+  select(!contains("unidentified")) %>% #not including unidentified orgs
+  select(amphipod_tube:urticina_sp) 
 
 meta <- nonmotile_tidy_w %>%
   select(year:replicate)
@@ -206,7 +228,6 @@ ggplot(data=nmds_points,
   annotate("text", x = -1, y = 1.4, 
            label = paste("Stress = ", round(nonmotile.nmds$stress, 3))) +
   theme(text = element_text(size = 14))
-#warning message isn't a problem
 
 # ggsave("figures/figure4.tiff", width = 8, height = 6, dpi = 300)
 
@@ -214,7 +235,8 @@ ggplot(data=nmds_points,
 ## compare depths at the pipe
 abund_outfall <- nonmotile_tidy_w %>%
   filter(!depth == "600_ref") %>%
-  select(amphipod_tube:ulva_sp) #not including unidentified orgs
+  select(!contains("unidentified")) %>% #not including unidentified orgs
+  select(amphipod_tube:urticina_sp) 
 
 meta_outfall <- nonmotile_tidy_w %>%
   filter(!depth == "600_ref") %>%
@@ -236,7 +258,8 @@ permutest(betadisper(vegdist(abund_outfall, method = "bray"), group = meta_outfa
 ## compare the -200 m outfall and reference sites
 abund_ref <- nonmotile_tidy_w %>%
   filter(depth == 600 | depth == "600_ref") %>%
-  select(amphipod_tube:ulva_sp) #not including unidentified orgs
+  select(!contains("unidentified")) %>% #not including unidentified orgs
+  select(amphipod_tube:urticina_sp) 
 
 meta_ref <- nonmotile_tidy_w %>%
   filter(depth == 600 | depth == "600_ref") %>%
@@ -254,7 +277,7 @@ permutest(betadisper(vegdist(abund_ref, method = "bray"), group = meta_ref$year,
 #see how many species are unique to each depth
 unique_by_depth <- combined_tidy %>% 
   group_by(Depth) %>% 
-  distinct(SpeciesID) %>% 
+  distinct(Recode_for_MS) %>% 
   mutate(present = 1) %>% 
   ungroup() %>% 
   pivot_wider(names_from = Depth, values_from = present, values_fill = 0) %>% 
@@ -263,7 +286,7 @@ unique_by_depth <- combined_tidy %>%
 
 unique_group_by_depth <- combined_tidy %>% 
   group_by(Depth) %>% 
-  distinct(Species_Group) %>% 
+  distinct(Recode_for_MS) %>% 
   mutate(present = 1) %>% 
   ungroup() %>% 
   pivot_wider(names_from = Depth, values_from = present, values_fill = 0) %>% 
@@ -275,7 +298,7 @@ summary(ISA_depth)
 
 nonmotile_tidy %>% 
   group_by(Depth) %>%
-  distinct(SpeciesID)
+  distinct(Recode_for_MS)
 
 ## SIMPER 
 SIMPER_depth <- simper(comm = abund, group = meta$depth, permutations = 9999)
@@ -290,45 +313,42 @@ summary(SIMPER_year)$'2_10' %>%
 
 #### motile analysis ####
 motile_tidy_w <- motile_tidy %>% 
-  group_by(Year, Depth, Replicate, Species_Group) %>% 
-  summarize(sum_area = sum(Species.Count)) %>% 
-  filter(!is.na(Species_Group)) %>% 
-  ungroup() %>% 
-  arrange(Species_Group) %>% 
-  pivot_wider(names_from = Species_Group, values_from = sum_area, values_fill = 0) %>% 
+  arrange(Recode_for_MS) %>% 
+  select(!MS_Species_Group) %>% 
+  pivot_wider(names_from = Recode_for_MS, values_from = Species_count, values_fill = 0) %>% 
   clean_names()
 
 #prep final raw dataframes
 motile.abund <- motile_tidy_w %>% 
-  select(amphipod_shrimp:sea_urchin)
+  select(!year:phylum)
 
 motile.meta <- motile_tidy_w %>% 
-  select(year:replicate)
+  select(year:phylum)
 
 CV(x = rowSums(motile.abund)) #high, indicates there would be high impact of relativizing between samples
 CV(x = colSums(motile.abund)) #high, indicates there would be high impact of relativizing between species
 
 motile.abund_rel <- wisconsin(motile.abund) #double standardization: standardizes by row total and max of columns
 
-motile.nmds <- metaMDS(motile.abund_rel,
-                       distance = "bray", 
-                       autotransform = FALSE,
-                       engine = "monoMDS",
-                       k = 3,
-                       weakties = TRUE,
-                       model = "global",
-                       maxit = 400,
-                       try = 40,
-                       trymax = 100, 
-                       trace = FALSE)
+# motile.nmds <- metaMDS(motile.abund_rel,
+#                        distance = "bray", 
+#                        autotransform = FALSE,
+#                        engine = "monoMDS",
+#                        k = 3,
+#                        weakties = TRUE,
+#                        model = "global",
+#                        maxit = 400,
+#                        try = 40,
+#                        trymax = 100, 
+#                        trace = FALSE)
 #post-hoc test
-stressplot(object = motile.nmds, lwd = 5)
-
-#tidyverse
-motile.nmds_points <- data.frame(motile.nmds$points)
-motile.nmds_points <- bind_cols(motile.meta, motile.nmds_points) %>% 
-  mutate(depth = factor(depth, labels = c("30", "90", "200", "200 ref")),
-         year = factor(year))
+# stressplot(object = motile.nmds, lwd = 5)
+# 
+# #tidyverse
+# motile.nmds_points <- data.frame(motile.nmds$points)
+# motile.nmds_points <- bind_cols(motile.meta, motile.nmds_points) %>% 
+#   mutate(depth = factor(depth, labels = c("30", "90", "200", "200 ref")),
+#          year = factor(year))
 
 #### Figure 5 ####
 #motile nmds

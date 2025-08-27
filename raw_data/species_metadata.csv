@@ -1,48 +1,49 @@
-SpeciesID,Genera,Species_Group,Alias,Mobility,COMMON NAME (for reference)
-anemone_sp,Cnidaria,Anemone,Anemone,Nonmotile,anemone that's not metridium or urticina
-amphipod,Arthropoda,Amphipod/shrimp,Amphipod,Motile,small crustaceans that look like tiny shrimp
-barnacle,Arthropoda,Barnacle,Barnacle,Nonmotile,NA
-branched_bryozoan_sp,Bryozoa,Bryozoan: branched,Bryozoan: branched,Nonmotile,branched bryozoan (that's specifically different looking than Crisia_sp)
-brachiopod,Brachiopoda,Brachiopod,Brachiopod,Nonmotile,NA
-calcareous_tubeworm,Annelida,Tubeworm: calcareous,Calcareous tubeworm,Nonmotile,"Serpula spp., most likely Pseudochitinopoma"
-Chelysoma_productum,Chordata,Tunicate,Brown tunicate,Nonmotile,brown tunicate
-Scallop_sp,Mollusca,Scallop,Scallop sp.,Nonmotile,scallop
-Chlamys_rhubida,Mollusca,Scallop,Pink scallop,Nonmotile,"typo in name, actual name is Chlamys rubida"
-Chorilia_longipes,Arthropoda,Majoidae crab,Longhord decorator crab,Motile,Longhorn decorator crab
-Corella_willmeriana,Chordata,Tunicate,Clear tunicate,Nonmotile,clear tunicate
-crab_sp,Arthropoda,Cancridae crab,Crab,Motile,"specifically different looking than Glebocarcinus_oregonensis, but let's see if we can figure out what it is!"
-Cranopsis_cucullata,Mollusca,Limpet,Hooded keyhole limpet,Nonmotile,NA
-Crepidula,Mollusca,Limpet,Slipper snail,Nonmotile,slipper snail (limpet)
-Crisia_sp,Bryozoa,Bryozoan: branched,Bryozoan: branched,Nonmotile,branched bryozoan
-colonial tunicate,Tunicata,Tunicate,Colonial tunicate,Nonmotile,NA
-Demospongiae,Porifera,Demosponge,Demosponge,Nonmotile,sponge
-egg_mass,Unknown,Unidentified,Unidentified egg mass,Nonmotile,NA
-encrusting_bryozoan_sp,Bryozoa,Bryozoan: encrusting,Bryozoan: encrusting,Nonmotile,encrusting bryozoan
-Ericthonius_rubricornis,Arthropoda,Amphipod: tube,Amphipod: tube,Nonmotile,"arthropod, looks like a bunch of tube worms jumbled together"
-Eulalia_quadrioculata,Annelida,Polychaete: errant,Polychaete: errant,Motile,annelid worms
-Glebocarcinus_oregonensis,Arthropoda,Cancridae crab,Pygmy Rock Crab,Motile,pygmy rock crab
-Harmothoe_sp,Annelida,Polychaete: errant,Polychaete: errant,Motile,annelid worms
-Hiatella_arctica,Mollusca,Clam,Wrinkled rock-borer clam,Nonmotile,wrinkled rock-borer clam
-Hinnites_giganteous,Mollusca,Scallop,Giant Scallop,Nonmotile,giant scallop (white shells with ridges)
-Lichenopora,Bryozoa,Bryozoan: coral-like,Bryozoan: coral-like,Nonmotile,coral bryozoan (encrusting frilly looking bryozoan)
-limpet,Mollusca,Limpet,Limpet,Nonmotile,NA
-Metridium,Cnidaria,Anemone,Anemone,Nonmotile,stalked anenome - usually white or orange
-Mopalia_kennerleyi,Mollusca,Chiton,Northern hairy chiton,Motile,NA
-Mussel,Mollusca,Mussel,Mussel,Nonmotile,NA
-Amphissa,Mollusca,Gastropod: snail,Wrinkled amphissa,Motile,wrinkled amphissa
-neptunea_lyrata,Mollusca,Gastropod: snail,Lyre whelk,Motile,lyre whelk
-Phyllodoce_sp,Annelida,Polychaete: errant,Scale worm,Motile,polychaete species (scale worm/annelid worm)
-Pododesmus_macrochisma,Mollusca,Jingle shell,Alaska jingle,Nonmotile,Alaska jingle (bivalve)
-polychaete_sp,Annelida,Polychaete: errant,Polychaete: errant,Motile,"annelid (see also Eulalia, Harmothoe, and sabellida)"
-Polynoid_sp,Annelida,Polychaete: errant,Scale worm,Motile,NA
-sabellariid_tubeworm,Annelida,Polychaete: tube,Sand and glue tubeworm,Nonmotile,"""sand and glue"" tubeworms; sabellida"
-shrimp_sp,Arthropoda,Amphipod/shrimp,Shrimp,Motile,let's try to indentify which one!
-Seaweed_sp,Unknown,Seaweed sp.,Seaweed sp.,Nonmotile,unidentified red/brown seaweed (but let's try to identify it!)
-Schizoporella_sp,Bryozoa,Bryozoan: encrusting,Bryozoan: encrusting,Nonmotile,NA
-spirobis_sp,Annelida,Polychaete: spirorbis,Spiral fan worm,Nonmotile,spiral fan worms (annelids)
-Strongylocentrotus_sp,Echinodermata,Sea urchin,Sea urchin,Motile,sea urchin spp
-Trichotropis,Mollusca,Gastropod: snail,Hairy snail,Motile,Hairy snail
-Styaela_gibbsii,Chordata,Tunicate,Stalked tunicate,Nonmotile,stalked tunicate
-Ulva,Chlorophyta,Ulva sp.,Sea lettuce,Nonmotile,sea lettuce
-Urticina,Cnidaria,Anemone,Colorful anemone,Nonmotile,colorful anemone
-unidentified,Unknown,Unidentified,Unidentified,Nonmotile,this means it's too small/difficult for even the experts to identify
+﻿SpeciesID,Phylum,Species_Group,Recode_for_MS,MS_Species_Group,Alias,Mobility,COMMON NAME (for reference) 
+anemone_sp,Cnidaria,Anemone,anemone_sp,Anemone sp.,Anemone,Nonmotile,anemone OTHER THAN metridium or urticina
+amphipod,Arthropoda,Amphipod/shrimp,errant_amphipod,Errant amphipod,Amphipod,Motile,small crustaceans that look like tiny shrimp [OMIT]
+barnacle,Arthropoda,Barnacle,balanus_sp,Balanus sp.,Barnacle,Nonmotile,
+branched_bryozoan_sp,Bryozoa,Bryozoan: branched,branched_bryozoan,Bryozoan: branched,Bryozoan: branched,Nonmotile,branched bryozoan OTHER THAN than Crisia_sp
+brachiopod,Brachiopoda,Brachiopod,brachiopod,Brachiopod sp.,Brachiopod,Nonmotile,
+calcareous_tubeworm,Annelida,Tubeworm: calcareous,calcareous_tubeworm,Calcareous tubeworm,Calcareous tubeworm,Nonmotile,"Serpula spp., most likely Pseudochitinopoma [THESE ARE VERY DIFFERENT GENERA?]"
+Chelysoma_productum,Chordata,Tunicate,chelysoma_productum,Chelysoma productum,Brown tunicate,Nonmotile,brown tunicate
+Scallop_sp,Mollusca,Scallop,scallop_sp,Scallop sp.,Scallop sp.,Nonmotile,scallop OTHER THAN CHLAMYS OR HINNITES
+Chlamys_rhubida,Mollusca,Scallop,chlamys_rhubida,Chlamys rubida,Pink scallop,Nonmotile,
+Chorilia_longipes,Arthropoda,Majoidae crab,chorilia_longipes,Chorilia longipes,Longhord decorator crab,Motile,Longhorn decorator crab
+Corella_willmeriana,Chordata,Tunicate,corella_willmeriana,Corella willmeriana,Clear tunicate,Nonmotile,clear tunicate
+crab_sp,Arthropoda,Cancridae crab,crab_sp,Crab sp. ,Crab,Motile,specifically different looking than Glebocarcinus_oregonensis
+Cranopsis_cucullata,Mollusca,Limpet,cranopsis_cucullata,Cranopsis cucullata,Hooded keyhole limpet,Nonmotile,
+Crepidula,Mollusca,Limpet,crepidula_sp,Crepidula sp.,Slipper snail,Nonmotile,slipper snail (limpet)
+Crisia_sp,Bryozoa,Bryozoan: branched,branched_bryozoan,Branched bryozoan,Bryozoan: branched,Nonmotile,branched bryozoan
+colonial tunicate,Tunicata,Tunicate,colonial_tunicate,Colonial tunicate,Colonial tunicate,Nonmotile,
+Demospongiae,Porifera,Demosponge,demospongiae,Demosponge,Demosponge,Nonmotile,sponge
+egg_mass,Unknown,Unidentified,unidentified_egg_mass,Unidentified egg mass,Unidentified egg mass,Nonmotile,
+encrusting_bryozoan_sp,Bryozoa,Bryozoan: encrusting,encrusting_bryozoan,Encrusting bryozoan,Bryozoan: encrusting,Nonmotile,encrusting bryozoan
+Ericthonius_rubricornis,Arthropoda,Amphipod: tube,amphipod_tube,Amphipod tube,Amphipod: tube,Nonmotile,"arthropod, looks like a bunch of tube worms jumbled together"
+Eulalia_quadrioculata,Annelida,Polychaete: errant,errant_polychaete,Errant polychaete,Polychaete: errant,Motile,annelid worms
+Glebocarcinus_oregonensis,Arthropoda,Cancridae crab,glebocarcinus_oregonensis,Glebocarcinus oregonensis,Pygmy Rock Crab,Motile,pygmy rock crab
+Harmothoe_sp,Annelida,Polychaete: errant,errant_polychaete,Errant polychaete,Polychaete: errant,Motile,annelid worms
+Hiatella_arctica,Mollusca,Clam,hiatella_arctica,Hiatella arctica ,Wrinkled rock-borer clam,Nonmotile,wrinkled rock-borer clam
+Hinnites_giganteous,Mollusca,Scallop,hinnites_giganteous,Hinnites giganteous,Giant Scallop,Nonmotile,giant scallop (white shells with ridges)
+Lichenopora,Bryozoa,Bryozoan: coral-like,calcified_bryozoan,Calcified bryozoan,Bryozoan: coral-like,Nonmotile,coral bryozoan (encrusting frilly looking bryozoan)
+limpet,Mollusca,Limpet,limpet,Limpet,Limpet,Nonmotile,
+Metridium,Cnidaria,Anemone,metridium_sp,Metridium sp. ,Anemone,Nonmotile,stalked anenome - usually white or orange
+Mopalia_kennerleyi,Mollusca,Chiton,mopalia_sp,Mopalia sp.,Northern hairy chiton,Motile,
+Mussel,Mollusca,Mussel,mussel_sp,Mussel sp. ,Mussel,Nonmotile,
+Amphissa,Mollusca,Gastropod: snail,amphissa_sp,Amphissa  sp. ,Wrinkled amphissa,Motile,wrinkled amphissa
+neptunea_lyrata,Mollusca,Gastropod: snail,neptunea_lyrata,Neptunea lyrata,Lyre whelk,Motile,lyre whelk
+Phyllodoce_sp,Annelida,Polychaete: errant,errant_polychaete,Errant polychaete,Scale worm,Motile,polychaete species (scale worm/annelid worm)
+Pododesmus_macrochisma,Mollusca,Jingle shell,pododesmus_macrochisma,Pododesmus macrochisma,Alaska jingle,Nonmotile,Alaska jingle (bivalve)
+polychaete_sp,Annelida,Polychaete: errant,errant_polychaete,Errant polychaete,Polychaete: errant,Motile,"annelid (see also Eulalia, Harmothoe, and sabellida)"
+Polynoid_sp,Annelida,Polychaete: errant,errant_polychaete,Errant polychaete,Scale worm,Motile,
+sabellariid_tubeworm,Annelida,Polychaete: tube,polychaete_noncalcareous_tube,Non-calcareous polychaete tube,Sand and glue tubeworm,Nonmotile,"""sand and glue"" tubeworms; sabellida"
+shrimp_sp,Arthropoda,Amphipod/shrimp,shrimp_sp,Shrimp sp.,Shrimp,Motile,
+Seaweed_sp,Unknown,Seaweed sp.,NA,OMIT THIS LINE,Seaweed sp.,Nonmotile,
+Schizoporella_sp,Bryozoa,Bryozoan: encrusting,encrusting_bryozoan,Encrusting bryozoan,Bryozoan: encrusting,Nonmotile,
+spirobis_sp,Annelida,Polychaete: spirorbis,spirorbid_polychaete,Spirorbid polychaete,Spiral fan worm,Nonmotile,spiral fan worms (annelids)
+Strongylocentrotus_sp,Echinodermata,Sea urchin,ptrongylocentrotus_sp,Strongylocentrotus sp. ,Sea urchin,Motile,sea urchin spp 
+Trichotropis,Mollusca,Gastropod: snail,trichotropis_cancellata,Trichotropis  cancellata,Hairy snail,Motile,Hairy snail
+Styaela_gibbsii,Chordata,Tunicate,styaela_gibbsii,Styaela gibbsii,Stalked tunicate,Nonmotile,stalked tunicate
+Ulva,Chlorophyta,Ulva sp.,NA,OMIT THIS LINE,Sea lettuce,Nonmotile,sea lettuce
+Urticina,Cnidaria,Anemone,urticina_sp,Urticina spp. ,Colorful anemone,Nonmotile,colorful anemone
+unidentified_pending,Unknown,Unidentified,NA,OMIT THIS LINE,Unidentified,Nonmotile,** this means it's either pending identification because you've put it in the Discord and/or we're sending it over to Megan or Greg or another expert
+unidentified,Unknown,Unidentified,unidentified_other,Unidentified other,Unidentified,Nonmotile,this means it's too small/difficult for even the experts to identify
