@@ -2,7 +2,7 @@
 anemone_sp,Cnidaria,Anemone,anemone_sp,Anemone sp.,Anemone,Nonmotile,anemone OTHER THAN metridium or urticina
 amphipod,Arthropoda,Amphipod/shrimp,errant_amphipod,Errant amphipod,Amphipod,Motile,small crustaceans that look like tiny shrimp [OMIT]
 barnacle,Arthropoda,Barnacle,balanus_sp,Balanus sp.,Barnacle,Nonmotile,
-branched_bryozoan_sp,Bryozoa,Bryozoan: branched,branched_bryozoan,Bryozoan: branched,Bryozoan: branched,Nonmotile,branched bryozoan OTHER THAN than Crisia_sp
+branched_bryozoan_sp,Bryozoa,Bryozoan: branched,branched_bryozoan,Branched bryozoan,Bryozoan: branched,Nonmotile,branched bryozoan OTHER THAN than Crisia_sp
 brachiopod,Brachiopoda,Brachiopod,brachiopod,Brachiopod sp.,Brachiopod,Nonmotile,
 calcareous_tubeworm,Annelida,Tubeworm: calcareous,calcareous_tubeworm,Calcareous tubeworm,Calcareous tubeworm,Nonmotile,"Serpula spp., most likely Pseudochitinopoma [THESE ARE VERY DIFFERENT GENERA?]"
 Chelysoma_productum,Chordata,Tunicate,chelysoma_productum,Chelysoma productum,Brown tunicate,Nonmotile,brown tunicate
@@ -44,6 +44,6 @@ Strongylocentrotus_sp,Echinodermata,Sea urchin,ptrongylocentrotus_sp,Strongyloce
 Trichotropis,Mollusca,Gastropod: snail,trichotropis_cancellata,Trichotropis  cancellata,Hairy snail,Motile,Hairy snail
 Styaela_gibbsii,Chordata,Tunicate,styaela_gibbsii,Styaela gibbsii,Stalked tunicate,Nonmotile,stalked tunicate
 Ulva,Chlorophyta,Ulva sp.,NA,OMIT THIS LINE,Sea lettuce,Nonmotile,sea lettuce
-Urticina,Cnidaria,Anemone,urticina_sp,Urticina spp. ,Colorful anemone,Nonmotile,colorful anemone
+Urticina,Cnidaria,Anemone,urticina_sp,Urticina sp. ,Colorful anemone,Nonmotile,colorful anemone
 unidentified_pending,Unknown,Unidentified,NA,OMIT THIS LINE,Unidentified,Nonmotile,** this means it's either pending identification because you've put it in the Discord and/or we're sending it over to Megan or Greg or another expert
 unidentified,Unknown,Unidentified,unidentified_other,Unidentified other,Unidentified,Nonmotile,this means it's too small/difficult for even the experts to identify

@@ -55,7 +55,49 @@ remove_algae <- combined_tidy %>%
   select(PhotoID, Grid.Area.cm)
 
 nonmotile_tidy<- nonmotile_tidy %>% 
-  rows_update(remove_algae, by = "PhotoID")
+  rows_update(remove_algae, by = "PhotoID") %>% 
+  filter(!is.na(Recode_for_MS))
+
+#### format cover and count data for tables ####
+
+rep_grid_area_sum <- nonmotile_tidy %>% 
+  group_by(Year, Site, Replicate) %>% 
+  summarize(total_grid_area = sum(Grid.Area.cm)) 
+
+nonmotile_table <- nonmotile_tidy %>% 
+  group_by(Year, Site, Replicate, Phylum, Recode_for_MS, MS_Species_Group) %>% 
+  summarize(group_area = sum(Org.Area.cm)) %>% 
+  right_join(rep_grid_area_sum) %>% 
+  mutate(group_prop = round(group_area/total_grid_area, 4)*100) %>% 
+  group_by(Year, Site, Phylum, MS_Species_Group) %>% 
+  summarize(mean = round(mean(group_prop), 2), sd = round(sd(group_prop), 2)) %>% 
+  ungroup() %>% 
+  replace_na(list(sd = 0)) %>% 
+  mutate(mean_sd = paste0(mean, " (", sd, ")")) %>% 
+  select(!c(mean, sd)) %>% 
+  mutate(year_site = paste(Year, Site, sep = "_")) %>% 
+  select(!Year:Site) %>% 
+  pivot_wider(names_from = year_site, values_from = mean_sd) %>% 
+  arrange(Phylum, MS_Species_Group) %>% 
+  replace(is.na(.), "-")
+
+write_csv(nonmotile_table, file = "outputs/nonmotile_table.csv")
+
+motile_table <- motile_tidy %>% 
+  group_by(Year, Site, Replicate, Phylum, MS_Species_Group) %>% 
+  summarize(Org_sum = sum(Species.Count)) %>% 
+  group_by(Year, Site, Phylum, MS_Species_Group) %>% 
+  summarize(mean = round(mean(Org_sum), 2), sd = round(sd(Org_sum), 2)) %>% 
+  ungroup() %>% 
+  mutate(mean_sd = paste0(mean, " (", sd, ")")) %>% 
+  select(!c(mean, sd)) %>% 
+  mutate(year_site = paste(Year, Site, sep = "_")) %>% 
+  select(!Year:Site) %>% 
+  pivot_wider(names_from = year_site, values_from = mean_sd) %>% 
+  arrange(Phylum, MS_Species_Group) %>% 
+  replace(is.na(.), "-")
+
+write_csv(motile_table, file = "outputs/motile_table.csv")
 
 #### summary of nonmotile phyla ####
 #phylum proportion values 
@@ -73,25 +115,25 @@ group_perc_live_cover <- nonmotile_tidy %>%
   mutate(group_prop = round(group_area/total_live_area, 4)*100)
 
 #focus on dominant groups
-top_10group_perc <- group_perc_live_cover %>% 
-  filter(group_prop > 10) 
+# top_10group_perc <- group_perc_live_cover %>% 
+#   filter(group_prop > 10) 
 
 #### Figure 2 ####
 ## plot proportions of nonmotile taxa
 nonmotile_tidy %>% 
-  ggplot(aes(x = factor(Site, 
-                        labels = c("Upper\noutfall", "Mid\noutfall", "Deep\noutfall", "Deep\nreference")), 
-             y = Org.Area.cm, fill = Phylum)) +
+  ggplot(aes(x = Year, y = Org.Area.cm, fill = Phylum)) +
   geom_col(position = "fill") +
   theme_classic() + 
-  facet_wrap(~Year) + 
+  facet_wrap(~factor(Site, 
+                     labels = c("Upper\noutfall", "Mid\noutfall", "Deep\noutfall", "Deep\nreference"))) + 
   # theme(text = element_text(size = 14)) +
-  labs(y = "Proportion of total live area", x = "Site", fill = "Phylum") +
+  labs(y = "Proportion of total live area", x = "Years deployed", fill = "Phylum") +
   scale_fill_manual(values = rev(brewer.pal(n = 11, "Spectral"))) +
   theme(text = element_text(size = 14),
-        axis.text.x = element_text(angle = 0, vjust = 1))
+        axis.text.x = element_text(angle = 0, vjust = 1),
+        strip.background = element_blank()) 
 
-# ggsave("figures/figure2.tiff", width = 8, height = 6, dpi = 300)
+# ggsave("outputs/figure3.tiff", width = 8, height = 6, dpi = 300)
 
 ## summary plots based on % cover 
 #calculate nonmotile percent live cover
@@ -104,31 +146,52 @@ perc_cover_df <- nonmotile_tidy %>%
   
 depth_colors <- c("#fde725","#4de3cc","#440154", "#fc8961")
 
-#### Figure 3 ####
+#### Figure 4 ####
 perc_cover_df %>%
-  ggplot(aes(x = Year, y = perc.live.cover, fill = Site)) +
-  geom_point(size = 3, shape = 21) +
+  mutate(Site = factor(Site, labels = c("Upper outfall", "Mid outfall", "Deep outfall", "Deep reference"))) %>% 
+  ggplot(aes(x = Year, y = perc.live.cover, fill = Site, shape = Site)) +
+  geom_point(size = 4, alpha = 0.85) +
   theme_classic() +
   labs(y = "Percent live cover",
-       x = "Pipe material deployment time (years)",
+       x = "Years deployed",
        fill = "Site") +
-  scale_fill_manual(values = depth_colors,
-                    labels = c("Upper outfall", "Mid outfall", "Deep outfall", "Deep reference")) +
-  theme(text = element_text(size = 14)) +
-  facet_wrap(~ factor(Depth, labels = c("30 m", "90 m", "200 m")))
+  scale_fill_manual(values = depth_colors) +
+  scale_shape_manual(values = c(21, 23, 24, 25)) + 
+  theme(text = element_text(size = 14), 
+        strip.background = element_blank()) 
 
-# ggsave("figures/figure3.tiff", width = 8, height = 6, dpi = 300)
+# 
+#   facet_wrap(~ factor(Depth, labels = c("30 m", "90 m", "200 m")))
+#   
+#   perc_cover_df %>%
+#     group_by(Year, Site) %>% 
+#     summarize(median = median(perc.live.cover), 
+#               ymin = min(perc.live.cover), 
+#               ymax = max(perc.live.cover)) %>% 
+#     ggplot(aes(x = Year, y = median, fill = Site)) +
+#     geom_point(size = 3, shape = 21) +
+#     geom_errorbar(aes(ymin = ymin,ymax = ymax), width = 0.01) + 
+#     theme_classic() +
+#     labs(y = "Percent live cover",
+#          x = "Years deployed",
+#          fill = "Site") +
+#     scale_fill_manual(values = depth_colors,
+#                       labels = c("Upper outfall", "Mid outfall", "Deep outfall", "Deep reference")) +
+#     theme(text = element_text(size = 14), 
+#           strip.background = element_blank()) 
+#   
+
+# ggsave("outputs/figure4.tiff", width = 8, height = 6, dpi = 300)
 
 #### univariate stats ####
 shapiro.test(x = perc_cover_df$perc.live.cover)
-shapiro.test(x = log(perc_cover_df$perc.live.cover))
 
-#test the outfall sites only 
-perc_cover_mod <- aov(log(perc.live.cover) ~ Depth + Year + Depth*Year, data = filter(perc_cover_df))
+#test for differences across all sites
+perc_cover_mod <- aov(perc.live.cover ~ Site + Year + Site*Year, data = perc_cover_df)
 summary(perc_cover_mod)
 
 #post-hoc test
-perc_cover_mod2 <- aov(log(perc.live.cover) ~ Depth + Year, data = filter(perc_cover_df))
+perc_cover_mod2 <- aov(perc.live.cover ~ Site + Year, data = perc_cover_df)
 TukeyHSD(perc_cover_mod2)
 
 #model diagnostics
@@ -167,7 +230,7 @@ meta <- nonmotile_tidy_w %>%
 CV <- function(x) { 100 * sd(x) / mean(x) }
 
 CV(x = rowSums(abund)) #low (<50), relativizing by row will not make a big difference
-CV(x = colSums(abund)) #medium (50-100), could have an effect to relativize between species
+CV(x = colSums(abund)) #high (100+), will have an effect to relativize between species
 
 #### nonmotile NMDS #### 
 nonmotile.nmds <- metaMDS(abund, distance = "bray", 
@@ -190,7 +253,7 @@ nmds_points <- bind_cols(meta, nmds_points) %>%
   mutate(depth = factor(depth, labels = c("30", "90", "200")),
          year = factor(year))
 
-#### Figure 4 ####
+#### Figure 5 ####
 #nmds plot
 ggplot(data=nmds_points,
        aes(x=MDS1, y=MDS2,
@@ -199,7 +262,7 @@ ggplot(data=nmds_points,
                                    "Deep outfall", "Deep reference")), 
 
            shape= year)) + 
-  geom_point(color = "black", size = 3) +
+  geom_point(color = "black", size = 4) +
   # stat_ellipse(aes(group = depth, color = depth), 
   #              linetype = "dashed", show.legend = FALSE) +
   theme(axis.line = element_blank(), 
@@ -215,7 +278,7 @@ ggplot(data=nmds_points,
            label = paste("Stress = ", round(nonmotile.nmds$stress, 3))) +
   theme(text = element_text(size = 14))
 
-# ggsave("figures/figure4.tiff", width = 8, height = 6, dpi = 300)
+# ggsave("outputs/figure5.tiff", width = 8, height = 6, dpi = 300)
 
 #### Nonmotile multi stats ####
 ## compare depths at the pipe
@@ -289,6 +352,7 @@ nonmotile_tidy %>%
 ## SIMPER 
 SIMPER_depth <- simper(comm = abund, group = meta$depth, permutations = 9999)
 summary(SIMPER_depth)
+#only keep the spp contributing to the top 50%? 
 
 #see which species are contributing to differences in years
 SIMPER_year <- simper(comm = abund, group = meta$year, permutations = 9999)
@@ -395,13 +459,6 @@ adonis2(motile.abund_ref_rel ~ depth:year, method = "bray",
 adonis2(motile.abund_ref_rel ~ depth + year, method = "bray",
         data = motile.meta_ref, permutations = 9999, by = "margin")
 #no significant effect
-
-## compare motile dispersion
-permutest(betadisper(vegdist(motile.abund_outfall_rel, method = "bray"), group = motile.meta_outfall$depth, type = "median"))
-permutest(betadisper(vegdist(motile.abund_outfall_rel, method = "bray"), group = motile.meta_outfall$year, type = "median"))
-permutest(betadisper(vegdist(motile.abund_ref_rel, method = "bray"), group = motile.meta_ref$depth, type = "median"))
-permutest(betadisper(vegdist(motile.abund_ref_rel, method = "bray"), group = motile.meta_ref$year, type = "median"))
-#none are significant
 
 ## SIMPER comparing year 2 to year 10 across all sites
 motile.SIMPER_year <- simper(comm = motile.abund_rel, group = motile.meta$year, permutations = 9999)
