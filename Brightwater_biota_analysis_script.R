@@ -65,39 +65,39 @@ rep_grid_area_sum <- nonmotile_tidy %>%
   summarize(total_grid_area = sum(Grid.Area.cm)) 
 
 nonmotile_table <- nonmotile_tidy %>% 
-  group_by(Year, Site, Replicate, Phylum, Recode_for_MS, MS_Species_Group) %>% 
+  group_by(Site, Year, Replicate, Phylum, Recode_for_MS, MS_Species_Group) %>% 
   summarize(group_area = sum(Org.Area.cm)) %>% 
   right_join(rep_grid_area_sum) %>% 
   mutate(group_prop = round(group_area/total_grid_area, 4)*100) %>% 
-  group_by(Year, Site, Phylum, MS_Species_Group) %>% 
+  group_by(Site, Year, Phylum, MS_Species_Group) %>% 
   summarize(mean = round(mean(group_prop), 2), sd = round(sd(group_prop), 2)) %>% 
   ungroup() %>% 
   replace_na(list(sd = 0)) %>% 
   mutate(mean_sd = paste0(mean, " (", sd, ")")) %>% 
   select(!c(mean, sd)) %>% 
-  mutate(year_site = paste(Year, Site, sep = "_")) %>% 
+  mutate(site_year = paste(Year, Site, sep = "_")) %>% 
   select(!Year:Site) %>% 
-  pivot_wider(names_from = year_site, values_from = mean_sd) %>% 
+  pivot_wider(names_from = site_year, values_from = mean_sd) %>% 
   arrange(Phylum, MS_Species_Group) %>% 
   replace(is.na(.), "-")
 
-write_csv(nonmotile_table, file = "outputs/nonmotile_table.csv")
+# write_csv(nonmotile_table, file = "outputs/nonmotile_table.csv")
 
 motile_table <- motile_tidy %>% 
-  group_by(Year, Site, Replicate, Phylum, MS_Species_Group) %>% 
+  group_by(Site, Year, Replicate, Phylum, MS_Species_Group) %>% 
   summarize(Org_sum = sum(Species.Count)) %>% 
-  group_by(Year, Site, Phylum, MS_Species_Group) %>% 
+  group_by(Site, Year, Phylum, MS_Species_Group) %>% 
   summarize(mean = round(mean(Org_sum), 2), sd = round(sd(Org_sum), 2)) %>% 
   ungroup() %>% 
   mutate(mean_sd = paste0(mean, " (", sd, ")")) %>% 
   select(!c(mean, sd)) %>% 
-  mutate(year_site = paste(Year, Site, sep = "_")) %>% 
+  mutate(site_year = paste(Year, Site, sep = "_")) %>% 
   select(!Year:Site) %>% 
-  pivot_wider(names_from = year_site, values_from = mean_sd) %>% 
+  pivot_wider(names_from = site_year, values_from = mean_sd) %>% 
   arrange(Phylum, MS_Species_Group) %>% 
   replace(is.na(.), "-")
 
-write_csv(motile_table, file = "outputs/motile_table.csv")
+# write_csv(motile_table, file = "outputs/motile_table.csv")
 
 #### summary of nonmotile phyla ####
 #phylum proportion values 
@@ -118,23 +118,6 @@ group_perc_live_cover <- nonmotile_tidy %>%
 # top_10group_perc <- group_perc_live_cover %>% 
 #   filter(group_prop > 10) 
 
-#### Figure 2 ####
-## plot proportions of nonmotile taxa
-nonmotile_tidy %>% 
-  ggplot(aes(x = Year, y = Org.Area.cm, fill = Phylum)) +
-  geom_col(position = "fill") +
-  theme_classic() + 
-  facet_wrap(~factor(Site, 
-                     labels = c("Upper\noutfall", "Mid\noutfall", "Deep\noutfall", "Deep\nreference"))) + 
-  # theme(text = element_text(size = 14)) +
-  labs(y = "Proportion of total live area", x = "Years deployed", fill = "Phylum") +
-  scale_fill_manual(values = rev(brewer.pal(n = 11, "Spectral"))) +
-  theme(text = element_text(size = 14),
-        axis.text.x = element_text(angle = 0, vjust = 1),
-        strip.background = element_blank()) 
-
-# ggsave("outputs/figure3.tiff", width = 8, height = 6, dpi = 300)
-
 ## summary plots based on % cover 
 #calculate nonmotile percent live cover
 perc_cover_df <- nonmotile_tidy %>% 
@@ -143,10 +126,10 @@ perc_cover_df <- nonmotile_tidy %>%
             live.area.covered = sum(Org.Area.cm)) %>% 
   ungroup() %>% 
   mutate(perc.live.cover = round((live.area.covered/grid.area.sum)*100, 2)) #divide the area covered by the total area to get % cover
-  
+
 depth_colors <- c("#fde725","#4de3cc","#440154", "#fc8961")
 
-#### Figure 4 ####
+#### Figure 3 ####
 perc_cover_df %>%
   mutate(Site = factor(Site, labels = c("Upper outfall", "Mid outfall", "Deep outfall", "Deep reference"))) %>% 
   ggplot(aes(x = Year, y = perc.live.cover, fill = Site, shape = Site)) +
@@ -181,7 +164,7 @@ perc_cover_df %>%
 #           strip.background = element_blank()) 
 #   
 
-# ggsave("outputs/figure4.tiff", width = 8, height = 6, dpi = 300)
+# ggsave("outputs/figure3.tiff", width = 8, height = 6, dpi = 300)
 
 #### univariate stats ####
 shapiro.test(x = perc_cover_df$perc.live.cover)
@@ -190,16 +173,29 @@ shapiro.test(x = perc_cover_df$perc.live.cover)
 perc_cover_mod <- aov(perc.live.cover ~ Site + Year + Site*Year, data = perc_cover_df)
 summary(perc_cover_mod)
 
-#post-hoc test
-perc_cover_mod2 <- aov(perc.live.cover ~ Site + Year, data = perc_cover_df)
-TukeyHSD(perc_cover_mod2)
-
 #model diagnostics
 aov.res <- residuals(perc_cover_mod)
 
 hist(perc_cover_mod$residuals)
 qqnorm(perc_cover_mod$residuals)
 qqline(perc_cover_mod$residuals)
+
+#### Figure 4 ####
+## plot proportions of nonmotile taxa
+nonmotile_tidy %>% 
+  ggplot(aes(x = Year, y = Org.Area.cm, fill = Phylum)) +
+  geom_col(position = "fill") +
+  theme_classic() + 
+  facet_wrap(~factor(Site, 
+                     labels = c("Upper\noutfall", "Mid\noutfall", "Deep\noutfall", "Deep\nreference"))) + 
+  # theme(text = element_text(size = 14)) +
+  labs(y = "Proportion of total live area", x = "Years deployed", fill = "Phylum") +
+  scale_fill_manual(values = rev(brewer.pal(n = 11, "Spectral"))) +
+  theme(text = element_text(size = 14),
+        axis.text.x = element_text(angle = 0, vjust = 1),
+        strip.background = element_blank()) 
+
+# ggsave("outputs/figure4.tiff", width = 8, height = 6, dpi = 300)
 
 #### nonmotile multivariate analysis ####
 
