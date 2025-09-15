@@ -277,85 +277,58 @@ ggplot(data=nmds_points,
 # ggsave("outputs/figure5.tiff", width = 8, height = 6, dpi = 300)
 
 #### Nonmotile multi stats ####
-## compare depths at the pipe
-abund_outfall <- nonmotile_tidy_w %>%
-  filter(!depth == "600_ref") %>%
-  select(!contains("unidentified")) %>% #not including unidentified orgs
-  select(amphipod_tube:urticina_sp) 
+## test for differences between depths and years
 
-meta_outfall <- nonmotile_tidy_w %>%
-  filter(!depth == "600_ref") %>%
-  select(year:replicate)
-
-adonis2(abund_outfall ~ depth:year, method = "bray",
-        data = meta_outfall, permutations = 9999, by = "margin")
+adonis2(abund ~ depth:year, method = "bray",
+        data = meta, permutations = 9999, by = "margin")
 #significant interaction term
+#don't have enough replication to do pairwise tests
 
-permutest(betadisper(vegdist(abund_outfall, method = "bray"), group = meta_outfall$depth, type = "median"))
-#significant
-
-year.beta <- betadisper(vegdist(abund_outfall, method = "bray"), group = meta_outfall$depth, type = "median")
-permutest(year.beta, pairwise = TRUE)
-
-permutest(betadisper(vegdist(abund_outfall, method = "bray"), group = meta_outfall$year, type = "median"))
+permutest(betadisper(vegdist(abund, method = "bray"), group = meta$depth, type = "median"), pairwise = TRUE)
 #not significant
 
-## compare the -200 m outfall and reference sites
-abund_ref <- nonmotile_tidy_w %>%
-  filter(depth == 600 | depth == "600_ref") %>%
-  select(!contains("unidentified")) %>% #not including unidentified orgs
-  select(amphipod_tube:urticina_sp) 
-
-meta_ref <- nonmotile_tidy_w %>%
-  filter(depth == 600 | depth == "600_ref") %>%
-  select(year:replicate)
-
-adonis2(abund_ref ~ depth:year, method = "bray",
-        data = meta_ref, permutations = 9999, by = "margin")
-#significant interaction term
-
-permutest(betadisper(vegdist(abund_ref, method = "bray"), group = meta_ref$depth, type = "median"))
-permutest(betadisper(vegdist(abund_ref, method = "bray"), group = meta_ref$year, type = "median"))
-#neither are significant
+permutest(betadisper(vegdist(abund, method = "bray"), group = meta$year, type = "median"), pairwise = TRUE)
+#not significant
 
 ## see if any species are specific to a particular depth
-#see how many species are unique to each depth
-unique_by_depth <- combined_tidy %>% 
-  group_by(Depth) %>% 
-  distinct(Recode_for_MS) %>% 
-  mutate(present = 1) %>% 
-  ungroup() %>% 
-  pivot_wider(names_from = Depth, values_from = present, values_fill = 0) %>% 
-  mutate(depths_present = rowSums(select_if(., is.numeric))) %>% 
-  arrange(depths_present)
+# #see how many species are unique to each depth
+# unique_by_depth <- combined_tidy %>% 
+#   group_by(Depth) %>% 
+#   distinct(Recode_for_MS) %>% 
+#   mutate(present = 1) %>% 
+#   ungroup() %>% 
+#   pivot_wider(names_from = Depth, values_from = present, values_fill = 0) %>% 
+#   mutate(depths_present = rowSums(select_if(., is.numeric))) %>% 
+#   arrange(depths_present)
+# 
+# unique_group_by_depth <- combined_tidy %>% 
+#   group_by(Depth) %>% 
+#   distinct(Recode_for_MS) %>% 
+#   mutate(present = 1) %>% 
+#   ungroup() %>% 
+#   pivot_wider(names_from = Depth, values_from = present, values_fill = 0) %>% 
+#   mutate(depths_present = rowSums(select_if(., is.numeric))) %>% 
+#   arrange(depths_present)
 
-unique_group_by_depth <- combined_tidy %>% 
-  group_by(Depth) %>% 
-  distinct(Recode_for_MS) %>% 
-  mutate(present = 1) %>% 
-  ungroup() %>% 
-  pivot_wider(names_from = Depth, values_from = present, values_fill = 0) %>% 
-  mutate(depths_present = rowSums(select_if(., is.numeric))) %>% 
-  arrange(depths_present)
 
-ISA_depth <- multipatt(x = abund, cluster = meta$depth, duleg = TRUE)
+abund_10 <- nonmotile_tidy_w %>%
+  select(!contains("unidentified")) %>% #not including unidentified orgs
+  filter(year == "10") %>% 
+  select(amphipod_tube:urticina_sp) 
+
+meta_10 <- nonmotile_tidy_w %>%
+  filter(year == "10") %>% 
+  select(year:replicate)
+
+ISA_depth <- multipatt(x = abund_10, cluster = meta_10$site, duleg = TRUE)
 summary(ISA_depth)
 
-nonmotile_tidy %>% 
-  group_by(Depth) %>%
-  distinct(Recode_for_MS)
 
 ## SIMPER 
-SIMPER_depth <- simper(comm = abund, group = meta$depth, permutations = 9999)
+SIMPER_depth <- simper(comm = abund_10, group = meta_10$site, permutations = 9999)
 summary(SIMPER_depth)
-#only keep the spp contributing to the top 50%? 
 
-#see which species are contributing to differences in years
-SIMPER_year <- simper(comm = abund, group = meta$year, permutations = 9999)
-
-summary(SIMPER_year)$'2_10' %>%
-  round(3) %>%
-  head()
+SIMPER_test <- keep(SIMPER_depth, cumsum <0.7)
 
 #### motile analysis ####
 motile_tidy_w <- motile_tidy %>% 
