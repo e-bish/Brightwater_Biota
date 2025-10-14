@@ -99,25 +99,6 @@ motile_table <- motile_tidy %>%
 
 # write_csv(motile_table, file = "outputs/motile_table.csv")
 
-#### summary of nonmotile phyla ####
-#phylum proportion values 
-area_sum <- nonmotile_tidy %>% 
-  group_by(Year, Site) %>% 
-  mutate(total_live_area = sum(Org.Area.cm)) %>% 
-  dplyr::select(Year, Site, total_live_area) %>% 
-  distinct()
-
-#breakdown by organism category
-group_perc_live_cover <- nonmotile_tidy %>% 
-  group_by(Year, Site, Recode_for_MS) %>% 
-  summarize(group_area = sum(Org.Area.cm)) %>% 
-  right_join(area_sum) %>% 
-  mutate(group_prop = round(group_area/total_live_area, 4)*100)
-
-#focus on dominant groups
-# top_10group_perc <- group_perc_live_cover %>% 
-#   filter(group_prop > 10) 
-
 ## summary plots based on % cover 
 #calculate nonmotile percent live cover
 perc_cover_df <- nonmotile_tidy %>% 
@@ -131,7 +112,7 @@ depth_colors <- c("#fde725","#4de3cc","#440154", "#fc8961")
 
 #### Figure 3 ####
 perc_cover_df %>%
-  mutate(Site = factor(Site, labels = c("Upper outfall", "Mid outfall", "Deep outfall", "Deep reference"))) %>% 
+  mutate(Site = factor(Site, labels = c("Shallow outfall", "Mid outfall", "Deep outfall", "Deep reference"))) %>% 
   ggplot(aes(x = Year, y = perc.live.cover, fill = Site, shape = Site)) +
   geom_point(size = 4, alpha = 0.85) +
   theme_classic() +
@@ -143,28 +124,52 @@ perc_cover_df %>%
   theme(text = element_text(size = 14), 
         strip.background = element_blank()) 
 
-# 
-#   facet_wrap(~ factor(Depth, labels = c("30 m", "90 m", "200 m")))
-#   
-#   perc_cover_df %>%
-#     group_by(Year, Site) %>% 
-#     summarize(median = median(perc.live.cover), 
-#               ymin = min(perc.live.cover), 
-#               ymax = max(perc.live.cover)) %>% 
-#     ggplot(aes(x = Year, y = median, fill = Site)) +
-#     geom_point(size = 3, shape = 21) +
-#     geom_errorbar(aes(ymin = ymin,ymax = ymax), width = 0.01) + 
-#     theme_classic() +
-#     labs(y = "Percent live cover",
-#          x = "Years deployed",
-#          fill = "Site") +
-#     scale_fill_manual(values = depth_colors,
-#                       labels = c("Upper outfall", "Mid outfall", "Deep outfall", "Deep reference")) +
-#     theme(text = element_text(size = 14), 
-#           strip.background = element_blank()) 
-#   
-
 # ggsave("outputs/figure3.tiff", width = 8, height = 6, dpi = 300)
+
+#### summary of nonmotile phyla ####
+
+## summary plot for number of species
+spp_richness_df <- nonmotile_tidy %>% 
+  group_by(Year, Site, Replicate) %>% 
+  distinct(Species_Group) %>% 
+  summarize(group_richness = n()) %>% 
+  ungroup()
+
+spp_richness_df %>% 
+  group_by(Year, Site) %>% 
+  summarize(mean_sr = mean(group_richness),
+            sd_sr = sd(group_richness)) %>% 
+  mutate(sd_sr = ifelse(is.na(sd_sr), 0, sd_sr)) %>% 
+  ggplot(aes(x = factor(Site, labels = c("Shallow outfall", 
+                                         "Mid outfall",
+                                         "Deep outfall",
+                                         "Deep reference")), 
+             y = mean_sr, fill = Year)) + 
+  geom_bar(position="dodge", stat="identity") +
+  geom_errorbar(aes(ymin = mean_sr - sd_sr, ymax = mean_sr + sd_sr), 
+                width=.1, position = position_dodge(width = .9)) +
+  scale_fill_manual(values = c("#f3e0af", "#1e9b8a")) +
+  theme_classic() +
+  labs(y = "Average number of distinct 
+       organism categories", 
+       x = "Site", 
+       fill = "Years\ndeployed")
+
+# ggsave("outputs/figure4.tiff", width = 8, height = 6, dpi = 300)
+
+#phylum proportion values 
+area_sum <- nonmotile_tidy %>% 
+  group_by(Year, Site) %>% 
+  mutate(total_live_area = sum(Org.Area.cm)) %>% 
+  dplyr::select(Year, Site, total_live_area) %>% 
+  distinct()
+
+#breakdown by organism category
+group_perc_live_cover <- nonmotile_tidy %>% 
+  group_by(Year, Site, Recode_for_MS) %>% 
+  summarize(group_area = sum(Org.Area.cm)) %>% 
+  right_join(area_sum) %>% 
+  mutate(group_prop = round(group_area/total_live_area, 4)*100)
 
 #### univariate stats ####
 shapiro.test(x = perc_cover_df$perc.live.cover)
@@ -180,22 +185,38 @@ hist(perc_cover_mod$residuals)
 qqnorm(perc_cover_mod$residuals)
 qqline(perc_cover_mod$residuals)
 
-#### Figure 4 ####
+#### Figure 5 ####
 ## plot proportions of nonmotile taxa
+phylum_colors <- c(
+  "#44627a", "#6b8ba4", "#8fb9a8",
+  "#d6c690", "#eea98d", "#fff4b3", "#e9e3da"
+)
+
+phylum_colors1 <- c(
+  "#6b8ba4", "#5c3ea0",  "#2f77bd",
+  "#3fb26b",  "#d6c690","#ffd64d", "#f4a259"
+)
+
+phylum_colors2 <- c( "#fc8961","#1e9b8a",
+                     "#f3e0af",
+                     "#4de3cc","#6b8ba4",
+                     "#fde725","lightgrey")
+
 nonmotile_tidy %>% 
-  ggplot(aes(x = Year, y = Org.Area.cm, fill = Phylum)) +
+  mutate(Group = ifelse(Phylum %in% c("Unknown", "Tunicata", "Chordata", "Brachiopoda"), "Other", Phylum)) %>% 
+  ggplot(aes(x = Year, y = Org.Area.cm, fill = Group)) +
   geom_col(position = "fill") +
   theme_classic() + 
   facet_wrap(~factor(Site, 
-                     labels = c("Upper\noutfall", "Mid\noutfall", "Deep\noutfall", "Deep\nreference"))) + 
+                     labels = c("Shallow\noutfall", "Mid\noutfall", "Deep\noutfall", "Deep\nreference"))) + 
   # theme(text = element_text(size = 14)) +
   labs(y = "Proportion of total live area", x = "Years deployed", fill = "Phylum") +
-  scale_fill_manual(values = rev(brewer.pal(n = 11, "Spectral"))) +
+  scale_fill_manual(values = phylum_colors2) +
   theme(text = element_text(size = 14),
         axis.text.x = element_text(angle = 0, vjust = 1),
         strip.background = element_blank()) 
 
-# ggsave("outputs/figure4.tiff", width = 8, height = 6, dpi = 300)
+# ggsave("outputs/figure5.tiff", width = 8, height = 6, dpi = 300)
 
 #### nonmotile multivariate analysis ####
 
@@ -249,12 +270,12 @@ nmds_points <- bind_cols(meta, nmds_points) %>%
   mutate(depth = factor(depth, labels = c("30", "90", "200")),
          year = factor(year))
 
-#### Figure 5 ####
+#### Figure 6 ####
 #nmds plot
 ggplot(data=nmds_points,
        aes(x=MDS1, y=MDS2,
            fill= factor(site,
-                        labels = c("Upper outfall", "Mid outfall", 
+                        labels = c("Shallow outfall", "Mid outfall", 
                                    "Deep outfall", "Deep reference")), 
 
            shape= year)) + 
@@ -274,7 +295,7 @@ ggplot(data=nmds_points,
            label = paste("Stress = ", round(nonmotile.nmds$stress, 3))) +
   theme(text = element_text(size = 14))
 
-# ggsave("outputs/figure5.tiff", width = 8, height = 6, dpi = 300)
+# ggsave("outputs/figure6.tiff", width = 8, height = 6, dpi = 300)
 
 #### Nonmotile multi stats ####
 ## test for differences between depths and years
