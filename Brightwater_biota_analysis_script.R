@@ -333,7 +333,7 @@ permutest(betadisper(vegdist(abund, method = "bray"), group = meta$year, type = 
 #   mutate(depths_present = rowSums(select_if(., is.numeric))) %>% 
 #   arrange(depths_present)
 
-
+# only look at 10 year data
 abund_10 <- nonmotile_tidy_w %>%
   select(!contains("unidentified")) %>% #not including unidentified orgs
   filter(year == "10") %>% 
@@ -346,12 +346,29 @@ meta_10 <- nonmotile_tidy_w %>%
 ISA_depth <- multipatt(x = abund_10, cluster = meta_10$site, duleg = TRUE)
 summary(ISA_depth)
 
-
 ## SIMPER 
 SIMPER_depth <- simper(comm = abund_10, group = meta_10$site, permutations = 9999)
 summary(SIMPER_depth)
 
-SIMPER_test <- keep(SIMPER_depth, cumsum <0.7)
+simper_df <- map_df(names(SIMPER_depth_df), function(comp) {
+  SIMPER_depth_df[[comp]] %>%
+    mutate(species = rownames(.),
+      comparison = comp) %>%
+    filter(cumsum <= 0.7)
+})
+
+SIMPER_depth_df <- lapply(SIMPER_depth, as.data.frame)
+
+SIMPER_test <- keep(SIMPER_depth_df, function (x) x$cumsum < 0.7)
+
+SIMPER_results <- data.frame()
+
+for (i in 1:length(SIMPER_depth_df)) {
+  tmp <- SIMPER_depth_df[[i]] %>% 
+    filter(cusum < .70) 
+  SIMPER_results <- rbind(SIMPER_results, tmp) 
+}
+
 
 #### motile analysis ####
 motile_tidy_w <- motile_tidy %>% 
