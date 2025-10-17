@@ -128,35 +128,6 @@ perc_cover_df %>%
 
 #### summary of nonmotile phyla ####
 
-## summary plot for number of species
-spp_richness_df <- nonmotile_tidy %>% 
-  group_by(Year, Site, Replicate) %>% 
-  distinct(Species_Group) %>% 
-  summarize(group_richness = n()) %>% 
-  ungroup()
-
-spp_richness_df %>% 
-  group_by(Year, Site) %>% 
-  summarize(mean_sr = mean(group_richness),
-            sd_sr = sd(group_richness)) %>% 
-  mutate(sd_sr = ifelse(is.na(sd_sr), 0, sd_sr)) %>% 
-  ggplot(aes(x = factor(Site, labels = c("Shallow outfall", 
-                                         "Mid outfall",
-                                         "Deep outfall",
-                                         "Deep reference")), 
-             y = mean_sr, fill = Year)) + 
-  geom_bar(position="dodge", stat="identity") +
-  geom_errorbar(aes(ymin = mean_sr - sd_sr, ymax = mean_sr + sd_sr), 
-                width=.1, position = position_dodge(width = .9)) +
-  scale_fill_manual(values = c("#f3e0af", "#1e9b8a")) +
-  theme_classic() +
-  labs(y = "Average number of distinct 
-       organism categories", 
-       x = "Site", 
-       fill = "Years\ndeployed")
-
-# ggsave("outputs/figure4.tiff", width = 8, height = 6, dpi = 300)
-
 #phylum proportion values 
 area_sum <- nonmotile_tidy %>% 
   group_by(Year, Site) %>% 
@@ -185,17 +156,17 @@ hist(perc_cover_mod$residuals)
 qqnorm(perc_cover_mod$residuals)
 qqline(perc_cover_mod$residuals)
 
-#### Figure 5 ####
+#### Figure 4 ####
 ## plot proportions of nonmotile taxa
-phylum_colors <- c(
-  "#44627a", "#6b8ba4", "#8fb9a8",
-  "#d6c690", "#eea98d", "#fff4b3", "#e9e3da"
-)
-
-phylum_colors1 <- c(
-  "#6b8ba4", "#5c3ea0",  "#2f77bd",
-  "#3fb26b",  "#d6c690","#ffd64d", "#f4a259"
-)
+# phylum_colors <- c(
+#   "#44627a", "#6b8ba4", "#8fb9a8",
+#   "#d6c690", "#eea98d", "#fff4b3", "#e9e3da"
+# )
+# 
+# phylum_colors1 <- c(
+#   "#6b8ba4", "#5c3ea0",  "#2f77bd",
+#   "#3fb26b",  "#d6c690","#ffd64d", "#f4a259"
+# )
 
 phylum_colors2 <- c( "#fc8961","#1e9b8a",
                      "#f3e0af",
@@ -216,7 +187,38 @@ nonmotile_tidy %>%
         axis.text.x = element_text(angle = 0, vjust = 1),
         strip.background = element_blank()) 
 
-# ggsave("outputs/figure5.tiff", width = 8, height = 6, dpi = 300)
+# ggsave("outputs/figure4.tiff", width = 8, height = 6, dpi = 300)
+
+#### Figure 5 ####
+## summary plot for number of species
+spp_richness_df <- nonmotile_tidy %>% 
+  group_by(Year, Site, Replicate) %>% 
+  distinct(Species_Group) %>% 
+  summarize(group_richness = n()) %>% 
+  ungroup()
+
+spp_richness_df %>% 
+  group_by(Year, Site) %>% 
+  summarize(mean_sr = mean(group_richness),
+            sd_sr = sd(group_richness)) %>% 
+  mutate(sd_sr = ifelse(is.na(sd_sr), 0, sd_sr)) %>% 
+  ggplot(aes(x = factor(Site, labels = c("Shallow\noutfall", 
+                                         "Mid\noutfall",
+                                         "Deep\noutfall",
+                                         "Deep\nreference")), 
+             y = mean_sr, fill = Year)) + 
+  geom_bar(position="dodge", stat="identity") +
+  geom_errorbar(aes(ymin = mean_sr - sd_sr, ymax = mean_sr + sd_sr), 
+                width=.1, position = position_dodge(width = .9)) +
+  scale_fill_manual(values = c("#f3e0af", "#1e9b8a")) +
+  theme_classic() +
+  labs(y = "Average number of species", 
+       x = "Site", 
+       fill = "Years\ndeployed") + 
+  theme(text = element_text(size = 12))
+
+# ggsave("outputs/figure5.tiff", width = 4, height = 6, dpi = 300)
+
 
 #### nonmotile multivariate analysis ####
 
