@@ -1,6 +1,6 @@
 # Brightwater_Biota
 
-A repo to store results related to Dethier et al. 2026
+A repo to store results related to:
 
 Dethier, M.N., Kreutziger, C., Bishop, E. (2026). Marine infrastructure supports a deepwater benthic assemblage in Puget Sound, WA. Marine Biology Research, 1–13. https://doi.org/10.1080/17451000.2026.2636547
 
